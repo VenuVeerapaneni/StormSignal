@@ -10,7 +10,7 @@ Show the language menu and switch from English to Tamil, then Hindi. Point out t
 
 ## 0:45–1:10 — Read the official warning
 
-“StormSignal checks the public India Meteorological Department district-warning page for Chennai. The app shows the warning exactly as IMD publishes it, its source update date, and the district it covers.” Read the current warning shown on screen; its wording will change as IMD updates the source.
+“An automated refresh checks the public India Meteorological Department district-warning page for Chennai every 30 minutes. StormSignal displays the latest published snapshot, with the exact IMD wording, source update date, and district it covers.” Read the warning shown on screen; its wording will change as IMD updates the source.
 
 ## 1:10–1:35 — Take a safer next step
 
