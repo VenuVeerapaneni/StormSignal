@@ -14,15 +14,13 @@ StormSignal is a mobile-first hackathon prototype for the TravelTech problem: he
 
 Open `index.html` in a modern web browser. No package installation or backend is needed for this static prototype.
 
-## Deploy with GitHub Pages
+## Live demo
 
-This project has no build step. To publish it from a GitHub repository:
+The current public demo is hosted on GitHub Pages:
 
-1. Push the project files to the repository's `main` branch.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, then select `main` and `/(root)`.
-4. Save and wait for GitHub Pages to publish the public URL.
-5. Open the published URL on a phone and use that URL in the demo video and submission form.
+[Open StormSignal](https://venuveerapaneni.github.io/StormSignal/) · [View the source repository](https://github.com/VenuVeerapaneni/StormSignal)
+
+The site publishes from the `main` branch at the repository root. It is a static page with no build step, backend, or secrets. After changing files on `main`, GitHub Pages rebuilds the site automatically.
 
 The page links to official external sources and uses the Web Share API when supported. It does not need secrets or a server.
 
