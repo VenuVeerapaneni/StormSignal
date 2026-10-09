@@ -1,0 +1,101 @@
+1
+00:00:00,000 --> 00:00:07,000
+During extreme weather, travelers may not
+know which warning to trust
+
+2
+00:00:07,000 --> 00:00:15,000
+or where to find help. StormSignal brings
+official warnings and local guidance together.
+
+3
+00:00:15,000 --> 00:00:22,000
+Chennai is our demo district. I’ll switch
+between English, Tamil, and Hindi.
+
+4
+00:00:22,000 --> 00:00:30,000
+The main information and safety steps
+change with the selected language.
+
+5
+00:00:30,000 --> 00:00:38,000
+The page shows the IMD district warning,
+its exact wording, and the source update date.
+
+6
+00:00:38,000 --> 00:00:46,000
+Open the link to verify what the source
+says.
+
+7
+00:00:46,000 --> 00:00:52,000
+A scheduled refresh checks IMD’s public
+Chennai page every 30 minutes.
+
+8
+00:00:52,000 --> 00:00:59,000
+StormSignal displays the latest published
+snapshot.
+
+9
+00:00:59,000 --> 00:01:05,000
+This is district-level forecast information,
+not street-by-street flood reports.
+
+10
+00:01:05,000 --> 00:01:12,000
+The app does not show safe routes or
+confirmed shelters.
+
+11
+00:01:12,000 --> 00:01:20,000
+Safety steps reflect the warning category.
+
+12
+00:01:20,000 --> 00:01:24,000
+For thunder and lightning, go indoors,
+
+13
+00:01:24,000 --> 00:01:29,000
+Avoid windows, and stay sheltered for
+30 minutes after the last thunder.
+
+14
+00:01:29,000 --> 00:01:36,000
+If the source data is old or unavailable,
+the app says it cannot verify the
+
+15
+00:01:36,000 --> 00:01:42,000
+current warning. No warning listed
+is not an all-clear.
+
+16
+00:01:42,000 --> 00:01:50,000
+Let’s open IMD’s page to compare its
+wording and date, then return to the app.
+
+17
+00:01:50,000 --> 00:01:57,000
+Now we’ll show the official local contacts.
+
+18
+00:01:57,000 --> 00:02:04,000
+The contact panel has tap-to-call links
+for Chennai’s Disaster Helpline 1077
+
+19
+00:02:04,000 --> 00:02:10,000
+and Corporation 1913, with a link to
+verify the numbers.
+
+20
+00:02:10,000 --> 00:02:17,000
+StormSignal helps travelers understand
+official warnings in a familiar language.
+
+21
+00:02:17,000 --> 00:02:25,000
+In an emergency, follow local authority
+instructions.
