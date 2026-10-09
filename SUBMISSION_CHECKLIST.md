@@ -5,6 +5,7 @@
 - [x] Public GitHub repository: https://github.com/VenuVeerapaneni/StormSignal
 - [x] Public, judge-accessible web demo: https://venuveerapaneni.github.io/StormSignal/
 - [x] README describing the selected problem statement, solution, and setup
+- [x] Ready-to-paste project description: [SUBMISSION_DESCRIPTION.md](SUBMISSION_DESCRIPTION.md)
 - [x] Demo script within the required 2-5 minute video length: [DEMO_SCRIPT.md](DEMO_SCRIPT.md)
 - [ ] Record a 2-5 minute demo video and add the video file to this repository
 
