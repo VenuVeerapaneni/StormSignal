@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1f33" />
+  <meta name="description" content="A multilingual travel safety prototype with official Chennai weather and emergency help links." />
+  <title>StormSignal — Travel safer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="StormSignal home"><span class="brand-mark">S</span><span>StormSignal</span></a>
+    <div class="top-actions"><span class="demo-badge"><i></i> DEMO DATA</span><label class="language">Language <select id="language"><option value="en">English</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option></select></label></div>
+  </header>
+  <main id="top">
+    <section class="welcome">
+      <div><p class="eyebrow" data-i18n="eyebrow">TRAVEL SAFETY, MADE CLEAR</p><h1 data-i18n="title">Know what’s happening.<br><em>Know what to do.</em></h1><p class="intro" data-i18n="intro">Weather alerts and practical guidance for travellers, in a language you understand.</p></div>
+      <div class="location-pill"><span class="pin">⌖</span><div><small data-i18n="yourArea">DEMO AREA</small><strong>Chennai, Tamil Nadu</strong></div></div>
+    </section>
+
+    <section class="notice" role="note"><span class="notice-icon">ⓘ</span><div><strong data-i18n="demoTitle">Hackathon preview</strong><p data-i18n="demoText">This screen uses sample information. It is not a live emergency service. Always follow current instructions from local authorities.</p></div></section>
+
+    <section class="alert-card" aria-labelledby="alertTitle">
+      <div class="alert-head"><div class="alert-label"><span class="pulse"></span><span data-i18n="activeAlert">SAMPLE WEATHER ALERT</span></div><span class="severity" data-i18n="highRisk">HIGH RISK</span></div>
+      <h2 id="alertTitle" data-i18n="alertTitle">Heavy rain and local flooding</h2>
+      <p class="alert-summary" data-i18n="alertSummary">Low-lying roads near the demo area may be waterlogged. Avoid walking or driving through floodwater.</p>
+      <div class="alert-meta"><span>⌖ <b data-i18n="areaLabel">Adyar &amp; nearby low-lying areas</b></span><span>◷ <b data-i18n="updated">Scenario timestamp · illustrative</b></span></div>
+      <div class="source"><span class="source-icon">✓</span><div><strong data-i18n="sampleSource">Sample source for demonstration</strong><small data-i18n="sampleSourceNote">Not an official or live warning</small></div><a class="text-button" href="https://mausam.imd.gov.in/chennaiums/district_warning_chnums.php" target="_blank" rel="noopener" data-i18n="liveSource">Open IMD live warnings ↗</a><button class="text-button" id="sourceInfo" data-i18n="whyShown">Why am I seeing this?</button></div>
+    </section>
+
+    <section class="guidance-grid">
+      <article class="panel guidance"><div class="section-title"><span class="round-icon blue">↗</span><div><p class="eyebrow" data-i18n="rightNow">RIGHT NOW</p><h2 data-i18n="stepsTitle">Stay safer</h2></div></div>
+        <ol class="steps"><li><span>1</span><div><strong data-i18n="step1Title">Move away from floodwater</strong><p data-i18n="step1Text">Do not cross water on foot or in a vehicle. It may be deeper or faster than it looks.</p></div></li><li><span>2</span><div><strong data-i18n="step2Title">Get to a secure place</strong><p data-i18n="step2Text">Stay indoors and away from drains, underpasses, and exposed electrical equipment.</p></div></li><li><span>3</span><div><strong data-i18n="step3Title">Check official updates</strong><p data-i18n="step3Text">Follow current local authority instructions. Ask hotel staff or local officials for help.</p></div></li></ol>
+      </article>
+      <article class="panel help"><div class="section-title"><span class="round-icon coral">＋</span><div><p class="eyebrow" data-i18n="nearbyHelp">OFFICIAL HELP</p><h2 data-i18n="helpTitle">Chennai contacts</h2></div></div>
+        <a class="contact-row" href="tel:1077"><span class="place-icon">☎</span><span><strong data-i18n="disasterLine">Disaster helpline</strong><small>1077 · <span data-i18n="callFromPhone">Call from your phone</span></small></span><span class="arrow">›</span></a>
+        <a class="contact-row" href="tel:1913"><span class="place-icon">☎</span><span><strong data-i18n="corporationLine">Chennai Corporation</strong><small>1913 · <span data-i18n="callFromPhone">Call from your phone</span></small></span><span class="arrow">›</span></a>
+        <div class="help-foot"><span data-i18n="helplineSource">Numbers listed by Chennai District Administration.</span> <a href="https://chennai.nic.in/helpline/" target="_blank" rel="noopener" data-i18n="verifyNumbers">View source ↗</a></div>
+      </article>
+    </section>
+
+    <section class="bottom-row"><div class="last-update"><span class="checkmark">✓</span><span><strong data-i18n="infoStatus">Information status</strong><small data-i18n="infoStatusText">Demo content · No live feed connected</small></span></div><button class="report-button" id="shareDemo">↗ <span data-i18n="shareDemo">Share this demo</span></button></section>
+  </main>
+  <footer><span>StormSignal <span class="footer-dot">•</span> Hackathon prototype</span><span data-i18n="footer">In an emergency, contact local emergency services.</span></footer>
+  <dialog id="dialog"><button class="close" aria-label="Close">×</button><p class="eyebrow" id="dialogEyebrow">ABOUT THIS DEMO</p><h2 id="dialogTitle">Clear information. Clear source.</h2><p id="dialogBody">This prototype uses sample data so you can explore the experience. In a live service, alerts and safe-place information should show their issuing authority and the time they were last verified. Use local authority guidance in real emergencies.</p><button class="primary close-action">Got it</button></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
+
