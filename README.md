@@ -43,5 +43,8 @@ The prototype links directly to the India Meteorological Department's Chennai ci
 
 ## Problem and solution
 
-Tourists may not understand local warning systems, languages, or geography during a severe weather event. StormSignal explores a simple way to present an alert, explain immediate safety steps in a selected language, and identify nearby help while making the source and freshness of information visible.
+**Selected problem statement: TravelTech - Real-Time Crisis Communication for Tourists During Extreme Weather Events.** The challenge describes fragmented local weather warnings, language barriers, limited knowledge of local geography, and travelers relying on unverified reports during floods and cyclones.
+
+StormSignal presents a clearly sourced alert, practical safety steps, and official help contacts in English, Tamil, and Hindi. It makes the demo area, source, and information status visible. The current build is a hosted prototype with a clearly labelled sample scenario; it does not claim to provide a live warning feed, verified safe-zone declarations, or route guidance.
+
 
