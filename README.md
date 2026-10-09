@@ -24,6 +24,13 @@ The site publishes from the main branch at the repository root. The page itself 
 
 The page links to official external sources and uses the Web Share API when supported. It does not need secrets or a server.
 
+## Submission materials
+
+- [Copy-ready project description](SUBMISSION_DESCRIPTION.md)
+- [Timed 2:25 demo recording guide](DEMO_SCRIPT.md)
+- [English subtitle file](demo/stormsignal-demo.srt)
+- [Submission checklist](SUBMISSION_CHECKLIST.md)
+
 ## Data and safety
 
 Chennai is the prototype's fixed demo district, not a user-detected location. IMD's district warning is district-level forecast information; it does not confirm street-level flooding, open shelters, safe routes, or current road conditions. StormSignal is not an emergency service. The app shows the exact source wording and its update date, and treats records from a previous day as unverified.
