@@ -1,33 +1,37 @@
-# StormSignal demo video (about 2 minutes)
+# StormSignal demo video (about 2 minutes 25 seconds)
 
 ## 0:00–0:20 — The problem
 
-“A tourist caught in extreme weather may not understand local alerts, know which source to trust, or know whom to contact. StormSignal is a mobile-first prototype that brings the key information into one simple view.”
+“A tourist in extreme weather may not know which warning to trust, what it means locally, or whom to contact. StormSignal brings an official district warning, clear safety steps, and local help into one multilingual view.”
 
 ## 0:20–0:45 — Choose a language
 
-Show the language menu and switch from English to Tamil, then Hindi. Point out that the safety instructions and key labels change with the selected language.
+Show the language menu and switch from English to Tamil, then Hindi. Point out that the main interface and safety steps change with the selected language.
 
-## 0:45–1:10 — Read the alert carefully
+## 0:45–1:10 — Read the official warning
 
-“This heavy-rain scenario is sample data. It is clearly labeled and has an illustrative timestamp, so nobody mistakes it for a live warning.” Show the affected-area text and the source explanation.
+“StormSignal checks the public India Meteorological Department district-warning page for Chennai. The app shows the warning exactly as IMD publishes it, its source update date, and the district it covers.” Read the current warning shown on screen; its wording will change as IMD updates the source.
 
-## 1:10–1:30 — Find the official warning
+## 1:10–1:35 — Take a safer next step
 
-Open the IMD Chennai city warning link. Explain that the prototype links to the official page because direct API access was unavailable during development; it does not fabricate a live alert feed.
+Show the practical safety steps. For a thunderstorm, point out shelter guidance and the instruction to stay sheltered for 30 minutes after the last thunder. Explain that the guidance is sourced from IMD's thunderstorm safety material.
 
-## 1:30–1:50 — Take a safer next step
+## 1:35–1:55 — Verify the source and freshness
 
-Return to StormSignal and show the short safety steps and tap-to-call Chennai contacts. Point out the official source link beside the numbers.
+Open the IMD source link and show the district warning there. Return to StormSignal and point out the source date. Explain that if the date is not today, the app says the current warning could not be verified instead of presenting old data as current.
 
-## 1:50–2:05 — Close with scope
+## 1:55–2:15 — Find official help
 
-“StormSignal demonstrates clearer, multilingual crisis communication. The current version uses a sample scenario, links to official warnings and helplines, and does not provide routes or unverified shelter locations. A next version could connect an authorized verified feed and confirmed emergency shelter data.”
+Return to the app and show the tap-to-call Chennai Disaster Helpline 1077 and Chennai Corporation 1913, along with the Chennai District Administration source link.
+
+## 2:15–2:25 — Close with scope
+
+“StormSignal helps travellers understand official warnings in a familiar language. Its warning is district-level, not street-level; it does not show live flooding, safe shelters, or evacuation routes. Follow local authorities in an emergency.”
 
 ## Recording notes
 
-- Record the deployed public URL on a phone-sized screen if available.
-- Keep the demo label visible before showing the sample alert.
-- Do not describe the sample flood as happening now.
-- Show that the official warning and helpline links open their source pages.
-
+- Record the deployed public URL on a phone-sized screen if possible.
+- Check that the source date is current before recording; do not claim a warning is active unless the app shows it.
+- If the source says no warning, show that state and explain it is not an all-clear.
+- Show the exact official wording, source link, selected language, safety steps, and help contacts.
+- Do not present district-level forecast information as a street-level hazard or route status.

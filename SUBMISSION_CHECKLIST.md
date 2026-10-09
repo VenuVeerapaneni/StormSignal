@@ -17,9 +17,10 @@
 ## Before recording
 
 - Open the deployed demo on a phone-sized screen.
-- Keep the sample-data and non-live-service notice visible when presenting the weather scenario.
+- Keep the source attribution, district, and IMD update date visible when presenting the warning.
 - Show English, Tamil, and Hindi; open the official IMD warning and Chennai helpline source links.
-- Explain that the current demo uses sample weather content and does not claim live alerts or verified safe-zone data.
+- Explain that the warning is district-level, not street-level, and that the app does not provide verified shelters, evacuation routes, or rescue dispatch.
+- If the source is stale or unavailable, show the app's "could not verify" state; do not claim an old warning is current.
 - Save the final video inside this repository (for example, `demo/stormsignal-demo.mp4`) and include its link in the submission form.
 
 ## Rules to remember

@@ -4,11 +4,11 @@ StormSignal is a mobile-first hackathon prototype for the TravelTech problem: he
 
 ## Current prototype
 
-- View a Chennai-area sample weather alert with area and update time.
+- View the latest published IMD district warning for Chennai, with the district and source update date shown.
 - Read short safety steps and use official Chennai help contacts.
 - Switch between English, Tamil, and Hindi.
-- See clear labels explaining that the alert is demonstration data, not a live emergency feed.
-- Open a brief explanation of the data source, and share the demo with a sample-data note.
+- See a clear warning when the source data is old or unavailable; outdated warning text is not presented as current.
+- Open the official source, read the exact IMD wording, and share the app with a scope note.
 
 ## Run locally
 
@@ -20,15 +20,15 @@ The current public demo is hosted on GitHub Pages:
 
 [Open StormSignal](https://venuveerapaneni.github.io/StormSignal/) · [View the source repository](https://github.com/VenuVeerapaneni/StormSignal)
 
-The site publishes from the `main` branch at the repository root. It is a static page with no build step, backend, or secrets. After changing files on `main`, GitHub Pages rebuilds the site automatically.
+The site publishes from the main branch at the repository root. The page itself is static and has no backend or secrets. A GitHub Actions workflow checks the public IMD Chennai district-warning page every 30 minutes and publishes a small JSON snapshot only when the source data changes. GitHub Pages then rebuilds the site from main.
 
 The page links to official external sources and uses the Web Share API when supported. It does not need secrets or a server.
 
 ## Data and safety
 
-The heavy-rain scenario and affected-area claim are illustrative sample content. Chennai is the prototype's demo area, not a user-detected location. The app is not an emergency service and must not be treated as a source of live warnings. A real deployment should use verified local authority sources, show attribution and freshness for each item, and explain what to do when information is stale or unavailable.
+Chennai is the prototype's fixed demo district, not a user-detected location. IMD's district warning is district-level forecast information; it does not confirm street-level flooding, open shelters, safe routes, or current road conditions. StormSignal is not an emergency service. The app shows the exact source wording and its update date, and treats records from a previous day as unverified.
 
-The prototype links directly to the India Meteorological Department's Chennai city warning page and the Chennai District Administration's helpline page. IMD documents district warning and nowcast APIs, but API access returned an authorization error during preparation, so this version does not pretend to ingest live data. The official helpline page lists Disaster Helpline 1077 and Chennai Corporation Complaints 1913. No evacuation shelter is listed because the Greater Chennai Corporation page located during research lists urban homeless shelters, not confirmed emergency evacuation centres.
+The warning snapshot is collected from the public [IMD Regional Meteorological Centre Chennai district-warning page](https://mausam.imd.gov.in/imd_latest/contents/districtwise-warning_mc.php?id=26&day=Day_1). The official [IMD API reference](https://api.imd.gov.in/public/api_reference.html) documents warning APIs, but API access requires authorization, so this prototype reads the public warning page instead. The official Chennai helpline page lists Disaster Helpline 1077 and Chennai Corporation Complaints 1913. No evacuation shelter is listed because the Greater Chennai Corporation page located during research lists urban homeless shelters, not confirmed emergency evacuation centres.
 
 ## Sources
 
@@ -38,13 +38,15 @@ The prototype links directly to the India Meteorological Department's Chennai ci
 
 ## Libraries and services
 
-- No JavaScript libraries or APIs are currently used.
+- The frontend uses plain JavaScript and the browser Fetch API; no JavaScript libraries are used.
+- scripts/update_imd_warnings.py uses only Python's standard library.
+- The refresh workflow uses the official GitHub Actions checkout and setup-python actions.
 - Google Fonts is referenced for typography; the page falls back to system sans-serif fonts if unavailable.
 
 ## Problem and solution
 
 **Selected problem statement: TravelTech - Real-Time Crisis Communication for Tourists During Extreme Weather Events.** The challenge describes fragmented local weather warnings, language barriers, limited knowledge of local geography, and travelers relying on unverified reports during floods and cyclones.
 
-StormSignal presents a clearly sourced alert, practical safety steps, and official help contacts in English, Tamil, and Hindi. It makes the demo area, source, and information status visible. The current build is a hosted prototype with a clearly labelled sample scenario; it does not claim to provide a live warning feed, verified safe-zone declarations, or route guidance.
+StormSignal presents the official Chennai district warning, practical safety steps, and official help contacts in English, Tamil, and Hindi. It makes the district, exact source wording, source update date, and data freshness visible. It does not claim street-level hazard detection, verified safe-zone declarations, rescue dispatch, or route guidance.
 
 

@@ -3,4 +3,5 @@ Thumbs.db
 .env
 node_modules/
 dist/
+__pycache__/
 

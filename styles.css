@@ -184,11 +184,19 @@ h1 em {
 }
 .alert-card {
   background:#fff;
-  border:1px solid #f0d5d2;
-  border-top:3px solid var(--red);
+  border:1px solid #d9e7ef;
+  border-top:3px solid var(--blue);
   border-radius:12px;
   padding:22px 24px 0;
   box-shadow:0 8px 24px #11283a08
+}
+.alert-card.is-clear {
+  border-color:#d7e9e1;
+  border-top-color:var(--green)
+}
+.alert-card.is-stale {
+  border-color:#e4e8eb;
+  border-top-color:#7b8791
 }
 .alert-head {
   display:flex;
@@ -205,17 +213,25 @@ h1 em {
   color:#9a504b
 }
 .pulse {
-  background:var(--red);
-  box-shadow:0 0 0 4px #fae7e5
+  background:var(--blue);
+  box-shadow:0 0 0 4px #e6f1f7
 }
 .severity {
   font-size:9px;
   letter-spacing:.8px;
-  color:#a33733;
-  background:#fff0ef;
+  color:#315c74;
+  background:#eaf4fa;
   border-radius:20px;
   padding:6px 10px;
   font-weight:700
+}
+.is-clear .severity {
+  color:#176e5e;
+  background:#e5f4ed
+}
+.is-stale .severity {
+  color:#58656f;
+  background:#eef1f3
 }
 .alert-card h2 {
   font:700 21px Manrope,sans-serif;
@@ -250,6 +266,27 @@ h1 em {
   align-items:center;
   gap:10px;
   border-radius:0 0 12px 12px
+}
+.source-wording {
+  display:grid;
+  gap:4px;
+  margin:15px 0 0;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#f9fbfc;
+  color:#425768;
+  font-size:11px;
+  line-height:1.45
+}
+.source-wording strong {
+  color:#567080;
+  font-size:9px;
+  letter-spacing:.7px;
+  text-transform:uppercase
+}
+.source-wording span {
+  overflow-wrap:anywhere
 }
 .source-icon {
   width:22px;
