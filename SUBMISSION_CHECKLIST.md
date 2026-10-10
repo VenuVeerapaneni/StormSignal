@@ -6,9 +6,11 @@
 - [x] Public, judge-accessible web demo: https://venuveerapaneni.github.io/StormSignal/
 - [x] README describing the selected problem statement, solution, and setup
 - [x] Ready-to-paste project description: [SUBMISSION_DESCRIPTION.md](SUBMISSION_DESCRIPTION.md)
-- [ ] Replace the old Chennai-version narration and captions with assets that match the India-wide app
-- [ ] Refresh the recorder helper so its narration and page steps match the current app
-- [ ] Record a 2–5 minute demo video and add it to this repository
+- [x] Current India-wide synthesized narration track: [stormsignal-narration-india.wav](demo/stormsignal-narration-india.wav)
+- [x] English captions aligned to the current narration: [stormsignal-demo.srt](demo/stormsignal-demo.srt)
+- [ ] Record a 2–5 minute demo video and add the video file to this repository
+
+The old MP3 and `demo/recorder.html` still refer to the Chennai prototype; do not use them for the current walkthrough.
 
 ## Team and final submission
 
@@ -20,10 +22,10 @@
 
 - Open the deployed demo on a phone-sized screen.
 - Show the current 18-language selector; for example, switch to Hindi and French, then return to English.
-- Show the links to the official India-wide IMD district warning map and NDMA's SACHET alert portal. Be clear that they open the official source pages and that StormSignal does not mirror their alerts.
+- Show links to the official India-wide IMD district warning map and NDMA SACHET alert portal. Explain that they open official pages and StormSignal does not mirror their alerts.
 - Show the three travel-safety steps and the nationwide 112 contact.
-- Explain that StormSignal does not detect street-level flooding, show verified shelters or routes, or dispatch rescue services.
-- Save the final video inside this repository (for example, `demo/stormsignal-demo.webm`) and include its link in the submission form.
+- Explain that StormSignal does not detect street-level flooding, provide verified shelters or routes, or dispatch rescue services.
+- Save the finished video inside this repository, for example as `demo/stormsignal-demo.webm`, and include its link in the submission form.
 
 ## Rules to remember
 
