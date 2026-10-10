@@ -4,48 +4,47 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b1f33" />
-  <meta name="description" content="A multilingual travel safety prototype with official Chennai weather and emergency help links." />
-  <title>StormSignal — Travel safer</title>
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <meta name="description" content="India-wide district weather warnings from IMD, with practical travel safety guidance in 13 languages." />
+  <title>StormSignal — India travel safety</title>
+  <link rel="stylesheet" href="styles.css?v=4" />
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="StormSignal home"><span class="brand-mark">S</span><span>StormSignal</span></a>
-    <div class="top-actions"><span class="demo-badge" id="feedBadge"><i></i><span id="feedStatus" data-i18n="feedStatus">Checking IMD source</span></span><label class="language"><span data-i18n="languageLabel">Language</span> <select id="language"><option value="en">English</option><option value="ta">தமிழ்</option><option value="hi">हिन्दी</option></select></label></div>
+    <div class="top-actions"><span class="demo-badge"><i></i><span data-i18n="status">IMD district map · India</span></span><label class="language"><span data-i18n="languageLabel">Language</span> <select id="language" aria-label="Choose language">
+      <option value="en">English</option><option value="hi">हिन्दी</option><option value="bn">বাংলা</option><option value="te">తెలుగు</option><option value="mr">मराठी</option><option value="ta">தமிழ்</option><option value="gu">ગુજરાતી</option><option value="kn">ಕನ್ನಡ</option><option value="ml">മലയാളം</option><option value="pa">ਪੰਜਾਬੀ</option><option value="or">ଓଡ଼ିଆ</option><option value="as">অসমীয়া</option><option value="ur">اردو</option>
+    </select></label></div>
   </header>
   <main id="top">
     <section class="welcome">
-      <div><p class="eyebrow" data-i18n="eyebrow">TRAVEL SAFETY, MADE CLEAR</p><h1 data-i18n="title">Know what’s happening.<br><em>Know what to do.</em></h1><p class="intro" data-i18n="intro">Weather alerts and practical guidance for travellers, in a language you understand.</p></div>
-      <div class="location-pill"><span class="pin">⌖</span><div><small data-i18n="yourArea">SELECTED DISTRICT</small><strong id="selectedArea">Chennai district, Tamil Nadu</strong></div></div>
+      <div><p class="eyebrow" data-i18n="eyebrow">TRAVEL SAFETY, MADE CLEAR</p><h1 data-i18n="title">Know what’s happening.<br><em>Know what to do.</em></h1><p class="intro" data-i18n="intro">District weather warnings and practical guidance for travellers across India.</p></div>
+      <div class="location-pill"><span class="pin">⌖</span><div><small data-i18n="coverageLabel">COVERAGE</small><strong data-i18n="coverage">India · states and union territories</strong></div></div>
     </section>
 
-    <section class="notice" role="note"><span class="notice-icon">ⓘ</span><div><strong data-i18n="demoTitle">Official source, practical help</strong><p data-i18n="demoText">District warnings come from the official IMD source. This page is not an emergency service; follow current instructions from local authorities.</p></div></section>
+    <section class="notice" role="note"><span class="notice-icon">ⓘ</span><div><strong data-i18n="noticeTitle">Official warnings, clearer next steps</strong><p data-i18n="noticeText">StormSignal links you to the India Meteorological Department’s interactive district map. Check the district and forecast date there, then follow current local authority instructions.</p></div></section>
 
-    <section class="alert-card" aria-labelledby="alertTitle">
-      <div class="alert-head"><div class="alert-label"><span class="pulse"></span><span data-i18n="activeAlert">OFFICIAL DISTRICT WARNING</span></div><span class="severity" id="statusBadge">CHECKING SOURCE</span></div>
-      <h2 id="alertTitle">Checking official IMD warning…</h2>
-      <p class="alert-summary" id="alertSummary">Loading the latest published district warning.</p>
-      <div class="alert-meta"><span>⌖ <b id="areaLabel">Chennai district · district-level data</b></span><span>◷ <b id="updated">Checking source date</b></span></div>
-      <div class="source-wording"><strong data-i18n="sourceWording">Official IMD wording</strong><span id="originalWarning">Loading…</span></div>
-      <div class="source"><span class="source-icon">✓</span><div><strong data-i18n="sourceName">India Meteorological Department</strong><small id="sourceDetail">District-wise warning source</small></div><a class="text-button" id="sourceLink" href="https://mausam.imd.gov.in/imd_latest/contents/districtwise-warning_mc.php?id=26&amp;day=Day_1" target="_blank" rel="noopener" data-i18n="liveSource">Open official IMD source ↗</a><button class="text-button" id="sourceInfo" data-i18n="whyShown">How does this work?</button></div>
+    <section class="alert-card national-card" aria-labelledby="alertTitle">
+      <div class="alert-head"><div class="alert-label"><span class="pulse"></span><span data-i18n="alertLabel">OFFICIAL DISTRICT WARNINGS · INDIA</span></div><span class="severity" data-i18n="liveSourceTag">OFFICIAL IMD MAP</span></div>
+      <h2 id="alertTitle" data-i18n="mapTitle">Check the warning for your district</h2>
+      <p class="alert-summary" data-i18n="mapText">Open IMD’s nationwide map, choose one of the available forecast dates, and select your district to read its warning.</p>
+      <div class="map-legend" aria-label="Warning levels"><strong data-i18n="legendTitle">IMD warning levels</strong><span><i class="legend-dot none"></i><span data-i18n="noWarning">No warning</span></span><span><i class="legend-dot watch"></i><span data-i18n="watch">Watch</span></span><span><i class="legend-dot alert"></i><span data-i18n="alert">Alert</span></span><span><i class="legend-dot warning"></i><span data-i18n="warning">Warning</span></span></div>
+      <div class="source"><span class="source-icon">✓</span><div><strong data-i18n="sourceName">India Meteorological Department</strong><small data-i18n="sourceDetail">Interactive district warnings across India · forecast dates shown by IMD</small></div><button class="text-button" id="aboutButton" data-i18n="aboutLink">How this works</button><a class="text-button primary-link" href="https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php" target="_blank" rel="noopener" data-i18n="openMap">Open India warning map ↗</a></div>
     </section>
 
     <section class="guidance-grid">
-      <article class="panel guidance"><div class="section-title"><span class="round-icon blue">↗</span><div><p class="eyebrow" data-i18n="rightNow">RIGHT NOW</p><h2 data-i18n="stepsTitle">Stay safer</h2></div></div>
-        <ol class="steps"><li><span>1</span><div><strong id="step1Title" data-i18n="step1Title">Check the official warning</strong><p id="step1Text" data-i18n="step1Text">Use the source link and note the district and issue date.</p></div></li><li><span>2</span><div><strong id="step2Title" data-i18n="step2Title">Move to a safer place</strong><p id="step2Text" data-i18n="step2Text">Follow the safety guidance that matches the official warning.</p></div></li><li><span>3</span><div><strong id="step3Title" data-i18n="step3Title">Check again before travel</strong><p id="step3Text" data-i18n="step3Text">District warnings can change. Follow current local authority instructions.</p></div></li></ol>
+      <article class="panel guidance"><div class="section-title"><span class="round-icon blue">↗</span><div><p class="eyebrow" data-i18n="rightNow">RIGHT NOW</p><h2 data-i18n="stepsTitle">Stay safer while travelling</h2></div></div>
+        <ol class="steps"><li><span>1</span><div><strong data-i18n="step1Title">Check your district and date</strong><p data-i18n="step1Text">Open the official map and read the warning for the place and day of your trip.</p></div></li><li><span>2</span><div><strong data-i18n="step2Title">Avoid floodwater and exposed places</strong><p data-i18n="step2Text">Never walk or drive through floodwater. Follow shelter or evacuation instructions from local authorities.</p></div></li><li><span>3</span><div><strong data-i18n="step3Title">Recheck before you move</strong><p data-i18n="step3Text">Warnings can change. Confirm the latest local instructions before travelling.</p></div></li></ol>
       </article>
-      <article class="panel help"><div class="section-title"><span class="round-icon coral">＋</span><div><p class="eyebrow" data-i18n="nearbyHelp">OFFICIAL HELP</p><h2 data-i18n="helpTitle">Chennai contacts</h2></div></div>
-        <a class="contact-row" href="tel:1077"><span class="place-icon">☎</span><span><strong data-i18n="disasterLine">Disaster helpline</strong><small>1077 · <span data-i18n="callFromPhone">Call from your phone</span></small></span><span class="arrow">›</span></a>
-        <a class="contact-row" href="tel:1913"><span class="place-icon">☎</span><span><strong data-i18n="corporationLine">Chennai Corporation</strong><small>1913 · <span data-i18n="callFromPhone">Call from your phone</span></small></span><span class="arrow">›</span></a>
-        <div class="help-foot"><span data-i18n="helplineSource">Numbers listed by Chennai District Administration.</span> <a href="https://chennai.nic.in/helpline/" target="_blank" rel="noopener" data-i18n="verifyNumbers">View source ↗</a></div>
+      <article class="panel help"><div class="section-title"><span class="round-icon coral">＋</span><div><p class="eyebrow" data-i18n="nearbyHelp">NATIONWIDE EMERGENCY HELP</p><h2 data-i18n="helpTitle">Emergency response</h2></div></div>
+        <a class="contact-row" href="tel:112"><span class="place-icon">☎</span><span><strong data-i18n="emergencyNumber">Call 112</strong><small data-i18n="emergencyDetail">Pan-India emergency response number</small></span><span class="arrow">›</span></a>
+        <div class="help-foot"><span data-i18n="helpNote">For police, fire, medical, and other emergency assistance.</span> <a href="https://112.gov.in/" target="_blank" rel="noopener" data-i18n="verifyNumbers">Official 112 service ↗</a></div>
       </article>
     </section>
 
-    <section class="bottom-row"><div class="last-update"><span class="checkmark" id="statusIcon">✓</span><span><strong data-i18n="infoStatus">Information status</strong><small id="infoStatusText" data-i18n="infoStatusText">Checking the official source</small></span></div><button class="report-button" id="shareDemo">↗ <span data-i18n="shareDemo">Share this page</span></button></section>
+    <section class="bottom-row"><div class="last-update"><span class="checkmark">✓</span><span><strong data-i18n="infoStatus">Source and scope</strong><small data-i18n="scopeText">Warnings open on IMD’s official map; StormSignal is not an emergency service.</small></span></div><button class="report-button" id="shareDemo">↗ <span data-i18n="shareDemo">Share this page</span></button></section>
   </main>
-  <footer><span>StormSignal <span class="footer-dot">•</span> Hackathon prototype</span><span data-i18n="footer">In an emergency, contact local emergency services.</span></footer>
-  <dialog id="dialog"><button class="close" aria-label="Close">×</button><p class="eyebrow" id="dialogEyebrow">ABOUT THIS SERVICE</p><h2 id="dialogTitle">Clear information. Clear source.</h2><p id="dialogBody">StormSignal reads the public IMD Chennai district-warning page and displays the official wording, source update date, and general safety steps. It does not provide street-level flood status, evacuation routes, or a live rescue service. Open the IMD source and follow local authority instructions.</p><button class="primary close-action" data-i18n="gotIt">Got it</button></dialog>
-  <script src="app.js?v=4"></script>
+  <footer><span>StormSignal <span class="footer-dot">•</span> Hackathon prototype</span><span data-i18n="footer">In an emergency, call 112 and follow local authority instructions.</span></footer>
+  <dialog id="dialog"><button class="close" aria-label="Close">×</button><p class="eyebrow" data-i18n="aboutLabel">ABOUT THIS SERVICE</p><h2 id="dialogTitle" data-i18n="aboutTitle">Clear information. Clear source.</h2><p id="dialogBody" data-i18n="aboutBody">StormSignal covers India by opening IMD’s public district-wise warning map. The map provides the official warning and forecast date for the district selected there. This prototype does not provide automatic location tracking, street-level conditions, shelters, evacuation routes, or rescue dispatch.</p><button class="primary close-action" data-i18n="gotIt">Got it</button></dialog>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
-
