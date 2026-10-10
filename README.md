@@ -33,16 +33,11 @@ IMD's public [district-wise warning map](https://mausam.imd.gov.in/responsive/di
 
 StormSignal does not provide automatic location tracking, street-level flood status, road closures, verified shelters, evacuation routes, or rescue dispatch. It is not an emergency service. For emergencies, call [112](https://112.gov.in/) and follow current instructions from local authorities.
 
-## Submission materials
+## Project resources
 
-- [Copy-ready project description](SUBMISSION_DESCRIPTION.md)
 - [Current India-wide walkthrough script](DEMO_SCRIPT.md)
-- [Current synthesized English narration](demo/stormsignal-narration-india.wav) — about 2:41, Windows text-to-speech
+- [Synthesized English narration](demo/stormsignal-narration-india.wav) — about 2:41
 - [Time-aligned English captions](demo/stormsignal-demo.srt)
-- Legacy Chennai-version MP3 and recorder helper remain in `demo/`; do not use them for the current app walkthrough.
-- [Submission checklist](SUBMISSION_CHECKLIST.md)
-
-The final 2–5 minute video still needs to be recorded and added to the repository before submission.
 
 ## Libraries and services
 
@@ -55,4 +50,3 @@ The final 2–5 minute video still needs to be recorded and added to the reposit
 ## Problem and solution
 
 The problem statement describes the difficulty travellers face when weather warnings are fragmented, unfamiliar, or hard to understand. StormSignal gives travellers an India-wide starting point to the official district warnings and forecast dates, concise safety guidance in 18 languages, and a nationwide emergency contact. It deliberately sends district/date selection to the authoritative IMD map instead of presenting an unverified local alert as live data.
-
