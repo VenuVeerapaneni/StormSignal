@@ -29,7 +29,7 @@ The page links to official external sources and uses the Web Share API when supp
 - [Copy-ready project description](SUBMISSION_DESCRIPTION.md)
 - [Timed 2:23 AI-narrated demo guide](DEMO_SCRIPT.md)
 - [Browser-tab-only recording helper](demo/recorder.html)
-- [AI narration audio track](demo/stormsignal-narration.mp3)
+- [AI narration audio track](demo/stormsignal-narration-16k.mp3)
 - [Timed English captions](demo/stormsignal-demo.srt)
 - [Submission checklist](SUBMISSION_CHECKLIST.md)
 

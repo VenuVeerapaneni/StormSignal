@@ -6,7 +6,7 @@
 - [x] Public, judge-accessible web demo: https://venuveerapaneni.github.io/StormSignal/
 - [x] README describing the selected problem statement, solution, and setup
 - [x] Ready-to-paste project description: [SUBMISSION_DESCRIPTION.md](SUBMISSION_DESCRIPTION.md)
-- [x] AI narration audio track, about 2 minutes 23 seconds: [stormsignal-narration.mp3](demo/stormsignal-narration.mp3)
+- [x] AI narration audio track, about 2 minutes 23 seconds: [stormsignal-narration-16k.mp3](demo/stormsignal-narration-16k.mp3)
 - [x] Timed English captions aligned to narration: [stormsignal-demo.srt](demo/stormsignal-demo.srt)
 - [x] Recording helper that requests capture of the selected browser tab only: [recorder.html](demo/recorder.html)
 - [ ] Record a 2-5 minute demo video and add the video file to this repository

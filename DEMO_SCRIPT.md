@@ -2,7 +2,7 @@
 
 The demo uses the public app at <https://venuveerapaneni.github.io/StormSignal/>. The voice-over is AI-generated. The recording helper in [demo/recorder.html](demo/recorder.html) captures the selected browser tab only, adds the narration track, and moves through the interface. It never requests desktop, system-audio, or microphone capture. Choose the tab titled “StormSignal — Travel safer” in the browser picker.
 
-The narration is in [demo/stormsignal-narration.mp3](demo/stormsignal-narration.mp3), with matching timed English captions in [demo/stormsignal-demo.srt](demo/stormsignal-demo.srt). The current IMD source date and warning can change; the app and recording show the actual published snapshot. At the time this narration was prepared, the source wording was “Thunderstorm & Lightning, Squall etc” and its date was 10 Oct 2026.
+The narration is in [demo/stormsignal-narration-16k.mp3](demo/stormsignal-narration-16k.mp3), with matching timed English captions in [demo/stormsignal-demo.srt](demo/stormsignal-demo.srt). The current IMD source date and warning can change; the app and recording show the actual published snapshot. At the time this narration was prepared, the source wording was “Thunderstorm & Lightning, Squall etc” and its date was 10 Oct 2026.
 
 | Time | Show | Narration |
 | --- | --- | --- |
