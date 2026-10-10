@@ -1,28 +1,22 @@
-# StormSignal narrated demo (2 minutes 23 seconds)
+# StormSignal walkthrough script — India-wide version
 
-The demo uses the public app at <https://venuveerapaneni.github.io/StormSignal/>. The voice-over is AI-generated. The recording helper in [demo/recorder.html](demo/recorder.html) captures the selected browser tab only, adds the narration track, and moves through the interface. It never requests desktop, system-audio, or microphone capture. Choose the tab titled “StormSignal — Travel safer” in the browser picker.
+This talk track matches the current public app. The existing MP3, SRT captions, and recorder helper in `demo/` are from the earlier Chennai prototype. They mention Chennai-only data, an automated refresh, Chennai helplines, and 13 languages; those claims do not match the current app. Do not use those assets for this walkthrough. The 2–5 minute screen recording is still for the team to make.
 
-The narration is in [demo/stormsignal-narration-16k.mp3](demo/stormsignal-narration-16k.mp3), with matching timed English captions in [demo/stormsignal-demo.srt](demo/stormsignal-demo.srt). The current IMD source date and warning can change; the app and recording show the actual published snapshot. At the time this narration was prepared, the source wording was “Thunderstorm & Lightning, Squall etc” and its date was 10 Oct 2026.
+## Suggested talk track (about 2:20–2:40)
 
 | Time | Show | Narration |
 | --- | --- | --- |
-| 0:00–0:16 | English home and warning overview. | “During severe weather, travelers may not know which warning to trust, or where to find reliable help. StormSignal brings official warnings and local guidance together in one simple view.” |
-| 0:16–0:31 | Change to Tamil, then Hindi, then English. | “Chennai is our demo district. Switch between English, Tamil, and Hindi for familiar safety information.” |
-| 0:31–0:53 | Show district, source date, exact IMD wording, and official link. | “The IMD wording reads: Thunderstorm and lightning, squall, et cetera. Check the source date and link.” |
-| 0:53–1:06 | Open “How does this work?” | “A scheduled refresh checks the public IMD Chennai page every 30 minutes and publishes its latest snapshot.” |
-| 1:06–1:21 | Show the district-level warning and limitation. | “This is district-level forecast information, not street-by-street conditions. No verified shelters or safe routes are shown.” |
-| 1:21–1:40 | Show the three safety steps. | “For thunder, move indoors, stay away from windows and plumbing, and shelter for 30 minutes after the last thunder.” |
-| 1:40–1:53 | Show freshness status and warning caveat. | “If the source is old or unavailable, the app says it cannot verify the current warning. No warning listed is not an all-clear.” |
-| 1:53–2:10 | Show Chennai contacts and their source. | “Chennai help: Disaster Helpline 1077 and Corporation 1913. Verify the numbers with District Administration.” |
-| 2:10–2:23 | Return to the app home. | “StormSignal makes official warnings easier to understand. In an emergency, follow local authorities.” |
+| 0:00–0:18 | English home screen and India coverage. | “When severe weather affects a trip, travellers need to know which sources to trust and what steps to take. StormSignal gives people a clear starting point for official weather information across India.” |
+| 0:18–0:42 | The IMD warning card and its map button. | “For district warnings, open the India Meteorological Department’s map. Choose a forecast date and district on IMD’s page to read the official warning. StormSignal links to that source; it does not copy changing warning data into this screen.” |
+| 0:42–1:02 | Point to the SACHET link. | “For current disaster alerts, StormSignal also links to NDMA’s SACHET portal. The alert list is maintained by the issuing authorities, so check the official page for the latest details.” |
+| 1:02–1:22 | Change the language to Hindi, then French, then return to English. | “The interface and practical travel guidance are available in 18 languages, including Indian languages and options for international visitors. Official alert wording stays on its source page; StormSignal’s guidance is not an official translation.” |
+| 1:22–1:48 | Show the three safety steps. | “Check the district and forecast date for your trip. Never walk or drive through floodwater, and follow local shelter or evacuation instructions. Recheck before you travel because warnings can change.” |
+| 1:48–2:05 | Show the call 112 link and Government of India source. | “For police, fire, medical, and other emergency assistance anywhere in India, use the nationwide 112 service. Follow instructions from local authorities.” |
+| 2:05–2:28 | Show the scope note and return to the home screen. | “StormSignal does not track your location or show street-level flooding, road closures, verified shelters, evacuation routes, or rescue dispatch. It helps travellers reach official information and practical guidance, while keeping the source clear.” |
 
-## Recording steps
+## Recording notes
 
-1. Open [the public recorder](https://venuveerapaneni.github.io/StormSignal/demo/recorder.html).
-2. Click **Open demo and start capture**.
-3. In the browser picker, choose the **StormSignal — Travel safer (recording)** tab. Do not choose a desktop or window.
-4. Wait for the narration to finish. Save the resulting `stormsignal-demo.webm` video in this repository.
-5. Include the video and public repository link in the team leader’s submission form.
-
-Before recording, confirm the visible warning and date match the current app. Follow local authority instructions in an emergency.
-
+- Keep the app visible while explaining its two official-source links. They open separately; the app does not embed or mirror either authority’s alert feed.
+- Use the current app title, **StormSignal — India travel safety**. Show language choices from the current 18-language selector.
+- The existing recorder page is not ready for this version because it still plays the old narration and targets old page controls. Do not use it until its audio and page steps are refreshed.
+- Save the finished 2–5 minute video in the repository, for example as `demo/stormsignal-demo.webm`.

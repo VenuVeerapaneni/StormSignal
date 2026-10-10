@@ -6,10 +6,9 @@
 - [x] Public, judge-accessible web demo: https://venuveerapaneni.github.io/StormSignal/
 - [x] README describing the selected problem statement, solution, and setup
 - [x] Ready-to-paste project description: [SUBMISSION_DESCRIPTION.md](SUBMISSION_DESCRIPTION.md)
-- [x] AI narration audio track, about 2 minutes 23 seconds: [stormsignal-narration-16k.mp3](demo/stormsignal-narration-16k.mp3)
-- [x] Timed English captions aligned to narration: [stormsignal-demo.srt](demo/stormsignal-demo.srt)
-- [x] Recording helper that requests capture of the selected browser tab only: [recorder.html](demo/recorder.html)
-- [ ] Record a 2-5 minute demo video and add the video file to this repository
+- [ ] Replace the old Chennai-version narration and captions with assets that match the India-wide app
+- [ ] Refresh the recorder helper so its narration and page steps match the current app
+- [ ] Record a 2–5 minute demo video and add it to this repository
 
 ## Team and final submission
 
@@ -20,16 +19,15 @@
 ## Before recording
 
 - Open the deployed demo on a phone-sized screen.
-- Show the 13 language choices and open the official India-wide IMD district warning map.
-- Select a district and forecast date on the IMD map so the source remains visible with its warning.
-- Show the nationwide 112 emergency contact and its Government of India source.
-- Explain that StormSignal links to IMD's map; it does not mirror live warnings, detect street-level flooding, or provide verified shelters, evacuation routes, or rescue dispatch.
+- Show the current 18-language selector; for example, switch to Hindi and French, then return to English.
+- Show the links to the official India-wide IMD district warning map and NDMA's SACHET alert portal. Be clear that they open the official source pages and that StormSignal does not mirror their alerts.
+- Show the three travel-safety steps and the nationwide 112 contact.
+- Explain that StormSignal does not detect street-level flooding, show verified shelters or routes, or dispatch rescue services.
 - Save the final video inside this repository (for example, `demo/stormsignal-demo.webm`) and include its link in the submission form.
 
 ## Rules to remember
 
-- The project repository and 2-5 minute demo video are both required; the video must be added to the repository.
+- The project repository and 2–5 minute demo video are both required; the video must be added to the repository.
 - The README must explain the problem statement, solution, and setup instructions.
 - The project must be hosted at an accessible public link.
 - Only the team leader should submit. Eligibility also requires in-person attendance for at least part of the event and a valid fest pass.
-
