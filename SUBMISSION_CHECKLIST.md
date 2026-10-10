@@ -22,7 +22,7 @@ The old MP3 and `demo/recorder.html` still refer to the Chennai prototype; do no
 
 - Open the deployed demo on a phone-sized screen.
 - Show the current 18-language selector; for example, switch to Hindi and French, then return to English.
-- Show links to the official India-wide IMD district warning map and NDMA SACHET alert portal. Explain that they open official pages and StormSignal does not mirror their alerts.
+- Show links to the official India-wide IMD district warning map and NDMA SACHET alert portal. Point out the optional SACHET app links for phone notifications. Explain that alerts remain on official pages and StormSignal does not mirror them.
 - Show the three travel-safety steps and the nationwide 112 contact.
 - Explain that StormSignal does not detect street-level flooding, provide verified shelters or routes, or dispatch rescue services.
 - Save the finished video inside this repository, for example as `demo/stormsignal-demo.webm`, and include its link in the submission form.
