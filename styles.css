@@ -614,6 +614,11 @@ dialog p:not(.eyebrow) {
 }
 .map-launch:hover {background:#173a56}
 .map-launch-actions {display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px}
+.sachet-app-prompt {display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px;padding:10px 12px;border:1px solid #d8e3e9;border-radius:9px;background:#f6f9fb}
+.sachet-app-prompt p {margin:0;color:#4c6578;font-size:10px;line-height:1.4;font-weight:600}
+.sachet-store-links {display:flex;gap:7px;flex-shrink:0}
+.sachet-store-links a {padding:8px 10px;border:1px solid #c7d8e2;border-radius:7px;background:#fff;color:var(--navy);font-size:10px;font-weight:700;text-decoration:none;white-space:nowrap}
+.sachet-store-links a:hover {background:#edf5f8}
 .map-launch-secondary {background:#fff;color:var(--navy);border:1px solid #c7d8e2}
 .map-launch-secondary:hover {background:#edf5f8}
 .legend-dot {
@@ -638,6 +643,8 @@ dialog p:not(.eyebrow) {
   .map-legend>strong {width:100%}
   .map-launch-panel {align-items:stretch;flex-direction:column;gap:12px;padding:14px}
   .map-launch-actions {display:grid;grid-template-columns:1fr}
+  .sachet-app-prompt {align-items:stretch;flex-direction:column}
+  .sachet-store-links a {flex:1;text-align:center}
   .map-launch {white-space:normal}
 }
 @media(max-width:700px) {
