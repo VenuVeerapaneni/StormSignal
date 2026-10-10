@@ -1,332 +1,73 @@
-const copy = {
-  en: {eyebrow:'TRAVEL SAFETY, MADE CLEAR',title:'Know what’s happening.<br><em>Know what to do.</em>',intro:'Weather alerts and practical guidance for travellers, in a language you understand.',yourArea:'YOUR AREA',demoTitle:'Hackathon preview',demoText:'This screen uses sample information. It is not a live emergency service. Always follow current instructions from local authorities.',activeAlert:'SAMPLE WEATHER ALERT',highRisk:'HIGH RISK',alertTitle:'Heavy rain and local flooding',alertSummary:'Low-lying roads near the demo area may be waterlogged. Avoid walking or driving through floodwater.',updated:'Updated 20 min ago',sampleSource:'Sample source for demonstration',sampleSourceNote:'Not an official or live warning',whyShown:'Why am I seeing this?',rightNow:'RIGHT NOW',stepsTitle:'Stay safer',step1Title:'Move away from floodwater',step1Text:'Do not cross water on foot or in a vehicle. It may be deeper or faster than it looks.',step2Title:'Get to a secure place',step2Text:'Stay indoors and away from drains, underpasses, and exposed electrical equipment.',step3Title:'Check official updates',step3Text:'Follow current local authority instructions. Ask hotel staff or local officials for help.',nearbyHelp:'NEARBY HELP',helpTitle:'Safe places',viewAll:'View all',place1:'Community Relief Centre',place2:'Emergency Medical Help',placeStatus:'Sample listing · Confirm locally',helpNote:'Locations shown are illustrative. Confirm availability with local authorities.',infoStatus:'Information status',infoStatusText:'Demo content · No live feed connected',report:'Report a local concern',footer:'In an emergency, contact local emergency services.'},
-  ta: {eyebrow:'பயண பாதுகாப்பு, தெளிவாக',title:'என்ன நடக்கிறது என்பதை அறியுங்கள்.<br><em>என்ன செய்ய வேண்டும் என்றும் அறியுங்கள்.</em>',intro:'பயணிகளுக்கான வானிலை எச்சரிக்கைகளும் நடைமுறை வழிகாட்டுதலும்.',yourArea:'உங்கள் பகுதி',demoTitle:'ஹேக்கத்தான் முன்னோட்டம்',demoText:'இது மாதிரி தகவல்களைப் பயன்படுத்துகிறது. இது நேரடி அவசர சேவை அல்ல. உள்ளூர் அதிகாரிகளின் தற்போதைய அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',activeAlert:'மாதிரி வானிலை எச்சரிக்கை',highRisk:'அதிக ஆபத்து',alertTitle:'கனமழை மற்றும் உள்ளூர் வெள்ளம்',alertSummary:'மாதிரி பகுதியில் தாழ்வான சாலைகளில் தண்ணீர் தேங்கியிருக்கலாம். வெள்ளநீரில் நடக்கவோ வாகனம் ஓட்டவோ வேண்டாம்.',updated:'20 நிமிடங்களுக்கு முன் புதுப்பிக்கப்பட்டது',sampleSource:'விளக்கத்திற்கான மாதிரி ஆதாரம்',sampleSourceNote:'அதிகாரப்பூர்வ அல்லது நேரடி எச்சரிக்கை அல்ல',whyShown:'இதை ஏன் பார்க்கிறேன்?',rightNow:'இப்போது',stepsTitle:'பாதுகாப்பாக இருங்கள்',step1Title:'வெள்ளநீரிலிருந்து விலகுங்கள்',step1Text:'நடந்தோ வாகனத்திலோ நீரைக் கடக்க வேண்டாம். ஆழமும் வேகமும் தெரியாமல் இருக்கலாம்.',step2Title:'பாதுகாப்பான இடத்திற்குச் செல்லுங்கள்',step2Text:'உள்ளே இருங்கள்; வடிகால்கள், சுரங்கப்பாதைகள், மின்சாதனங்களிலிருந்து விலகுங்கள்.',step3Title:'அதிகாரப்பூர்வ தகவலைப் பாருங்கள்',step3Text:'உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள். ஹோட்டல் ஊழியர்கள் அல்லது அதிகாரிகளிடம் உதவி கேளுங்கள்.',nearbyHelp:'அருகிலுள்ள உதவி',helpTitle:'பாதுகாப்பான இடங்கள்',viewAll:'அனைத்தையும் காண்க',place1:'சமூக நிவாரண மையம்',place2:'அவசர மருத்துவ உதவி',placeStatus:'மாதிரி பட்டியல் · உள்ளூரில் உறுதிசெய்யவும்',helpNote:'இடங்கள் விளக்கத்திற்காக மட்டுமே. உள்ளூர் அதிகாரிகளிடம் கிடைப்பதை உறுதிசெய்யவும்.',infoStatus:'தகவல் நிலை',infoStatusText:'மாதிரி உள்ளடக்கம் · நேரடி தகவல் இல்லை',report:'உள்ளூர் பிரச்சினையை தெரிவிக்கவும்',footer:'அவசரத்தில், உள்ளூர் அவசர சேவைகளைத் தொடர்புகொள்ளுங்கள்.'},
-  hi: {eyebrow:'यात्रा सुरक्षा, स्पष्ट जानकारी',title:'जानें क्या हो रहा है।<br><em>जानें क्या करना है।</em>',intro:'यात्रियों के लिए मौसम अलर्ट और व्यावहारिक मार्गदर्शन, आपकी समझ की भाषा में।',yourArea:'आपका क्षेत्र',demoTitle:'हैकाथॉन पूर्वावलोकन',demoText:'यह स्क्रीन नमूना जानकारी दिखाती है। यह लाइव आपातकालीन सेवा नहीं है। स्थानीय अधिकारियों के मौजूदा निर्देश मानें।',activeAlert:'नमूना मौसम चेतावनी',highRisk:'उच्च जोखिम',alertTitle:'भारी बारिश और स्थानीय बाढ़',alertSummary:'डेमो क्षेत्र की निचली सड़कों पर पानी भर सकता है। बाढ़ के पानी में पैदल या वाहन से न जाएँ।',updated:'20 मिनट पहले अपडेट',sampleSource:'प्रदर्शन के लिए नमूना स्रोत',sampleSourceNote:'आधिकारिक या लाइव चेतावनी नहीं',whyShown:'यह क्यों दिख रहा है?',rightNow:'अभी',stepsTitle:'सुरक्षित रहें',step1Title:'बाढ़ के पानी से दूर रहें',step1Text:'पैदल या वाहन से पानी पार न करें। पानी दिखने से अधिक गहरा या तेज हो सकता है।',step2Title:'सुरक्षित जगह पर जाएँ',step2Text:'अंदर रहें और नालों, अंडरपास तथा खुले बिजली उपकरणों से दूर रहें।',step3Title:'आधिकारिक अपडेट देखें',step3Text:'स्थानीय अधिकारियों के निर्देश मानें। होटल कर्मचारियों या स्थानीय अधिकारियों से मदद लें।',nearbyHelp:'पास में सहायता',helpTitle:'सुरक्षित स्थान',viewAll:'सभी देखें',place1:'सामुदायिक राहत केंद्र',place2:'आपातकालीन चिकित्सा सहायता',placeStatus:'नमूना सूची · स्थानीय रूप से पुष्टि करें',helpNote:'स्थान केवल उदाहरण हैं। स्थानीय अधिकारियों से उपलब्धता की पुष्टि करें।',infoStatus:'जानकारी की स्थिति',infoStatusText:'डेमो सामग्री · लाइव फीड उपलब्ध नहीं',report:'स्थानीय समस्या बताएँ',footer:'आपातकाल में स्थानीय आपात सेवाओं से संपर्क करें.'}
-};
-Object.assign(copy.en, {yourArea:'DEMO AREA',areaLabel:'Adyar & nearby low-lying areas',liveSource:'Open IMD Chennai city warnings ↗',nearbyHelp:'OFFICIAL HELP',helpTitle:'Chennai contacts',disasterLine:'Disaster helpline',corporationLine:'Chennai Corporation',callFromPhone:'Call from your phone',helplineSource:'Numbers listed by Chennai District Administration.',verifyNumbers:'View source ↗',shareDemo:'Share this demo',infoStatus:'Information status',infoStatusText:'Demo content · No live feed connected',aboutTitle:'Clear information. Clear source.',aboutBody:'This prototype uses sample data so you can explore the experience. In a live service, alerts and safe-place information should show their issuing authority and the time they were last verified. Use local authority guidance in real emergencies.',copiedTitle:'Link copied',copiedBody:'The demo link and sample-data note are ready to share.',shareText:'StormSignal is a hackathon prototype. Its weather scenario is sample content, not a live warning.'});
-Object.assign(copy.ta, {yourArea:'மாதிரி பகுதி',areaLabel:'அடையாறு மற்றும் அருகிலுள்ள தாழ்வான பகுதிகள்',liveSource:'IMD சென்னை நகர எச்சரிக்கைகளைத் திறக்கவும் ↗',nearbyHelp:'அதிகாரப்பூர்வ உதவி',helpTitle:'சென்னை தொடர்புகள்',disasterLine:'பேரிடர் உதவி எண்',corporationLine:'சென்னை மாநகராட்சி',callFromPhone:'தொலைபேசியில் அழைக்கவும்',helplineSource:'சென்னை மாவட்ட நிர்வாகம் வெளியிட்ட எண்கள்.',verifyNumbers:'ஆதாரத்தைப் பார்க்கவும் ↗',shareDemo:'இந்த டெமோவைப் பகிரவும்',infoStatus:'தகவல் நிலை',infoStatusText:'மாதிரி தகவல் · நேரடி தகவல் இணைப்பு இல்லை',aboutTitle:'தெளிவான தகவல். தெளிவான ஆதாரம்.',aboutBody:'இந்த முன்மாதிரி அனுபவத்தைப் பார்க்க மாதிரி தகவல்களைப் பயன்படுத்துகிறது. நேரடி சேவையில், எச்சரிக்கையின் அதிகாரப்பூர்வ மூலம் மற்றும் கடைசியாக சரிபார்க்கப்பட்ட நேரம் காட்டப்பட வேண்டும். உண்மையான அவசரத்தில் உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',copiedTitle:'இணைப்பு நகலெடுக்கப்பட்டது',copiedBody:'மாதிரி தகவல் குறிப்புடன் கூடிய இணைப்பைப் பகிரலாம்.',shareText:'StormSignal ஒரு ஹேக்கத்தான் முன்மாதிரி. இதில் உள்ள வானிலை நிகழ்வு மாதிரி தகவல்; நேரடி எச்சரிக்கை அல்ல.'});
-Object.assign(copy.hi, {yourArea:'डेमो क्षेत्र',areaLabel:'अड्यार और आसपास के निचले इलाके',liveSource:'IMD चेन्नई शहर की चेतावनी खोलें ↗',nearbyHelp:'आधिकारिक सहायता',helpTitle:'चेन्नई संपर्क',disasterLine:'आपदा हेल्पलाइन',corporationLine:'चेन्नई नगर निगम',callFromPhone:'फोन से कॉल करें',helplineSource:'चेन्नई जिला प्रशासन द्वारा सूचीबद्ध नंबर।',verifyNumbers:'स्रोत देखें ↗',shareDemo:'यह डेमो साझा करें',infoStatus:'जानकारी की स्थिति',infoStatusText:'डेमो सामग्री · लाइव फीड उपलब्ध नहीं',aboutTitle:'स्पष्ट जानकारी। स्पष्ट स्रोत।',aboutBody:'इस प्रोटोटाइप में अनुभव दिखाने के लिए नमूना डेटा है। वास्तविक सेवा में चेतावनी जारी करने वाले अधिकारी और आखिरी सत्यापन का समय दिखना चाहिए। असली आपातकाल में स्थानीय अधिकारियों के निर्देश मानें।',copiedTitle:'लिंक कॉपी हुआ',copiedBody:'डेमो लिंक और नमूना डेटा की जानकारी साझा करने के लिए तैयार है।',shareText:'StormSignal एक हैकाथॉन प्रोटोटाइप है। इसका मौसम परिदृश्य नमूना सामग्री है, लाइव चेतावनी नहीं।'});
-copy.en.updated='Scenario timestamp · illustrative';
-copy.ta.updated='மாதிரி நேரம் · விளக்கத்திற்காக';
-copy.hi.updated='नमूना समय · केवल उदाहरण';
-
-Object.assign(copy.en, {
-  feedStatus:'Checking IMD source', languageLabel:'Language', yourArea:'SELECTED DISTRICT',
-  demoTitle:'Official source, practical help',
-  demoText:'District warnings come from the official IMD Chennai page. This page is not an emergency service; follow current instructions from local authorities.',
-  activeAlert:'OFFICIAL DISTRICT WARNING', highRisk:'IMD DATA',
-  alertTitle:'Checking official IMD warning…', alertSummary:'Loading the latest published district warning.',
-  stepsTitle:'Stay safer', step1Title:'Check the official warning', step1Text:'Use the source link and note the district and issue date.',
-  step2Title:'Move to a safer place', step2Text:'Follow the safety guidance that matches the official warning.',
-  step3Title:'Check again before travel', step3Text:'District warnings can change. Follow current local authority instructions.',
-  nearbyHelp:'OFFICIAL HELP', shareDemo:'Share this page', infoStatus:'Information status', infoStatusText:'Checking the official source',
-  sourceWording:'OFFICIAL IMD WORDING', sourceName:'India Meteorological Department',
-  liveSource:'Open official IMD source ↗', whyShown:'How does this work?', gotIt:'Got it',
+const base = {
+  status:'IMD district map · India',sourceName:'India Meteorological Department',sourceDetail:'Interactive district warnings across India · forecast dates shown by IMD',aboutLink:'How this works',languageLabel:'Language',eyebrow:'TRAVEL SAFETY, MADE CLEAR',
+  title:'Know what’s happening.<br><em>Know what to do.</em>',intro:'District weather warnings and practical guidance for travellers across India.',
+  coverageLabel:'COVERAGE',coverage:'India · states and union territories',noticeTitle:'Official warnings, clearer next steps',
+  noticeText:'StormSignal links you to the India Meteorological Department’s interactive district map. Check the district and forecast date there, then follow current local authority instructions.',
+  alertLabel:'OFFICIAL DISTRICT WARNINGS · INDIA',liveSourceTag:'OFFICIAL IMD MAP',mapTitle:'Check the warning for your district',
+  mapText:'Open IMD’s nationwide map, choose one of the available forecast dates, and select your district to read its warning.',
+  legendTitle:'IMD warning levels',noWarning:'No warning',watch:'Watch',alert:'Alert',warning:'Warning',openMap:'Open India warning map ↗',
+  rightNow:'RIGHT NOW',stepsTitle:'Stay safer while travelling',step1Title:'Check your district and date',
+  step1Text:'Open the official map and read the warning for the place and day of your trip.',
+  step2Title:'Avoid floodwater and exposed places',step2Text:'Never walk or drive through floodwater. Follow shelter or evacuation instructions from local authorities.',
+  step3Title:'Recheck before you move',step3Text:'Warnings can change. Confirm the latest local instructions before travelling.',
+  nearbyHelp:'NATIONWIDE EMERGENCY HELP',helpTitle:'Emergency response',emergencyNumber:'Call 112',
+  emergencyDetail:'Pan-India emergency response number',helpNote:'For police, fire, medical, and other emergency assistance.',
+  verifyNumbers:'Official 112 service ↗',infoStatus:'Source and scope',
+  scopeText:'Warnings open on IMD’s official map; StormSignal is not an emergency service.',shareDemo:'Share this page',
+  footer:'In an emergency, call 112 and follow local authority instructions.',aboutLabel:'ABOUT THIS SERVICE',
   aboutTitle:'Clear information. Clear source.',
-  aboutBody:'A scheduled refresh checks the public IMD Chennai district-warning page every 30 minutes. StormSignal displays the latest published snapshot, its official wording, and source update date with general safety steps. It does not provide street-level flood status, evacuation routes, or a live rescue service. Open the IMD source and follow local authority instructions.',
-  sourceDateLabel:'IMD source updated', districtLevel:'Chennai district · district-level data',
-  warningBadge:'IMD WARNING', noWarningBadge:'NO ACTIVE WARNING', staleBadge:'CHECK OFFICIAL SOURCE',
-  warningTitleStorm:'Thunderstorm and lightning warning', warningTitleRain:'Heavy rain warning',
-  warningTitleWind:'Strong-wind warning', warningTitleOther:'Official weather warning',
-  noWarningTitle:'No active district warning listed', staleTitle:'Current warning could not be verified',
-  unavailableTitle:'Official warning data is unavailable',
-  warningSummary:'The latest IMD district page lists a warning for Chennai. The source wording is shown below; it does not describe street-by-street conditions.',
-  noWarningSummary:'The latest IMD district data lists no active warning for Chennai. This is not an all-clear; check the official source before travel.',
-  staleSummary:'The latest available IMD record is dated {date}. It may be out of date, so check the official source before making travel decisions.',
-  unavailableSummary:'StormSignal could not verify the latest district warning. Open the official IMD page before making travel decisions.',
-  freshStatus:'IMD district warning updated today', noWarningStatus:'No active warning appears in today’s IMD district data',
-  staleStatus:'The available IMD warning data is out of date', unavailableStatus:'Could not verify the latest IMD warning',
-  warningOriginal:'Thunderstorm & Lightning, Squall etc', noWarningOriginal:'No warning',
-  shareText:'StormSignal presents official IMD district warnings with multilingual safety guidance. Check the source date and follow local authority instructions.'
-});
-Object.assign(copy.ta, {
-  feedStatus:'IMD ஆதாரத்தைச் சரிபார்க்கிறது', languageLabel:'மொழி', yourArea:'தேர்ந்தெடுத்த மாவட்டம்',
-  demoTitle:'அதிகாரப்பூர்வ ஆதாரம், நடைமுறை உதவி',
-  demoText:'மாவட்ட எச்சரிக்கைகள் IMD சென்னை அதிகாரப்பூர்வப் பக்கத்திலிருந்து பெறப்படுகின்றன. இது அவசர சேவை அல்ல; உள்ளூர் அதிகாரிகளின் தற்போதைய அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',
-  activeAlert:'அதிகாரப்பூர்வ மாவட்ட எச்சரிக்கை', highRisk:'IMD தகவல்',
-  alertTitle:'அதிகாரப்பூர்வ IMD எச்சரிக்கையைச் சரிபார்க்கிறது…', alertSummary:'சமீபத்திய மாவட்ட எச்சரிக்கை ஏற்றப்படுகிறது.',
-  stepsTitle:'பாதுகாப்பாக இருங்கள்', step1Title:'அதிகாரப்பூர்வ எச்சரிக்கையைப் பாருங்கள்', step1Text:'ஆதார இணைப்பைத் திறந்து மாவட்டத்தையும் வெளியீட்டு நாளையும் கவனியுங்கள்.',
-  step2Title:'பாதுகாப்பான இடத்திற்குச் செல்லுங்கள்', step2Text:'அதிகாரப்பூர்வ எச்சரிக்கைக்கு பொருந்தும் பாதுகாப்பு வழிகாட்டுதலைப் பின்பற்றுங்கள்.',
-  step3Title:'பயணத்திற்கு முன் மீண்டும் சரிபார்க்கவும்', step3Text:'மாவட்ட எச்சரிக்கைகள் மாறலாம். உள்ளூர் அதிகாரிகளின் தற்போதைய அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',
-  nearbyHelp:'அதிகாரப்பூர்வ உதவி', shareDemo:'இந்தப் பக்கத்தைப் பகிரவும்', infoStatus:'தகவல் நிலை', infoStatusText:'அதிகாரப்பூர்வ ஆதாரத்தைச் சரிபார்க்கிறது',
-  sourceWording:'IMD-யின் அதிகாரப்பூர்வ சொற்கள்', sourceName:'இந்திய வானிலை ஆய்வு மையம்',
-  liveSource:'அதிகாரப்பூர்வ IMD ஆதாரத்தைத் திறக்கவும் ↗', whyShown:'இது எப்படிச் செயல்படுகிறது?', gotIt:'சரி',
-  aboutTitle:'தெளிவான தகவல். தெளிவான ஆதாரம்.',
-  aboutBody:'ஒவ்வொரு 30 நிமிடங்களுக்கும் திட்டமிட்ட புதுப்பிப்பு, IMD சென்னை மாவட்ட எச்சரிக்கைப் பக்கத்தைச் சரிபார்க்கிறது. StormSignal சமீபத்திய வெளியிடப்பட்ட தரவையும் அதன் அதிகாரப்பூர்வ சொற்களையும் புதுப்பிப்பு நாளையும் பொதுவான பாதுகாப்பு வழிகாட்டுதலுடன் காட்டுகிறது. தெரு-வாரியான வெள்ள நிலை, வெளியேற்றப் பாதை அல்லது மீட்பு சேவையை இது வழங்காது. IMD ஆதாரத்தையும் உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களையும் பின்பற்றுங்கள்.',
-  sourceDateLabel:'IMD ஆதாரம் புதுப்பிக்கப்பட்டது', districtLevel:'சென்னை மாவட்டம் · மாவட்ட அளவிலான தகவல்',
-  warningBadge:'IMD எச்சரிக்கை', noWarningBadge:'செயலில் எச்சரிக்கை இல்லை', staleBadge:'அதிகாரப்பூர்வ ஆதாரத்தைப் பாருங்கள்',
-  warningTitleStorm:'இடி மற்றும் மின்னல் எச்சரிக்கை', warningTitleRain:'கனமழை எச்சரிக்கை',
-  warningTitleWind:'பலத்த காற்று எச்சரிக்கை', warningTitleOther:'அதிகாரப்பூர்வ வானிலை எச்சரிக்கை',
-  noWarningTitle:'செயலில் உள்ள மாவட்ட எச்சரிக்கை இல்லை', staleTitle:'தற்போதைய எச்சரிக்கையை உறுதிசெய்ய முடியவில்லை',
-  unavailableTitle:'அதிகாரப்பூர்வ எச்சரிக்கைத் தரவு கிடைக்கவில்லை',
-  warningSummary:'சமீபத்திய IMD மாவட்டப் பக்கத்தில் சென்னைக்கான எச்சரிக்கை உள்ளது. அசல் சொற்கள் கீழே காட்டப்பட்டுள்ளன; இவை தெரு-வாரியான நிலையைச் சுட்டிக்காட்டாது.',
-  noWarningSummary:'சமீபத்திய IMD மாவட்டத் தரவில் சென்னைக்கான செயலில் உள்ள எச்சரிக்கை இல்லை. இதை முழுப் பாதுகாப்பு உறுதி எனக் கருத வேண்டாம்; பயணத்திற்கு முன் அதிகாரப்பூர்வ ஆதாரத்தைப் பாருங்கள்.',
-  staleSummary:'கிடைக்கும் சமீபத்திய IMD பதிவின் நாள் {date}. அது பழையதாக இருக்கலாம்; பயண முடிவுக்கு முன் அதிகாரப்பூர்வ ஆதாரத்தைப் பாருங்கள்.',
-  unavailableSummary:'சமீபத்திய மாவட்ட எச்சரிக்கையை StormSignal உறுதிசெய்ய முடியவில்லை. பயண முடிவுக்கு முன் அதிகாரப்பூர்வ IMD பக்கத்தைத் திறக்கவும்.',
-  freshStatus:'இன்றைய IMD மாவட்ட எச்சரிக்கை', noWarningStatus:'இன்றைய IMD மாவட்டத் தரவில் செயலில் எச்சரிக்கை இல்லை',
-  staleStatus:'கிடைக்கும் IMD எச்சரிக்கைத் தரவு பழையது', unavailableStatus:'சமீபத்திய IMD எச்சரிக்கையை உறுதிசெய்ய முடியவில்லை',
-  warningOriginal:'Thunderstorm & Lightning, Squall etc', noWarningOriginal:'எச்சரிக்கை இல்லை',
-  shareText:'StormSignal அதிகாரப்பூர்வ IMD மாவட்ட எச்சரிக்கைகளையும் பலமொழி பாதுகாப்பு வழிகாட்டுதலையும் காட்டுகிறது. ஆதார நாளைச் சரிபார்த்து உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.'
-});
-Object.assign(copy.hi, {
-  feedStatus:'IMD स्रोत जाँचा जा रहा है', languageLabel:'भाषा', yourArea:'चुना हुआ ज़िला',
-  demoTitle:'आधिकारिक स्रोत, उपयोगी मदद',
-  demoText:'ज़िला चेतावनियाँ आधिकारिक IMD चेन्नई पेज से ली जाती हैं। यह आपातकालीन सेवा नहीं है; स्थानीय अधिकारियों के मौजूदा निर्देश मानें।',
-  activeAlert:'आधिकारिक ज़िला चेतावनी', highRisk:'IMD जानकारी',
-  alertTitle:'आधिकारिक IMD चेतावनी जाँची जा रही है…', alertSummary:'नवीनतम ज़िला चेतावनी लोड हो रही है।',
-  stepsTitle:'सुरक्षित रहें', step1Title:'आधिकारिक चेतावनी देखें', step1Text:'स्रोत लिंक खोलें और ज़िले तथा जारी होने की तारीख़ पर ध्यान दें।',
-  step2Title:'सुरक्षित जगह पर जाएँ', step2Text:'आधिकारिक चेतावनी के अनुसार सुरक्षा निर्देश मानें।',
-  step3Title:'यात्रा से पहले फिर जाँचें', step3Text:'ज़िला चेतावनियाँ बदल सकती हैं। स्थानीय अधिकारियों के मौजूदा निर्देश मानें।',
-  nearbyHelp:'आधिकारिक सहायता', shareDemo:'यह पेज साझा करें', infoStatus:'जानकारी की स्थिति', infoStatusText:'आधिकारिक स्रोत जाँचा जा रहा है',
-  sourceWording:'IMD की आधिकारिक चेतावनी', sourceName:'भारत मौसम विज्ञान विभाग',
-  liveSource:'आधिकारिक IMD स्रोत खोलें ↗', whyShown:'यह कैसे काम करता है?', gotIt:'ठीक है',
-  aboutTitle:'स्पष्ट जानकारी। स्पष्ट स्रोत।',
-  aboutBody:'हर 30 मिनट में एक तय प्रक्रिया सार्वजनिक IMD चेन्नई ज़िला-चेतावनी पेज जाँचती है। StormSignal नवीनतम प्रकाशित डेटा, आधिकारिक शब्द और स्रोत की तारीख़ के साथ सामान्य सुरक्षा निर्देश दिखाता है। यह सड़क-स्तर की बाढ़ की स्थिति, निकासी मार्ग या बचाव सेवा नहीं देता। IMD स्रोत और स्थानीय अधिकारियों के निर्देश देखें।',
-  sourceDateLabel:'IMD स्रोत अपडेट', districtLevel:'चेन्नई ज़िला · ज़िला-स्तर की जानकारी',
-  warningBadge:'IMD चेतावनी', noWarningBadge:'कोई सक्रिय चेतावनी नहीं', staleBadge:'आधिकारिक स्रोत देखें',
-  warningTitleStorm:'आंधी और बिजली गिरने की चेतावनी', warningTitleRain:'भारी बारिश की चेतावनी',
-  warningTitleWind:'तेज़ हवाओं की चेतावनी', warningTitleOther:'आधिकारिक मौसम चेतावनी',
-  noWarningTitle:'कोई सक्रिय ज़िला चेतावनी सूचीबद्ध नहीं', staleTitle:'मौजूदा चेतावनी की पुष्टि नहीं हो सकी',
-  unavailableTitle:'आधिकारिक चेतावनी डेटा उपलब्ध नहीं है',
-  warningSummary:'नवीनतम IMD ज़िला पेज चेन्नई के लिए चेतावनी दिखाता है। आधिकारिक शब्द नीचे दिए हैं; वे सड़क-दर-सड़क स्थिति नहीं बताते।',
-  noWarningSummary:'नवीनतम IMD ज़िला डेटा में चेन्नई के लिए कोई सक्रिय चेतावनी नहीं है। इसे पूरी तरह सुरक्षित न मानें; यात्रा से पहले आधिकारिक स्रोत देखें।',
-  staleSummary:'उपलब्ध नवीनतम IMD रिकॉर्ड की तारीख़ {date} है। यह पुराना हो सकता है; यात्रा का निर्णय लेने से पहले आधिकारिक स्रोत देखें।',
-  unavailableSummary:'StormSignal नवीनतम ज़िला चेतावनी की पुष्टि नहीं कर सका। यात्रा का निर्णय लेने से पहले आधिकारिक IMD पेज खोलें।',
-  freshStatus:'आज की IMD ज़िला चेतावनी', noWarningStatus:'आज के IMD ज़िला डेटा में कोई सक्रिय चेतावनी नहीं',
-  staleStatus:'उपलब्ध IMD चेतावनी डेटा पुराना है', unavailableStatus:'नवीनतम IMD चेतावनी की पुष्टि नहीं हो सकी',
-  warningOriginal:'Thunderstorm & Lightning, Squall etc', noWarningOriginal:'कोई चेतावनी नहीं',
-  shareText:'StormSignal आधिकारिक IMD ज़िला चेतावनियों के साथ बहुभाषी सुरक्षा निर्देश दिखाता है। स्रोत की तारीख़ जाँचें और स्थानीय अधिकारियों के निर्देश मानें।'
-});
-
-const safetyGuidance = {
-  en: {
-    thunderstorm:[
-      ['Move indoors','Use a solid building; stay away from windows and plumbing. Avoid travel if possible.'],
-      ['If outdoors, seek shelter','Avoid open ground, isolated trees, water, and metal structures; choose a place not likely to flood.'],
-      ['Wait before going back out','Stay sheltered for 30 minutes after the last thunder and keep checking official updates.']
-    ],
-    rain:[
-      ['Avoid floodwater','Never walk or drive through floodwater.'],
-      ['Move to safer ground','Stay away from underpasses, drains, and low-lying routes; follow evacuation instructions.'],
-      ['Check official updates','Use the source link before travelling and follow local authority instructions.']
-    ],
-    wind:[
-      ['Take shelter indoors','Stay away from windows and secure loose outdoor items if safe.'],
-      ['Avoid exposed areas','Do not shelter under trees or near loose metal sheets.'],
-      ['Keep away from fallen wires','Stay clear of downed power lines and follow local authority instructions.']
-    ],
-    noWarning:[
-      ['No warning listed today','The latest IMD district data shows no active warning for Chennai.'],
-      ['This is not an all-clear','Weather can change; check the official source before travel.'],
-      ['Stay informed','Follow local authority instructions and use official contacts if you need help.']
-    ],
-    unverified:[
-      ['Verify with IMD','Open the official warning page before deciding to travel.'],
-      ['Use local guidance','Follow current instructions from local authorities and hotel staff.'],
-      ['Get help if needed','Call the listed official contacts in an emergency.']
-    ]
-  },
-  ta: {
-    thunderstorm:[
-      ['உடனே உள்ளே செல்லுங்கள்','உறுதியான கட்டிடத்திற்குள் தங்கி, ஜன்னல்கள் மற்றும் குழாய்களிலிருந்து விலகுங்கள். முடிந்தால் பயணத்தைத் தவிர்க்கவும்.'],
-      ['வெளியில் இருந்தால் தஞ்சமடையுங்கள்','திறந்த வெளி, தனி மரங்கள், நீர் மற்றும் உலோக அமைப்புகளைத் தவிர்த்து, வெள்ளம் வராத பாதுகாப்பான இடத்தைத் தேர்ந்தெடுக்கவும்.'],
-      ['மீண்டும் வெளியே செல்லும் முன் காத்திருங்கள்','கடைசி இடியொலிக்குப் பிறகு 30 நிமிடங்கள் பாதுகாப்பான இடத்தில் இருங்கள்; அதிகாரப்பூர்வ தகவலைப் பாருங்கள்.']
-    ],
-    rain:[
-      ['வெள்ளநீரைத் தவிர்க்கவும்','வெள்ளநீரில் நடக்கவோ வாகனம் ஓட்டவோ வேண்டாம்.'],
-      ['உயரமான பாதுகாப்பான இடத்திற்குச் செல்லுங்கள்','சுரங்கப்பாதைகள், வடிகால்கள் மற்றும் தாழ்வான பாதைகளிலிருந்து விலகி, வெளியேற்ற அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.'],
-      ['அதிகாரப்பூர்வ தகவலைப் பாருங்கள்','பயணத்திற்கு முன் ஆதார இணைப்பைத் திறந்து உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.']
-    ],
-    wind:[
-      ['உள்ளே தஞ்சமடையுங்கள்','ஜன்னல்களிலிருந்து விலகி இருங்கள்; பாதுகாப்பாக இருந்தால் வெளியில் உள்ள தளர்ந்த பொருட்களைப் பாதுகாக்கவும்.'],
-      ['திறந்த இடங்களைத் தவிர்க்கவும்','மரங்களின் கீழோ தளர்ந்த உலோகத் தகடுகளருகிலோ தஞ்சமடைய வேண்டாம்.'],
-      ['விழுந்த மின்கம்பிகளிலிருந்து விலகுங்கள்','மின்கம்பிகளை அணுகாதீர்கள்; உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.']
-    ],
-    noWarning:[
-      ['இன்று எச்சரிக்கை பட்டியலிடப்படவில்லை','சமீபத்திய IMD மாவட்டத் தரவில் சென்னைக்கான செயலில் உள்ள எச்சரிக்கை இல்லை.'],
-      ['இது முழுப் பாதுகாப்பு உறுதி அல்ல','வானிலை மாறலாம்; பயணத்திற்கு முன் அதிகாரப்பூர்வ ஆதாரத்தைப் பாருங்கள்.'],
-      ['தகவலுடன் இருங்கள்','உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்; உதவி தேவைப்பட்டால் அதிகாரப்பூர்வ எண்களைப் பயன்படுத்துங்கள்.']
-    ],
-    unverified:[
-      ['IMD-யில் உறுதிசெய்யுங்கள்','பயண முடிவுக்கு முன் அதிகாரப்பூர்வ எச்சரிக்கைப் பக்கத்தைத் திறக்கவும்.'],
-      ['உள்ளூர் வழிகாட்டுதலைப் பின்பற்றுங்கள்','உள்ளூர் அதிகாரிகள் மற்றும் விடுதி ஊழியர்களின் தற்போதைய அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.'],
-      ['தேவைப்பட்டால் உதவி பெறுங்கள்','அவசரத்தில் பட்டியலிட்ட அதிகாரப்பூர்வ எண்களை அழைக்கவும்.']
-    ]
-  },
-  hi: {
-    thunderstorm:[
-      ['तुरंत अंदर जाएँ','मज़बूत इमारत में रहें और खिड़कियों तथा पाइपलाइन से दूर रहें। संभव हो तो यात्रा टालें।'],
-      ['बाहर हों तो सुरक्षित जगह लें','खुले मैदान, अकेले पेड़ों, पानी और धातु के ढाँचों से दूर रहें; ऐसी जगह चुनें जहाँ बाढ़ का खतरा न हो।'],
-      ['बाहर निकलने से पहले प्रतीक्षा करें','आखिरी गरज के बाद 30 मिनट तक सुरक्षित जगह में रहें और आधिकारिक अपडेट देखते रहें।']
-    ],
-    rain:[
-      ['बाढ़ के पानी से दूर रहें','बाढ़ के पानी में पैदल या वाहन से न जाएँ।'],
-      ['ऊँची सुरक्षित जगह पर जाएँ','अंडरपास, नालों और निचले रास्तों से दूर रहें; निकासी निर्देश मानें।'],
-      ['आधिकारिक अपडेट देखें','यात्रा से पहले स्रोत खोलें और स्थानीय अधिकारियों के निर्देश मानें।']
-    ],
-    wind:[
-      ['अंदर सुरक्षित रहें','खिड़कियों से दूर रहें और यदि सुरक्षित हो तो बाहर की ढीली चीज़ें बाँध दें।'],
-      ['खुले इलाकों से बचें','पेड़ों के नीचे या ढीली धातु की चादरों के पास शरण न लें।'],
-      ['गिरी हुई तारों से दूर रहें','गिरी बिजली की तारों के पास न जाएँ और स्थानीय अधिकारियों के निर्देश मानें।']
-    ],
-    noWarning:[
-      ['आज कोई चेतावनी सूचीबद्ध नहीं','नवीनतम IMD ज़िला डेटा में चेन्नई के लिए कोई सक्रिय चेतावनी नहीं दिखती।'],
-      ['यह पूरी सुरक्षा की पुष्टि नहीं है','मौसम बदल सकता है; यात्रा से पहले आधिकारिक स्रोत देखें।'],
-      ['जानकारी लेते रहें','स्थानीय अधिकारियों के निर्देश मानें और ज़रूरत पड़ने पर आधिकारिक संपर्कों का उपयोग करें।']
-    ],
-    unverified:[
-      ['IMD से पुष्टि करें','यात्रा का निर्णय लेने से पहले आधिकारिक चेतावनी पेज खोलें।'],
-      ['स्थानीय निर्देश मानें','स्थानीय अधिकारियों और होटल कर्मचारियों की मौजूदा सलाह का पालन करें।'],
-      ['ज़रूरत पड़ने पर मदद लें','आपातकाल में सूचीबद्ध आधिकारिक नंबरों पर कॉल करें।']
-    ]
-  }
+  aboutBody:'StormSignal covers India by opening IMD’s public district-wise warning map. The map provides the official warning and forecast date for the district selected there. This prototype does not provide automatic location tracking, street-level conditions, shelters, evacuation routes, or rescue dispatch.',
+  gotIt:'Got it',shareText:'StormSignal links travellers to India’s official district weather warnings and practical safety guidance. Check IMD’s map and follow local authority instructions.'
 };
 
-const localeTags = {en:'en-IN',ta:'ta-IN',hi:'hi-IN'};
-const localizeWarning = (warning, language) => {
-  const value = warning.toLowerCase();
-  const strings = copy[language];
-  if (/thunderstorm|lightning|squall/.test(value)) return strings.warningTitleStorm;
-  if (/extremely heavy rain|very heavy rain|heavy rain/.test(value)) return strings.warningTitleRain;
-  if (/strong surface winds?|wind/.test(value)) return strings.warningTitleWind;
-  return warning;
+// Translations are concise summaries. The official IMD warning remains in its original wording on the source map.
+const translated = {
+  hi:{status:'IMD ज़िला मानचित्र · भारत',languageLabel:'भाषा',eyebrow:'यात्रा सुरक्षा, स्पष्ट जानकारी',title:'जानें क्या हो रहा है।<br><em>जानें क्या करना है।</em>',intro:'भारत भर के यात्रियों के लिए ज़िला मौसम चेतावनी और व्यावहारिक सलाह।',coverageLabel:'क्षेत्र',coverage:'भारत · राज्य और केंद्र शासित प्रदेश',noticeTitle:'आधिकारिक चेतावनी, स्पष्ट अगले कदम',noticeText:'StormSignal आपको भारत मौसम विज्ञान विभाग के इंटरैक्टिव ज़िला मानचित्र पर ले जाता है। वहाँ ज़िला और पूर्वानुमान की तारीख़ जाँचें, फिर स्थानीय अधिकारियों के निर्देश मानें।',alertLabel:'आधिकारिक ज़िला चेतावनी · भारत',liveSourceTag:'आधिकारिक IMD मानचित्र',mapTitle:'अपने ज़िले की चेतावनी देखें',mapText:'IMD का देशव्यापी मानचित्र खोलें, उपलब्ध तारीख़ चुनें और चेतावनी पढ़ने के लिए अपना ज़िला चुनें।',legendTitle:'IMD चेतावनी स्तर',noWarning:'चेतावनी नहीं',watch:'नज़र रखें',alert:'सतर्कता',warning:'चेतावनी',openMap:'भारत का चेतावनी मानचित्र खोलें ↗',rightNow:'अभी',stepsTitle:'यात्रा में सुरक्षित रहें',step1Title:'ज़िला और तारीख़ जाँचें',step1Text:'आधिकारिक मानचित्र पर अपनी जगह और यात्रा के दिन की चेतावनी पढ़ें।',step2Title:'बाढ़ के पानी और खुले स्थानों से बचें',step2Text:'बाढ़ के पानी में पैदल या वाहन से न जाएँ। स्थानीय अधिकारियों के आश्रय या निकासी निर्देश मानें।',step3Title:'आगे बढ़ने से पहले फिर जाँचें',step3Text:'चेतावनी बदल सकती है। यात्रा से पहले नवीनतम स्थानीय निर्देशों की पुष्टि करें।',nearbyHelp:'पूरे भारत में आपात सहायता',helpTitle:'आपातकालीन सहायता',emergencyNumber:'112 पर कॉल करें',emergencyDetail:'पूरे भारत का आपातकालीन नंबर',helpNote:'पुलिस, अग्निशमन, चिकित्सा और अन्य आपात सहायता के लिए।',verifyNumbers:'आधिकारिक 112 सेवा ↗',infoStatus:'स्रोत और दायरा',scopeText:'चेतावनी IMD के आधिकारिक मानचित्र पर खुलती है; StormSignal आपात सेवा नहीं है।',shareDemo:'यह पेज साझा करें',footer:'आपातकाल में 112 पर कॉल करें और स्थानीय अधिकारियों के निर्देश मानें।',aboutLabel:'इस सेवा के बारे में',aboutTitle:'स्पष्ट जानकारी। स्पष्ट स्रोत।',aboutBody:'StormSignal, IMD के सार्वजनिक ज़िला चेतावनी मानचित्र को खोलकर भारत के लिए चेतावनी दिखाता है। मानचित्र पर चुने गए ज़िले की आधिकारिक चेतावनी और तारीख़ देखें। यह प्रोटोटाइप स्थान ट्रैकिंग, सड़क-स्तर की स्थिति, आश्रय, निकासी मार्ग या बचाव सेवा नहीं देता।',gotIt:'समझ गया',shareText:'StormSignal यात्रियों को भारत की आधिकारिक ज़िला मौसम चेतावनी और सुरक्षा सलाह तक पहुँचाता है। IMD मानचित्र देखें और स्थानीय निर्देश मानें।'},
+  ta:{status:'IMD மாவட்ட வரைபடம் · இந்தியா',languageLabel:'மொழி',eyebrow:'பயணப் பாதுகாப்பு, தெளிவாக',title:'என்ன நடக்கிறது என்பதை அறியுங்கள்.<br><em>என்ன செய்ய வேண்டும் என்றும் அறியுங்கள்.</em>',intro:'இந்தியா முழுவதும் பயணிகளுக்கான மாவட்ட வானிலை எச்சரிக்கைகளும் நடைமுறை வழிகாட்டுதலும்.',coverageLabel:'கவரேஜ்',coverage:'இந்தியா · மாநிலங்கள் மற்றும் யூனியன் பிரதேசங்கள்',noticeTitle:'அதிகாரப்பூர்வ எச்சரிக்கை, தெளிவான அடுத்த படிகள்',noticeText:'இந்திய வானிலை ஆய்வு மையத்தின் ஊடாடும் மாவட்ட வரைபடத்தை StormSignal திறக்கிறது. அங்கு மாவட்டத்தையும் முன்னறிவிப்பு நாளையும் பார்த்து, உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',alertLabel:'அதிகாரப்பூர்வ மாவட்ட எச்சரிக்கைகள் · இந்தியா',liveSourceTag:'அதிகாரப்பூர்வ IMD வரைபடம்',mapTitle:'உங்கள் மாவட்ட எச்சரிக்கையைப் பாருங்கள்',mapText:'IMD-யின் இந்தியா முழுவதற்குமான வரைபடத்தைத் திறந்து, தேதியைத் தேர்ந்தெடுத்து உங்கள் மாவட்ட எச்சரிக்கையைப் படியுங்கள்.',legendTitle:'IMD எச்சரிக்கை நிலைகள்',noWarning:'எச்சரிக்கை இல்லை',watch:'கவனிக்கவும்',alert:'விழிப்புடன் இருங்கள்',warning:'எச்சரிக்கை',openMap:'இந்திய எச்சரிக்கை வரைபடத்தைத் திறக்கவும் ↗',rightNow:'இப்போது',stepsTitle:'பயணத்தில் பாதுகாப்பாக இருங்கள்',step1Title:'மாவட்டத்தையும் நாளையும் சரிபார்க்கவும்',step1Text:'அதிகாரப்பூர்வ வரைபடத்தில் உங்கள் இடம் மற்றும் பயண நாளுக்கான எச்சரிக்கையைப் பாருங்கள்.',step2Title:'வெள்ளநீர் மற்றும் திறந்த இடங்களைத் தவிர்க்கவும்',step2Text:'வெள்ளநீரில் நடக்கவோ வாகனம் ஓட்டவோ வேண்டாம். உள்ளூர் அதிகாரிகளின் தஞ்சம் அல்லது வெளியேற்ற அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',step3Title:'புறப்படுவதற்கு முன் மீண்டும் சரிபார்க்கவும்',step3Text:'எச்சரிக்கைகள் மாறலாம். பயணத்திற்கு முன் சமீபத்திய உள்ளூர் அறிவுறுத்தல்களை உறுதிப்படுத்துங்கள்.',nearbyHelp:'இந்தியா முழுவதும் அவசர உதவி',helpTitle:'அவசர உதவி',emergencyNumber:'112-ஐ அழைக்கவும்',emergencyDetail:'இந்தியா முழுவதற்குமான அவசர எண்',helpNote:'காவல், தீயணைப்பு, மருத்துவம் மற்றும் பிற அவசர உதவிக்கு.',verifyNumbers:'அதிகாரப்பூர்வ 112 சேவை ↗',infoStatus:'ஆதாரமும் வரம்பும்',scopeText:'எச்சரிக்கைகள் IMD அதிகாரப்பூர்வ வரைபடத்தில் திறக்கப்படும்; StormSignal அவசர சேவை அல்ல.',shareDemo:'இந்தப் பக்கத்தைப் பகிரவும்',footer:'அவசரத்தில் 112-ஐ அழைத்து உள்ளூர் அதிகாரிகளின் அறிவுறுத்தல்களைப் பின்பற்றுங்கள்.',aboutLabel:'இந்தச் சேவையைப் பற்றி',aboutTitle:'தெளிவான தகவல். தெளிவான ஆதாரம்.',aboutBody:'IMD-யின் பொது மாவட்ட எச்சரிக்கை வரைபடத்தைத் திறந்து இந்தியா முழுவதற்குமான எச்சரிக்கைகளை StormSignal காட்டுகிறது. அங்கு தேர்ந்தெடுத்த மாவட்டத்திற்கான அதிகாரப்பூர்வ எச்சரிக்கையும் தேதியும் கிடைக்கும். இந்த முன்மாதிரி இடக் கண்காணிப்பு, தெரு-நிலை நிலவரம், தங்குமிடம், வெளியேற்றப் பாதை அல்லது மீட்புச் சேவையை வழங்காது.',gotIt:'சரி',shareText:'இந்தியாவின் அதிகாரப்பூர்வ மாவட்ட வானிலை எச்சரிக்கைகளையும் பயணப் பாதுகாப்பு வழிகாட்டுதலையும் StormSignal இணைக்கிறது. IMD வரைபடத்தையும் உள்ளூர் அறிவுறுத்தல்களையும் பாருங்கள்.'},
+  te:{status:'IMD జిల్లా మ్యాప్ · భారత్',languageLabel:'భాష',eyebrow:'ప్రయాణ భద్రత, స్పష్టంగా',title:'ఏం జరుగుతుందో తెలుసుకోండి.<br><em>ఏం చేయాలో తెలుసుకోండి.</em>',intro:'భారతదేశమంతటా ప్రయాణికుల కోసం జిల్లా వాతావరణ హెచ్చరికలు, ఆచరణాత్మక సూచనలు.',coverageLabel:'పరిధి',coverage:'భారతదేశం · రాష్ట్రాలు, కేంద్రపాలిత ప్రాంతాలు',noticeTitle:'అధికారిక హెచ్చరికలు, స్పష్టమైన తదుపరి చర్యలు',noticeText:'StormSignal భారత వాతావరణ శాఖ ఇంటరాక్టివ్ జిల్లా మ్యాప్‌కు తీసుకెళ్తుంది. అక్కడ జిల్లా, సూచన తేదీని చూసి స్థానిక అధికారుల తాజా సూచనలు పాటించండి.',alertLabel:'అధికారిక జిల్లా హెచ్చరికలు · భారతదేశం',liveSourceTag:'అధికారిక IMD మ్యాప్',mapTitle:'మీ జిల్లా హెచ్చరికను చూడండి',mapText:'IMD దేశవ్యాప్త మ్యాప్ తెరిచి, తేదీని ఎంచుకుని మీ జిల్లా హెచ్చరికను చదవండి.',legendTitle:'IMD హెచ్చరిక స్థాయిలు',noWarning:'హెచ్చరిక లేదు',watch:'గమనించండి',alert:'అప్రమత్తం',warning:'హెచ్చరిక',openMap:'భారత హెచ్చరిక మ్యాప్ తెరవండి ↗',rightNow:'ఇప్పుడే',stepsTitle:'ప్రయాణంలో సురక్షితంగా ఉండండి',step1Title:'జిల్లా, తేదీ చూడండి',step1Text:'అధికారిక మ్యాప్‌లో మీ ప్రాంతం, ప్రయాణ తేదీకి సంబంధించిన హెచ్చరిక చదవండి.',step2Title:'వరద నీరు, బహిరంగ ప్రదేశాలకు దూరంగా ఉండండి',step2Text:'వరద నీటిలో నడవకండి లేదా వాహనం నడపకండి. స్థానిక అధికారుల ఆశ్రయం లేదా తరలింపు సూచనలు పాటించండి.',step3Title:'బయలుదేరే ముందు మళ్లీ చూడండి',step3Text:'హెచ్చరికలు మారవచ్చు. ప్రయాణానికి ముందు తాజా స్థానిక సూచనలు నిర్ధారించుకోండి.',nearbyHelp:'దేశవ్యాప్త అత్యవసర సహాయం',helpTitle:'అత్యవసర స్పందన',emergencyNumber:'112కు కాల్ చేయండి',emergencyDetail:'భారతదేశమంతటా అత్యవసర నంబర్',helpNote:'పోలీస్, అగ్నిమాపక, వైద్య మరియు ఇతర అత్యవసర సహాయం కోసం.',verifyNumbers:'అధికారిక 112 సేవ ↗',infoStatus:'మూలం, పరిధి',scopeText:'హెచ్చరికలు IMD అధికారిక మ్యాప్‌లో తెరుచుకుంటాయి; StormSignal అత్యవసర సేవ కాదు.',shareDemo:'ఈ పేజీని పంచుకోండి',footer:'అత్యవసరంలో 112కు కాల్ చేసి స్థానిక అధికారుల సూచనలు పాటించండి.',aboutLabel:'ఈ సేవ గురించి',aboutTitle:'స్పష్టమైన సమాచారం. స్పష్టమైన మూలం.',aboutBody:'IMD ప్రజా జిల్లా హెచ్చరిక మ్యాప్‌ను తెరిచి StormSignal భారతదేశ వ్యాప్తంగా సమాచారాన్ని అందిస్తుంది. అక్కడ ఎంచుకున్న జిల్లాకు అధికారిక హెచ్చరిక, సూచన తేదీ కనిపిస్తాయి. ఈ నమూనా స్థానం ట్రాకింగ్, వీధి స్థాయి పరిస్థితులు, ఆశ్రయాలు, తరలింపు మార్గాలు లేదా రక్షణ సేవ ఇవ్వదు.',gotIt:'సరే',shareText:'StormSignal భారతదేశ అధికారిక జిల్లా వాతావరణ హెచ్చరికలు, ప్రయాణ భద్రత సూచనలకు అనుసంధానిస్తుంది. IMD మ్యాప్ చూడండి, స్థానిక సూచనలు పాటించండి.'},
+  bn:{status:'IMD জেলা মানচিত্র · ভারত',languageLabel:'ভাষা',eyebrow:'ভ্রমণ নিরাপত্তা, সহজভাবে',title:'কী ঘটছে জানুন।<br><em>কী করতে হবে জানুন।</em>',intro:'ভারতজুড়ে ভ্রমণকারীদের জন্য জেলার আবহাওয়া সতর্কতা ও ব্যবহারিক পরামর্শ।',coverageLabel:'পরিধি',coverage:'ভারত · রাজ্য ও কেন্দ্রশাসিত অঞ্চল',noticeTitle:'সরকারি সতর্কতা, পরবর্তী পদক্ষেপ স্পষ্ট',noticeText:'StormSignal আপনাকে ভারতের আবহাওয়া দপ্তরের ইন্টার্যাক্টিভ জেলা মানচিত্রে নিয়ে যায়। সেখানে জেলা ও পূর্বাভাসের তারিখ দেখে স্থানীয় কর্তৃপক্ষের নির্দেশ মানুন।',alertLabel:'সরকারি জেলা সতর্কতা · ভারত',liveSourceTag:'সরকারি IMD মানচিত্র',mapTitle:'আপনার জেলার সতর্কতা দেখুন',mapText:'IMD-র সারা ভারতের মানচিত্র খুলুন, তারিখ বেছে নিয়ে জেলার সতর্কতা পড়ুন।',legendTitle:'IMD সতর্কতার স্তর',noWarning:'সতর্কতা নেই',watch:'নজর রাখুন',alert:'সতর্ক হন',warning:'সতর্কতা',openMap:'ভারতের সতর্কতা মানচিত্র খুলুন ↗',rightNow:'এখনই',stepsTitle:'ভ্রমণে নিরাপদ থাকুন',step1Title:'জেলা ও তারিখ দেখুন',step1Text:'সরকারি মানচিত্রে ভ্রমণের স্থান ও দিনের সতর্কতা পড়ুন।',step2Title:'বন্যার জল ও খোলা জায়গা এড়িয়ে চলুন',step2Text:'বন্যার জলে হাঁটবেন না বা গাড়ি চালাবেন না। স্থানীয় কর্তৃপক্ষের আশ্রয় বা সরিয়ে নেওয়ার নির্দেশ মানুন।',step3Title:'রওনা হওয়ার আগে আবার দেখুন',step3Text:'সতর্কতা বদলাতে পারে। ভ্রমণের আগে সর্বশেষ স্থানীয় নির্দেশ নিশ্চিত করুন।',nearbyHelp:'সারা দেশের জরুরি সহায়তা',helpTitle:'জরুরি সহায়তা',emergencyNumber:'112-এ কল করুন',emergencyDetail:'সারা ভারতের জরুরি নম্বর',helpNote:'পুলিশ, দমকল, চিকিৎসা ও অন্যান্য জরুরি সহায়তার জন্য।',verifyNumbers:'সরকারি 112 পরিষেবা ↗',infoStatus:'উৎস ও পরিধি',scopeText:'সতর্কতা IMD-র সরকারি মানচিত্রে খুলবে; StormSignal জরুরি পরিষেবা নয়।',shareDemo:'এই পৃষ্ঠা শেয়ার করুন',footer:'জরুরি অবস্থায় 112-এ কল করুন এবং স্থানীয় নির্দেশ মানুন।',aboutLabel:'এই পরিষেবা সম্পর্কে',aboutTitle:'স্পষ্ট তথ্য। স্পষ্ট উৎস।',aboutBody:'IMD-র সর্বসাধারণের জেলা সতর্কতা মানচিত্র খুলে StormSignal ভারতজুড়ে সতর্কতা দেখায়। সেখানে নির্বাচিত জেলার সরকারি সতর্কতা ও পূর্বাভাসের তারিখ দেখুন। এই প্রোটোটাইপ অবস্থান ট্র্যাকিং, রাস্তার অবস্থা, আশ্রয়কেন্দ্র, সরিয়ে নেওয়ার পথ বা উদ্ধার পরিষেবা দেয় না।',gotIt:'ঠিক আছে',shareText:'StormSignal ভারতের সরকারি জেলা আবহাওয়া সতর্কতা ও ভ্রমণ নিরাপত্তা নির্দেশনার সঙ্গে যুক্ত করে। IMD মানচিত্র দেখুন এবং স্থানীয় নির্দেশ মানুন।'},
+  mr:{status:'IMD जिल्हा नकाशा · भारत',languageLabel:'भाषा',eyebrow:'प्रवास सुरक्षा, स्पष्टपणे',title:'काय घडत आहे ते जाणून घ्या.<br><em>काय करायचे ते जाणून घ्या.</em>',intro:'भारतभरातील प्रवाशांसाठी जिल्हा हवामान इशारे आणि व्यावहारिक मार्गदर्शन.',coverageLabel:'व्याप्ती',coverage:'भारत · राज्ये आणि केंद्रशासित प्रदेश',noticeTitle:'अधिकृत इशारे, पुढील पावले स्पष्ट',noticeText:'StormSignal तुम्हाला भारतीय हवामान विभागाच्या परस्परसंवादी जिल्हा नकाशावर नेतो. तेथे जिल्हा आणि अंदाजाची तारीख पाहून स्थानिक अधिकाऱ्यांच्या सूचना पाळा.',alertLabel:'अधिकृत जिल्हा इशारे · भारत',liveSourceTag:'अधिकृत IMD नकाशा',mapTitle:'तुमच्या जिल्ह्याचा इशारा पाहा',mapText:'IMD चा देशव्यापी नकाशा उघडा, तारीख निवडा आणि जिल्ह्याचा इशारा वाचा.',legendTitle:'IMD इशारा पातळ्या',noWarning:'इशारा नाही',watch:'लक्ष ठेवा',alert:'सावधान',warning:'इशारा',openMap:'भारताचा इशारा नकाशा उघडा ↗',rightNow:'आत्ताच',stepsTitle:'प्रवासात सुरक्षित राहा',step1Title:'जिल्हा आणि तारीख तपासा',step1Text:'अधिकृत नकाशावर प्रवासाच्या ठिकाणाचा आणि दिवसाचा इशारा वाचा.',step2Title:'पूराचे पाणी आणि उघडी ठिकाणे टाळा',step2Text:'पूराच्या पाण्यातून चालू किंवा वाहन चालवू नका. स्थानिक अधिकाऱ्यांच्या निवारा किंवा स्थलांतर सूचना पाळा.',step3Title:'निघण्यापूर्वी पुन्हा तपासा',step3Text:'इशारे बदलू शकतात. प्रवासापूर्वी नवीनतम स्थानिक सूचनांची खात्री करा.',nearbyHelp:'देशभरातील आपत्कालीन मदत',helpTitle:'आपत्कालीन प्रतिसाद',emergencyNumber:'112 वर कॉल करा',emergencyDetail:'भारतभरातील आपत्कालीन क्रमांक',helpNote:'पोलीस, अग्निशमन, वैद्यकीय आणि इतर आपत्कालीन मदतीसाठी.',verifyNumbers:'अधिकृत 112 सेवा ↗',infoStatus:'स्रोत आणि व्याप्ती',scopeText:'इशारे IMD च्या अधिकृत नकाशावर उघडतात; StormSignal आपत्कालीन सेवा नाही.',shareDemo:'हे पान शेअर करा',footer:'आपत्कालीन स्थितीत 112 वर कॉल करा आणि स्थानिक अधिकाऱ्यांच्या सूचना पाळा.',aboutLabel:'या सेवेबद्दल',aboutTitle:'स्पष्ट माहिती. स्पष्ट स्रोत.',aboutBody:'IMD चा सार्वजनिक जिल्हा इशारा नकाशा उघडून StormSignal भारतभराची माहिती दाखवते. तेथे निवडलेल्या जिल्ह्याचा अधिकृत इशारा आणि तारीख मिळते. हा नमुना स्थान ट्रॅकिंग, रस्त्यावरील परिस्थिती, निवारा, स्थलांतर मार्ग किंवा बचाव सेवा देत नाही.',gotIt:'समजले',shareText:'StormSignal भारताचे अधिकृत जिल्हा हवामान इशारे आणि प्रवास सुरक्षा मार्गदर्शन दाखवते. IMD नकाशा पाहा आणि स्थानिक सूचना पाळा.'},
+  gu:{status:'IMD જિલ્લાનો નકશો · ભારત',languageLabel:'ભાષા',eyebrow:'મુસાફરી સુરક્ષા, સ્પષ્ટ રીતે',title:'શું થઈ રહ્યું છે તે જાણો.<br><em>શું કરવું તે જાણો.</em>',intro:'ભારતભરના પ્રવાસીઓ માટે જિલ્લા હવામાન ચેતવણીઓ અને ઉપયોગી માર્ગદર્શન.',coverageLabel:'વિસ્તાર',coverage:'ભારત · રાજ્યો અને કેન્દ્રશાસિત પ્રદેશો',noticeTitle:'સત્તાવાર ચેતવણીઓ, આગળનાં પગલાં સ્પષ્ટ',noticeText:'StormSignal તમને ભારતીય હવામાન વિભાગના ઇન્ટરેક્ટિવ જિલ્લા નકશા પર લઈ જાય છે. ત્યાં જિલ્લો અને આગાહીની તારીખ તપાસો અને સ્થાનિક અધિકારીઓની સૂચનાઓ અનુસરો.',alertLabel:'સત્તાવાર જિલ્લા ચેતવણીઓ · ભારત',liveSourceTag:'સત્તાવાર IMD નકશો',mapTitle:'તમારા જિલ્લાની ચેતવણી જુઓ',mapText:'IMDનો દેશવ્યાપી નકશો ખોલો, તારીખ પસંદ કરો અને તમારા જિલ્લાની ચેતવણી વાંચો.',legendTitle:'IMD ચેતવણી સ્તરો',noWarning:'ચેતવણી નથી',watch:'ધ્યાન રાખો',alert:'સાવચેત',warning:'ચેતવણી',openMap:'ભારતનો ચેતવણી નકશો ખોલો ↗',rightNow:'હમણાં',stepsTitle:'મુસાફરીમાં સુરક્ષિત રહો',step1Title:'જિલ્લો અને તારીખ તપાસો',step1Text:'સત્તાવાર નકશામાં સ્થળ અને મુસાફરીના દિવસની ચેતવણી વાંચો.',step2Title:'પૂરના પાણી અને ખુલ્લાં સ્થળોથી દૂર રહો',step2Text:'પૂરના પાણીમાં ચાલશો કે વાહન ચલાવશો નહીં. સ્થાનિક અધિકારીઓની આશ્રય અથવા સ્થળાંતર સૂચનાઓ અનુસરો.',step3Title:'નીકળતા પહેલાં ફરી તપાસો',step3Text:'ચેતવણીઓ બદલાઈ શકે છે. મુસાફરી પહેલાં નવીનતમ સ્થાનિક સૂચનાઓ ખાતરી કરો.',nearbyHelp:'સમગ્ર ભારતની કટોકટી મદદ',helpTitle:'કટોકટી પ્રતિસાદ',emergencyNumber:'112 પર કૉલ કરો',emergencyDetail:'ભારતભરનો કટોકટી નંબર',helpNote:'પોલીસ, અગ્નિશમન, તબીબી અને અન્ય કટોકટી સહાય માટે.',verifyNumbers:'સત્તાવાર 112 સેવા ↗',infoStatus:'સ્રોત અને વ્યાપ',scopeText:'ચેતવણીઓ IMDના સત્તાવાર નકશામાં ખુલશે; StormSignal કટોકટી સેવા નથી.',shareDemo:'આ પેજ શેર કરો',footer:'કટોકટીમાં 112 પર કૉલ કરો અને સ્થાનિક અધિકારીઓની સૂચનાઓ અનુસરો.',aboutLabel:'આ સેવા વિશે',aboutTitle:'સ્પષ્ટ માહિતી. સ્પષ્ટ સ્રોત.',aboutBody:'IMDના જાહેર જિલ્લા ચેતવણી નકશા દ્વારા StormSignal ભારતભરની ચેતવણી બતાવે છે. ત્યાં પસંદ કરેલા જિલ્લાની સત્તાવાર ચેતવણી અને તારીખ જુઓ. આ નમૂનો સ્થાન ટ્રેકિંગ, રસ્તાની સ્થિતિ, આશ્રયસ્થાનો, સ્થળાંતર માર્ગ કે બચાવ સેવા આપતો નથી.',gotIt:'બરાબર',shareText:'StormSignal ભારતની સત્તાવાર જિલ્લા હવામાન ચેતવણીઓ અને મુસાફરી સુરક્ષા માર્ગદર્શન સાથે જોડે છે. IMD નકશો જુઓ અને સ્થાનિક સૂચનાઓ અનુસરો.'},
+  kn:{status:'IMD ಜಿಲ್ಲಾ ನಕ್ಷೆ · ಭಾರತ',languageLabel:'ಭಾಷೆ',eyebrow:'ಪ್ರಯಾಣ ಸುರಕ್ಷತೆ, ಸ್ಪಷ್ಟವಾಗಿ',title:'ಏನಾಗುತ್ತಿದೆ ತಿಳಿಯಿರಿ.<br><em>ಏನು ಮಾಡಬೇಕು ತಿಳಿಯಿರಿ.</em>',intro:'ಭಾರತದಾದ್ಯಂತ ಪ್ರಯಾಣಿಕರಿಗೆ ಜಿಲ್ಲಾ ಹವಾಮಾನ ಎಚ್ಚರಿಕೆಗಳು ಮತ್ತು ಪ್ರಾಯೋಗಿಕ ಮಾರ್ಗದರ್ಶನ.',coverageLabel:'ವ್ಯಾಪ್ತಿ',coverage:'ಭಾರತ · ರಾಜ್ಯಗಳು ಮತ್ತು ಕೇಂದ್ರಾಡಳಿತ ಪ್ರದೇಶಗಳು',noticeTitle:'ಅಧಿಕೃತ ಎಚ್ಚರಿಕೆಗಳು, ಮುಂದಿನ ಕ್ರಮಗಳು ಸ್ಪಷ್ಟ',noticeText:'StormSignal ನಿಮ್ಮನ್ನು ಭಾರತೀಯ ಹವಾಮಾನ ಇಲಾಖೆಯ ಸಂವಾದಾತ್ಮಕ ಜಿಲ್ಲಾ ನಕ್ಷೆಗೆ ಕರೆದೊಯ್ಯುತ್ತದೆ. ಅಲ್ಲಿ ಜಿಲ್ಲೆ ಮತ್ತು ಮುನ್ಸೂಚನೆ ದಿನಾಂಕ ನೋಡಿ ಸ್ಥಳೀಯ ಅಧಿಕಾರಿಗಳ ಸೂಚನೆ ಪಾಲಿಸಿ.',alertLabel:'ಅಧಿಕೃತ ಜಿಲ್ಲಾ ಎಚ್ಚರಿಕೆಗಳು · ಭಾರತ',liveSourceTag:'ಅಧಿಕೃತ IMD ನಕ್ಷೆ',mapTitle:'ನಿಮ್ಮ ಜಿಲ್ಲೆಯ ಎಚ್ಚರಿಕೆ ಪರಿಶೀಲಿಸಿ',mapText:'IMDಯ ರಾಷ್ಟ್ರವ್ಯಾಪಿ ನಕ್ಷೆ ತೆರೆಯಿರಿ, ದಿನಾಂಕ ಆಯ್ಕೆ ಮಾಡಿ, ನಿಮ್ಮ ಜಿಲ್ಲೆಯ ಎಚ್ಚರಿಕೆ ಓದಿ.',legendTitle:'IMD ಎಚ್ಚರಿಕೆ ಮಟ್ಟಗಳು',noWarning:'ಎಚ್ಚರಿಕೆ ಇಲ್ಲ',watch:'ಗಮನಿಸಿ',alert:'ಎಚ್ಚರಿಕೆ',warning:'ಎಚ್ಚರಿಕೆ',openMap:'ಭಾರತದ ಎಚ್ಚರಿಕೆ ನಕ್ಷೆ ತೆರೆಯಿರಿ ↗',rightNow:'ಈಗಲೇ',stepsTitle:'ಪ್ರಯಾಣದಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿರಿ',step1Title:'ಜಿಲ್ಲೆ ಮತ್ತು ದಿನಾಂಕ ಪರಿಶೀಲಿಸಿ',step1Text:'ಅಧಿಕೃತ ನಕ್ಷೆಯಲ್ಲಿ ನಿಮ್ಮ ಸ್ಥಳ ಮತ್ತು ಪ್ರಯಾಣದ ದಿನದ ಎಚ್ಚರಿಕೆ ಓದಿ.',step2Title:'ಪ್ರವಾಹದ ನೀರು ಮತ್ತು ತೆರೆದ ಪ್ರದೇಶ ತಪ್ಪಿಸಿ',step2Text:'ಪ್ರವಾಹದ ನೀರಿನಲ್ಲಿ ನಡೆಯಬೇಡಿ ಅಥವಾ ವಾಹನ ಚಲಾಯಿಸಬೇಡಿ. ಸ್ಥಳೀಯ ಅಧಿಕಾರಿಗಳ ಆಶ್ರಯ ಅಥವಾ ಸ್ಥಳಾಂತರ ಸೂಚನೆ ಪಾಲಿಸಿ.',step3Title:'ಹೊರಡುವ ಮುನ್ನ ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ',step3Text:'ಎಚ್ಚರಿಕೆಗಳು ಬದಲಾಗಬಹುದು. ಪ್ರಯಾಣಕ್ಕೂ ಮೊದಲು ಇತ್ತೀಚಿನ ಸ್ಥಳೀಯ ಸೂಚನೆ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.',nearbyHelp:'ದೇಶವ್ಯಾಪಿ ತುರ್ತು ಸಹಾಯ',helpTitle:'ತುರ್ತು ಪ್ರತಿಕ್ರಿಯೆ',emergencyNumber:'112ಗೆ ಕರೆ ಮಾಡಿ',emergencyDetail:'ಭಾರತದಾದ್ಯಂತ ತುರ್ತು ಸಂಖ್ಯೆ',helpNote:'ಪೊಲೀಸ್, ಅಗ್ನಿಶಾಮಕ, ವೈದ್ಯಕೀಯ ಮತ್ತು ಇತರ ತುರ್ತು ಸಹಾಯಕ್ಕಾಗಿ.',verifyNumbers:'ಅಧಿಕೃತ 112 ಸೇವೆ ↗',infoStatus:'ಮೂಲ ಮತ್ತು ವ್ಯಾಪ್ತಿ',scopeText:'ಎಚ್ಚರಿಕೆಗಳು IMD ಅಧಿಕೃತ ನಕ್ಷೆಯಲ್ಲಿ ತೆರೆಯುತ್ತವೆ; StormSignal ತುರ್ತು ಸೇವೆಯಲ್ಲ.',shareDemo:'ಈ ಪುಟ ಹಂಚಿಕೊಳ್ಳಿ',footer:'ತುರ್ತು ಪರಿಸ್ಥಿತಿಯಲ್ಲಿ 112ಗೆ ಕರೆ ಮಾಡಿ ಮತ್ತು ಸ್ಥಳೀಯ ಅಧಿಕಾರಿಗಳ ಸೂಚನೆ ಪಾಲಿಸಿ.',aboutLabel:'ಈ ಸೇವೆಯ ಕುರಿತು',aboutTitle:'ಸ್ಪಷ್ಟ ಮಾಹಿತಿ. ಸ್ಪಷ್ಟ ಮೂಲ.',aboutBody:'IMD ಸಾರ್ವಜನಿಕ ಜಿಲ್ಲಾ ಎಚ್ಚರಿಕೆ ನಕ್ಷೆಯನ್ನು ತೆರೆಯುವ ಮೂಲಕ StormSignal ಭಾರತಕ್ಕೆ ಮಾಹಿತಿ ನೀಡುತ್ತದೆ. ಅಲ್ಲಿ ಆಯ್ಕೆ ಮಾಡಿದ ಜಿಲ್ಲೆಯ ಅಧಿಕೃತ ಎಚ್ಚರಿಕೆ ಮತ್ತು ದಿನಾಂಕ ದೊರೆಯುತ್ತದೆ. ಈ ಮಾದರಿ ಸ್ಥಳ ಟ್ರ್ಯಾಕಿಂಗ್, ರಸ್ತೆಮಟ್ಟದ ಪರಿಸ್ಥಿತಿ, ಆಶ್ರಯ, ಸ್ಥಳಾಂತರ ಮಾರ್ಗ ಅಥವಾ ರಕ್ಷಣಾ ಸೇವೆ ಒದಗಿಸುವುದಿಲ್ಲ.',gotIt:'ಸರಿ',shareText:'StormSignal ಭಾರತದ ಅಧಿಕೃತ ಜಿಲ್ಲಾ ಹವಾಮಾನ ಎಚ್ಚರಿಕೆ ಮತ್ತು ಪ್ರಯಾಣ ಸುರಕ್ಷತಾ ಮಾರ್ಗದರ್ಶನಕ್ಕೆ ಕೊಂಡಿ ನೀಡುತ್ತದೆ. IMD ನಕ್ಷೆ ನೋಡಿ, ಸ್ಥಳೀಯ ಸೂಚನೆ ಪಾಲಿಸಿ.'},
+  ml:{status:'IMD ജില്ല മാപ്പ് · ഇന്ത്യ',languageLabel:'ഭാഷ',eyebrow:'യാത്രാ സുരക്ഷ, വ്യക്തമായി',title:'എന്താണ് സംഭവിക്കുന്നതെന്ന് അറിയുക.<br><em>എന്ത് ചെയ്യണമെന്ന് അറിയുക.</em>',intro:'ഇന്ത്യയിലുടനീളമുള്ള യാത്രക്കാർക്ക് ജില്ലാ കാലാവസ്ഥാ മുന്നറിയിപ്പുകളും പ്രായോഗിക മാർഗനിർദേശവും.',coverageLabel:'പരിധി',coverage:'ഇന്ത്യ · സംസ്ഥാനങ്ങളും കേന്ദ്രഭരണ പ്രദേശങ്ങളും',noticeTitle:'ഔദ്യോഗിക മുന്നറിയിപ്പുകൾ, വ്യക്തമായ അടുത്ത നടപടികൾ',noticeText:'ഇന്ത്യൻ കാലാവസ്ഥാ വകുപ്പിന്റെ സംവേദനാത്മക ജില്ലാ മാപ്പിലേക്ക് StormSignal നിങ്ങളെ നയിക്കുന്നു. അവിടെ ജില്ലയും പ്രവചന തീയതിയും പരിശോധിച്ച് പ്രാദേശിക അധികാരികളുടെ നിർദേശങ്ങൾ പാലിക്കുക.',alertLabel:'ഔദ്യോഗിക ജില്ലാ മുന്നറിയിപ്പുകൾ · ഇന്ത്യ',liveSourceTag:'ഔദ്യോഗിക IMD മാപ്പ്',mapTitle:'നിങ്ങളുടെ ജില്ലയിലെ മുന്നറിയിപ്പ് പരിശോധിക്കുക',mapText:'IMD-യുടെ ഇന്ത്യയിലുടനീളമുള്ള മാപ്പ് തുറന്ന് തീയതി തിരഞ്ഞെടുത്ത് ജില്ലയിലെ മുന്നറിയിപ്പ് വായിക്കുക.',legendTitle:'IMD മുന്നറിയിപ്പ് നിലകൾ',noWarning:'മുന്നറിയിപ്പില്ല',watch:'ശ്രദ്ധിക്കുക',alert:'ജാഗ്രത',warning:'മുന്നറിയിപ്പ്',openMap:'ഇന്ത്യയുടെ മുന്നറിയിപ്പ് മാപ്പ് തുറക്കുക ↗',rightNow:'ഇപ്പോൾ',stepsTitle:'യാത്രയിൽ സുരക്ഷിതരായിരിക്കുക',step1Title:'ജില്ലയും തീയതിയും പരിശോധിക്കുക',step1Text:'ഔദ്യോഗിക മാപ്പിൽ യാത്രാ സ്ഥലത്തിന്റെയും ദിവസത്തിന്റെയും മുന്നറിയിപ്പ് വായിക്കുക.',step2Title:'വെള്ളപ്പൊക്കജലവും തുറന്ന സ്ഥലങ്ങളും ഒഴിവാക്കുക',step2Text:'വെള്ളപ്പൊക്കജലത്തിലൂടെ നടക്കുകയോ വാഹനമോടിക്കുകയോ ചെയ്യരുത്. പ്രാദേശിക അധികാരികളുടെ അഭയ/ഒഴിപ്പിക്കൽ നിർദേശങ്ങൾ പാലിക്കുക.',step3Title:'യാത്ര തുടങ്ങുംമുമ്പ് വീണ്ടും പരിശോധിക്കുക',step3Text:'മുന്നറിയിപ്പുകൾ മാറാം. യാത്രയ്ക്കുമുമ്പ് ഏറ്റവും പുതിയ പ്രാദേശിക നിർദേശങ്ങൾ ഉറപ്പാക്കുക.',nearbyHelp:'രാജ്യവ്യാപക അടിയന്തര സഹായം',helpTitle:'അടിയന്തര പ്രതികരണം',emergencyNumber:'112 വിളിക്കുക',emergencyDetail:'ഇന്ത്യയിലുടനീളമുള്ള അടിയന്തര നമ്പർ',helpNote:'പോലീസ്, അഗ്നിശമനം, വൈദ്യസഹായം, മറ്റ് അടിയന്തര സഹായങ്ങൾക്കായി.',verifyNumbers:'ഔദ്യോഗിക 112 സേവനം ↗',infoStatus:'ഉറവിടവും പരിധിയും',scopeText:'മുന്നറിയിപ്പുകൾ IMD ഔദ്യോഗിക മാപ്പിൽ തുറക്കും; StormSignal അടിയന്തര സേവനമല്ല.',shareDemo:'ഈ പേജ് പങ്കിടുക',footer:'അടിയന്തരാവസ്ഥയിൽ 112 വിളിച്ച് പ്രാദേശിക അധികാരികളുടെ നിർദേശങ്ങൾ പാലിക്കുക.',aboutLabel:'ഈ സേവനത്തെക്കുറിച്ച്',aboutTitle:'വ്യക്തമായ വിവരം. വ്യക്തമായ ഉറവിടം.',aboutBody:'IMD-യുടെ പൊതുജില്ലാ മുന്നറിയിപ്പ് മാപ്പ് തുറന്നാണ് StormSignal ഇന്ത്യയ്ക്കുള്ള വിവരങ്ങൾ നൽകുന്നത്. അവിടെ തിരഞ്ഞെടുക്കുന്ന ജില്ലയുടെ ഔദ്യോഗിക മുന്നറിയിപ്പും തീയതിയും കാണാം. ഈ മാതൃക സ്ഥലനിരീക്ഷണം, റോഡ് നില, അഭയകേന്ദ്രം, ഒഴിപ്പിക്കൽ പാത, രക്ഷാപ്രവർത്തനം എന്നിവ നൽകുന്നില്ല.',gotIt:'ശരി',shareText:'ഇന്ത്യയുടെ ഔദ്യോഗിക ജില്ലാ കാലാവസ്ഥാ മുന്നറിയിപ്പുകളും യാത്രാ സുരക്ഷാ മാർഗനിർദേശങ്ങളും StormSignal നൽകുന്നു. IMD മാപ്പും പ്രാദേശിക നിർദേശങ്ങളും പരിശോധിക്കുക.'},
+  pa:{status:'IMD ਜ਼ਿਲ੍ਹਾ ਨਕਸ਼ਾ · ਭਾਰਤ',languageLabel:'ਭਾਸ਼ਾ',eyebrow:'ਯਾਤਰਾ ਸੁਰੱਖਿਆ, ਸਾਫ਼ ਜਾਣਕਾਰੀ',title:'ਜਾਣੋ ਕੀ ਹੋ ਰਿਹਾ ਹੈ।<br><em>ਜਾਣੋ ਕੀ ਕਰਨਾ ਹੈ।</em>',intro:'ਭਾਰਤ ਭਰ ਦੇ ਯਾਤਰੀਆਂ ਲਈ ਜ਼ਿਲ੍ਹਾ ਮੌਸਮ ਚੇਤਾਵਨੀਆਂ ਅਤੇ ਵਰਤੋਂਯੋਗ ਸਲਾਹ।',coverageLabel:'ਦਾਇਰਾ',coverage:'ਭਾਰਤ · ਰਾਜ ਅਤੇ ਕੇਂਦਰ ਸ਼ਾਸਿਤ ਪ੍ਰਦੇਸ਼',noticeTitle:'ਅਧਿਕਾਰਤ ਚੇਤਾਵਨੀਆਂ, ਅਗਲੇ ਕਦਮ ਸਪੱਸ਼ਟ',noticeText:'StormSignal ਤੁਹਾਨੂੰ ਭਾਰਤੀ ਮੌਸਮ ਵਿਭਾਗ ਦੇ ਇੰਟਰਐਕਟਿਵ ਜ਼ਿਲ੍ਹਾ ਨਕਸ਼ੇ ’ਤੇ ਲੈ ਜਾਂਦਾ ਹੈ। ਉੱਥੇ ਜ਼ਿਲ੍ਹਾ ਅਤੇ ਪੇਸ਼ਗੋਈ ਦੀ ਤਾਰੀਖ਼ ਵੇਖੋ ਅਤੇ ਸਥਾਨਕ ਅਧਿਕਾਰੀਆਂ ਦੀਆਂ ਹਦਾਇਤਾਂ ਮੰਨੋ।',alertLabel:'ਅਧਿਕਾਰਤ ਜ਼ਿਲ੍ਹਾ ਚੇਤਾਵਨੀਆਂ · ਭਾਰਤ',liveSourceTag:'ਅਧਿਕਾਰਤ IMD ਨਕਸ਼ਾ',mapTitle:'ਆਪਣੇ ਜ਼ਿਲ੍ਹੇ ਦੀ ਚੇਤਾਵਨੀ ਵੇਖੋ',mapText:'IMD ਦਾ ਦੇਸ਼-ਪੱਧਰੀ ਨਕਸ਼ਾ ਖੋਲ੍ਹੋ, ਤਾਰੀਖ਼ ਚੁਣੋ ਅਤੇ ਆਪਣੇ ਜ਼ਿਲ੍ਹੇ ਦੀ ਚੇਤਾਵਨੀ ਪੜ੍ਹੋ।',legendTitle:'IMD ਚੇਤਾਵਨੀ ਪੱਧਰ',noWarning:'ਚੇਤਾਵਨੀ ਨਹੀਂ',watch:'ਨਜ਼ਰ ਰੱਖੋ',alert:'ਸਾਵਧਾਨ',warning:'ਚੇਤਾਵਨੀ',openMap:'ਭਾਰਤ ਦਾ ਚੇਤਾਵਨੀ ਨਕਸ਼ਾ ਖੋਲ੍ਹੋ ↗',rightNow:'ਹੁਣੇ',stepsTitle:'ਯਾਤਰਾ ਦੌਰਾਨ ਸੁਰੱਖਿਅਤ ਰਹੋ',step1Title:'ਜ਼ਿਲ੍ਹਾ ਅਤੇ ਤਾਰੀਖ਼ ਵੇਖੋ',step1Text:'ਅਧਿਕਾਰਤ ਨਕਸ਼ੇ ’ਤੇ ਯਾਤਰਾ ਵਾਲੀ ਥਾਂ ਅਤੇ ਦਿਨ ਦੀ ਚੇਤਾਵਨੀ ਪੜ੍ਹੋ।',step2Title:'ਹੜ੍ਹ ਦੇ ਪਾਣੀ ਅਤੇ ਖੁੱਲ੍ਹੀਆਂ ਥਾਵਾਂ ਤੋਂ ਬਚੋ',step2Text:'ਹੜ੍ਹ ਦੇ ਪਾਣੀ ਵਿੱਚ ਨਾ ਤੁਰੋ ਅਤੇ ਨਾ ਵਾਹਨ ਚਲਾਓ। ਸਥਾਨਕ ਅਧਿਕਾਰੀਆਂ ਦੀਆਂ ਪਨਾਹ ਜਾਂ ਨਿਕਾਸੀ ਹਦਾਇਤਾਂ ਮੰਨੋ।',step3Title:'ਰਵਾਨਾ ਹੋਣ ਤੋਂ ਪਹਿਲਾਂ ਮੁੜ ਜਾਂਚੋ',step3Text:'ਚੇਤਾਵਨੀਆਂ ਬਦਲ ਸਕਦੀਆਂ ਹਨ। ਯਾਤਰਾ ਤੋਂ ਪਹਿਲਾਂ ਤਾਜ਼ਾ ਸਥਾਨਕ ਹਦਾਇਤਾਂ ਦੀ ਪੁਸ਼ਟੀ ਕਰੋ।',nearbyHelp:'ਦੇਸ਼-ਪੱਧਰੀ ਐਮਰਜੈਂਸੀ ਮਦਦ',helpTitle:'ਐਮਰਜੈਂਸੀ ਸਹਾਇਤਾ',emergencyNumber:'112 ’ਤੇ ਕਾਲ ਕਰੋ',emergencyDetail:'ਪੂਰੇ ਭਾਰਤ ਦਾ ਐਮਰਜੈਂਸੀ ਨੰਬਰ',helpNote:'ਪੁਲਿਸ, ਅੱਗ ਬੁਝਾਊ, ਡਾਕਟਰੀ ਅਤੇ ਹੋਰ ਐਮਰਜੈਂਸੀ ਮਦਦ ਲਈ।',verifyNumbers:'ਅਧਿਕਾਰਤ 112 ਸੇਵਾ ↗',infoStatus:'ਸਰੋਤ ਅਤੇ ਦਾਇਰਾ',scopeText:'ਚੇਤਾਵਨੀਆਂ IMD ਦੇ ਅਧਿਕਾਰਤ ਨਕਸ਼ੇ ’ਤੇ ਖੁੱਲ੍ਹਦੀਆਂ ਹਨ; StormSignal ਐਮਰਜੈਂਸੀ ਸੇਵਾ ਨਹੀਂ ਹੈ।',shareDemo:'ਇਹ ਪੰਨਾ ਸਾਂਝਾ ਕਰੋ',footer:'ਐਮਰਜੈਂਸੀ ਵਿੱਚ 112 ’ਤੇ ਕਾਲ ਕਰੋ ਅਤੇ ਸਥਾਨਕ ਹਦਾਇਤਾਂ ਮੰਨੋ।',aboutLabel:'ਇਸ ਸੇਵਾ ਬਾਰੇ',aboutTitle:'ਸਪੱਸ਼ਟ ਜਾਣਕਾਰੀ। ਸਪੱਸ਼ਟ ਸਰੋਤ।',aboutBody:'StormSignal IMD ਦਾ ਜਨਤਕ ਜ਼ਿਲ੍ਹਾ ਚੇਤਾਵਨੀ ਨਕਸ਼ਾ ਖੋਲ੍ਹ ਕੇ ਭਾਰਤ ਭਰ ਦੀ ਜਾਣਕਾਰੀ ਦਿੰਦਾ ਹੈ। ਚੁਣੇ ਜ਼ਿਲ੍ਹੇ ਦੀ ਅਧਿਕਾਰਤ ਚੇਤਾਵਨੀ ਅਤੇ ਤਾਰੀਖ਼ ਉੱਥੇ ਵੇਖੋ। ਇਹ ਨਮੂਨਾ ਟਿਕਾਣਾ ਟ੍ਰੈਕਿੰਗ, ਸੜਕ ਦੀ ਸਥਿਤੀ, ਪਨਾਹ, ਨਿਕਾਸੀ ਰਸਤੇ ਜਾਂ ਬਚਾਅ ਸੇਵਾ ਨਹੀਂ ਦਿੰਦਾ।',gotIt:'ਠੀਕ ਹੈ',shareText:'StormSignal ਭਾਰਤ ਦੀਆਂ ਅਧਿਕਾਰਤ ਜ਼ਿਲ੍ਹਾ ਮੌਸਮ ਚੇਤਾਵਨੀਆਂ ਅਤੇ ਯਾਤਰਾ ਸੁਰੱਖਿਆ ਸਲਾਹ ਨਾਲ ਜੋੜਦਾ ਹੈ। IMD ਨਕਸ਼ਾ ਵੇਖੋ ਅਤੇ ਸਥਾਨਕ ਹਦਾਇਤਾਂ ਮੰਨੋ।'},
+  or:{status:'IMD ଜିଲ୍ଲା ମାନଚିତ୍ର · ଭାରତ',languageLabel:'ଭାଷା',eyebrow:'ଯାତ୍ରା ସୁରକ୍ଷା, ସ୍ପଷ୍ଟ ସୂଚନା',title:'କ’ଣ ଘଟୁଛି ଜାଣନ୍ତୁ।<br><em>କ’ଣ କରିବେ ଜାଣନ୍ତୁ।</em>',intro:'ଭାରତର ଯାତ୍ରୀଙ୍କ ପାଇଁ ଜିଲ୍ଲା ପାଣିପାଗ ସତର୍କତା ଓ ବ୍ୟବହାରିକ ପରାମର୍ଶ।',coverageLabel:'ପରିସର',coverage:'ଭାରତ · ରାଜ୍ୟ ଓ କେନ୍ଦ୍ରଶାସିତ ଅଞ୍ଚଳ',noticeTitle:'ସରକାରୀ ସତର୍କତା, ପରବର୍ତ୍ତୀ ପଦକ୍ଷେପ ସ୍ପଷ୍ଟ',noticeText:'StormSignal ଆପଣଙ୍କୁ ଭାରତୀୟ ପାଣିପାଗ ବିଭାଗର ଇଣ୍ଟର୍‌ଆକ୍ଟିଭ୍ ଜିଲ୍ଲା ମାନଚିତ୍ରକୁ ନେଇଯାଏ। ସେଠାରେ ଜିଲ୍ଲା ଓ ପୂର୍ବାନୁମାନ ତାରିଖ ଦେଖି ସ୍ଥାନୀୟ ଅଧିକାରୀଙ୍କ ନିର୍ଦ୍ଦେଶ ମାନନ୍ତୁ।',alertLabel:'ସରକାରୀ ଜିଲ୍ଲା ସତର୍କତା · ଭାରତ',liveSourceTag:'ସରକାରୀ IMD ମାନଚିତ୍ର',mapTitle:'ଆପଣଙ୍କ ଜିଲ୍ଲାର ସତର୍କତା ଦେଖନ୍ତୁ',mapText:'IMDର ସାରା ଭାରତ ମାନଚିତ୍ର ଖୋଲନ୍ତୁ, ତାରିଖ ବାଛନ୍ତୁ ଓ ଜିଲ୍ଲା ସତର୍କତା ପଢ଼ନ୍ତୁ।',legendTitle:'IMD ସତର୍କତା ସ୍ତର',noWarning:'ସତର୍କତା ନାହିଁ',watch:'ନଜର ରଖନ୍ତୁ',alert:'ସତର୍କ',warning:'ସତର୍କତା',openMap:'ଭାରତ ସତର୍କତା ମାନଚିତ୍ର ଖୋଲନ୍ତୁ ↗',rightNow:'ଏବେ',stepsTitle:'ଯାତ୍ରାରେ ସୁରକ୍ଷିତ ରୁହନ୍ତୁ',step1Title:'ଜିଲ୍ଲା ଓ ତାରିଖ ଯାଞ୍ଚ କରନ୍ତୁ',step1Text:'ସରକାରୀ ମାନଚିତ୍ରରେ ଯାତ୍ରା ସ୍ଥାନ ଓ ଦିନର ସତର୍କତା ପଢ଼ନ୍ତୁ।',step2Title:'ବନ୍ୟା ଜଳ ଓ ଖୋଲା ସ୍ଥାନରୁ ଦୂରେ ରୁହନ୍ତୁ',step2Text:'ବନ୍ୟା ଜଳରେ ଚାଲନ୍ତୁ ନାହିଁ କିମ୍ବା ଗାଡ଼ି ଚଳାନ୍ତୁ ନାହିଁ। ସ୍ଥାନୀୟ ଅଧିକାରୀଙ୍କ ଆଶ୍ରୟ ବା ସ୍ଥାନାନ୍ତର ନିର୍ଦ୍ଦେଶ ମାନନ୍ତୁ।',step3Title:'ଯିବା ପୂର୍ବରୁ ପୁଣି ଯାଞ୍ଚ କରନ୍ତୁ',step3Text:'ସତର୍କତା ବଦଳିପାରେ। ଯାତ୍ରା ପୂର୍ବରୁ ସାମ୍ପ୍ରତିକ ସ୍ଥାନୀୟ ନିର୍ଦ୍ଦେଶ ନିଶ୍ଚିତ କରନ୍ତୁ।',nearbyHelp:'ସାରା ଦେଶର ଜରୁରୀ ସହାୟତା',helpTitle:'ଜରୁରୀ ସହାୟତା',emergencyNumber:'112କୁ କଲ୍ କରନ୍ତୁ',emergencyDetail:'ସାରା ଭାରତର ଜରୁରୀ ନମ୍ବର',helpNote:'ପୋଲିସ, ଅଗ୍ନିଶମ, ଚିକିତ୍ସା ଓ ଅନ୍ୟ ଜରୁରୀ ସହାୟତା ପାଇଁ।',verifyNumbers:'ସରକାରୀ 112 ସେବା ↗',infoStatus:'ଉତ୍ସ ଓ ପରିସର',scopeText:'ସତର୍କତା IMDର ସରକାରୀ ମାନଚିତ୍ରରେ ଖୋଲିବ; StormSignal ଜରୁରୀ ସେବା ନୁହେଁ।',shareDemo:'ଏହି ପୃଷ୍ଠା ସେୟାର କରନ୍ତୁ',footer:'ଜରୁରୀ ସମୟରେ 112କୁ କଲ୍ କରି ସ୍ଥାନୀୟ ନିର୍ଦ୍ଦେଶ ମାନନ୍ତୁ।',aboutLabel:'ଏହି ସେବା ବିଷୟରେ',aboutTitle:'ସ୍ପଷ୍ଟ ସୂଚନା। ସ୍ପଷ୍ଟ ଉତ୍ସ।',aboutBody:'IMDର ସାର୍ବଜନୀନ ଜିଲ୍ଲା ସତର୍କତା ମାନଚିତ୍ର ଖୋଲି StormSignal ଭାରତ ପାଇଁ ସୂଚନା ଦିଏ। ସେଠାରେ ଚୟନ କରାଯାଇଥିବା ଜିଲ୍ଲାର ସରକାରୀ ସତର୍କତା ଓ ତାରିଖ ଦେଖନ୍ତୁ। ଏହି ନମୁନା ଅବସ୍ଥାନ ଟ୍ରାକିଂ, ରାସ୍ତା ସ୍ଥିତି, ଆଶ୍ରୟ, ସ୍ଥାନାନ୍ତର ପଥ ବା ଉଦ୍ଧାର ସେବା ଦିଏ ନାହିଁ।',gotIt:'ଠିକ୍ ଅଛି',shareText:'StormSignal ଭାରତର ସରକାରୀ ଜିଲ୍ଲା ପାଣିପାଗ ସତର୍କତା ଓ ଯାତ୍ରା ସୁରକ୍ଷା ପରାମର୍ଶ ସହ ଯୋଡ଼େ। IMD ମାନଚିତ୍ର ଦେଖନ୍ତୁ ଓ ସ୍ଥାନୀୟ ନିର୍ଦ୍ଦେଶ ମାନନ୍ତୁ।'},
+  as:{status:'IMD জিলা মানচিত্ৰ · ভাৰত',languageLabel:'ভাষা',eyebrow:'ভ্ৰমণ সুৰক্ষা, স্পষ্টভাৱে',title:'কি ঘটিছে জানক।<br><em>কি কৰিব লাগে জানক।</em>',intro:'ভাৰতৰ সকলো ঠাইৰ ভ্ৰমণকাৰীৰ বাবে জিলা বতৰৰ সতৰ্কবাণী আৰু ব্যৱহাৰিক পৰামৰ্শ।',coverageLabel:'সামৰি লোৱা অঞ্চল',coverage:'ভাৰত · ৰাজ্য আৰু কেন্দ্ৰীয় শাসিত অঞ্চল',noticeTitle:'চৰকাৰী সতৰ্কবাণী, পৰৱৰ্তী পদক্ষেপ স্পষ্ট',noticeText:'StormSignal-এ আপোনাক ভাৰতীয় বতৰ বিজ্ঞান বিভাগৰ ইণ্টাৰেক্টিভ জিলা মানচিত্ৰলৈ লৈ যায়। তাত জিলা আৰু পূৰ্বানুমানৰ তাৰিখ চাই স্থানীয় কৰ্তৃপক্ষৰ নিৰ্দেশ মানক।',alertLabel:'চৰকাৰী জিলা সতৰ্কবাণী · ভাৰত',liveSourceTag:'চৰকাৰী IMD মানচিত্ৰ',mapTitle:'আপোনাৰ জিলাৰ সতৰ্কবাণী চাওক',mapText:'IMD-ৰ দেশজোৰা মানচিত্ৰ খুলি তাৰিখ বাছনি কৰি জিলাৰ সতৰ্কবাণী পঢ়ক।',legendTitle:'IMD সতৰ্কবাণীৰ স্তৰ',noWarning:'সতৰ্কবাণী নাই',watch:'মন কৰক',alert:'সতৰ্ক হওক',warning:'সতৰ্কবাণী',openMap:'ভাৰতৰ সতৰ্কবাণী মানচিত্ৰ খোলক ↗',rightNow:'এতিয়াই',stepsTitle:'ভ্ৰমণত সুৰক্ষিত থাকক',step1Title:'জিলা আৰু তাৰিখ পৰীক্ষা কৰক',step1Text:'চৰকাৰী মানচিত্ৰত ভ্ৰমণৰ ঠাই আৰু দিনৰ সতৰ্কবাণী পঢ়ক।',step2Title:'বানপানী আৰু মুকলি ঠাই এৰাই চলক',step2Text:'বানপানীৰ মাজেৰে খোজ কাঢ়ি বা গাড়ী চলাই নাযাব। স্থানীয় কৰ্তৃপক্ষৰ আশ্ৰয় বা স্থানান্তৰৰ নিৰ্দেশ মানক।',step3Title:'যাত্ৰা কৰাৰ আগতে পুনৰ চাওক',step3Text:'সতৰ্কবাণী সলনি হ’ব পাৰে। যাত্ৰাৰ আগতে শেহতীয়া স্থানীয় নিৰ্দেশ নিশ্চিত কৰক।',nearbyHelp:'সৰ্বভাৰতীয় জৰুৰী সহায়',helpTitle:'জৰুৰীকালীন সহায়',emergencyNumber:'112-লৈ ফোন কৰক',emergencyDetail:'গোটেই ভাৰতৰ জৰুৰী নম্বৰ',helpNote:'আৰক্ষী, অগ্নিনিৰ্বাপক, চিকিৎসা আৰু আন জৰুৰী সহায়ৰ বাবে।',verifyNumbers:'চৰকাৰী 112 সেৱা ↗',infoStatus:'উৎস আৰু পৰিসৰ',scopeText:'সতৰ্কবাণী IMD-ৰ চৰকাৰী মানচিত্ৰত খোল খায়; StormSignal জৰুৰী সেৱা নহয়।',shareDemo:'এই পৃষ্ঠা ভাগ কৰক',footer:'জৰুৰী অৱস্থাত 112-লৈ ফোন কৰি স্থানীয় নিৰ্দেশ মানক।',aboutLabel:'এই সেৱাৰ বিষয়ে',aboutTitle:'স্পষ্ট তথ্য। স্পষ্ট উৎস।',aboutBody:'IMD-ৰ ৰাজহুৱা জিলা সতৰ্কবাণীৰ মানচিত্ৰ খুলি StormSignal-এ ভাৰতৰ তথ্য দেখুৱায়। তাত বাছনি কৰা জিলাৰ চৰকাৰী সতৰ্কবাণী আৰু তাৰিখ পোৱা যায়। এই আৰ্হিয়ে অৱস্থান অনুসৰণ, পথৰ অৱস্থা, আশ্ৰয়, স্থানান্তৰৰ পথ বা উদ্ধাৰ সেৱা নিদিয়ে।',gotIt:'ঠিক আছে',shareText:'StormSignal-এ ভাৰতৰ চৰকাৰী জিলা বতৰৰ সতৰ্কবাণী আৰু ভ্ৰমণ সুৰক্ষাৰ পৰামৰ্শলৈ লৈ যায়। IMD মানচিত্ৰ চাওক আৰু স্থানীয় নিৰ্দেশ মানক।'},
+  ur:{status:'IMD ضلعی نقشہ · بھارت',languageLabel:'زبان',eyebrow:'سفر کی حفاظت، واضح معلومات',title:'جانیں کیا ہو رہا ہے۔<br><em>جانیں کیا کرنا ہے۔</em>',intro:'بھارت بھر کے مسافروں کے لیے ضلعی موسم کی تنبیہات اور عملی رہنمائی۔',coverageLabel:'دائرہ',coverage:'بھارت · ریاستیں اور مرکز کے زیر انتظام علاقے',noticeTitle:'سرکاری تنبیہات، اگلے اقدامات واضح',noticeText:'StormSignal آپ کو محکمہ موسمیات کے انٹرایکٹو ضلعی نقشے تک لے جاتا ہے۔ وہاں ضلع اور پیش گوئی کی تاریخ دیکھیں اور مقامی حکام کی ہدایات پر عمل کریں۔',alertLabel:'سرکاری ضلعی تنبیہات · بھارت',liveSourceTag:'سرکاری IMD نقشہ',mapTitle:'اپنے ضلع کی تنبیہ دیکھیں',mapText:'IMD کا ملک گیر نقشہ کھولیں، تاریخ منتخب کریں اور اپنے ضلع کی تنبیہ پڑھیں۔',legendTitle:'IMD تنبیہ کی سطحیں',noWarning:'کوئی تنبیہ نہیں',watch:'نظر رکھیں',alert:'خبردار',warning:'تنبیہ',openMap:'بھارت کا تنبیہی نقشہ کھولیں ↗',rightNow:'ابھی',stepsTitle:'سفر میں محفوظ رہیں',step1Title:'ضلع اور تاریخ دیکھیں',step1Text:'سرکاری نقشے پر سفر کی جگہ اور دن کی تنبیہ پڑھیں۔',step2Title:'سیلابی پانی اور کھلی جگہوں سے بچیں',step2Text:'سیلابی پانی میں نہ چلیں اور نہ گاڑی چلائیں۔ مقامی حکام کی پناہ یا انخلا کی ہدایات پر عمل کریں۔',step3Title:'روانہ ہونے سے پہلے دوبارہ دیکھیں',step3Text:'تنبیہات بدل سکتی ہیں۔ سفر سے پہلے تازہ مقامی ہدایات کی تصدیق کریں۔',nearbyHelp:'ملک گیر ہنگامی مدد',helpTitle:'ہنگامی امداد',emergencyNumber:'112 پر کال کریں',emergencyDetail:'پورے بھارت کا ہنگامی نمبر',helpNote:'پولیس، فائر، طبی اور دیگر ہنگامی مدد کے لیے۔',verifyNumbers:'سرکاری 112 سروس ↗',infoStatus:'ماخذ اور دائرہ',scopeText:'تنبیہات IMD کے سرکاری نقشے پر کھلتی ہیں؛ StormSignal ہنگامی سروس نہیں۔',shareDemo:'یہ صفحہ شیئر کریں',footer:'ہنگامی حالت میں 112 پر کال کریں اور مقامی حکام کی ہدایات پر عمل کریں۔',aboutLabel:'اس سروس کے بارے میں',aboutTitle:'واضح معلومات۔ واضح ماخذ۔',aboutBody:'StormSignal، IMD کے عوامی ضلعی تنبیہی نقشے کے ذریعے بھارت بھر کی معلومات دکھاتا ہے۔ منتخب ضلع کی سرکاری تنبیہ اور تاریخ نقشے پر دیکھیں۔ یہ نمونہ مقام کی نگرانی، سڑک کی حالت، پناہ گاہ، انخلا کے راستے یا امدادی کارروائی فراہم نہیں کرتا۔',gotIt:'ٹھیک ہے',shareText:'StormSignal بھارت کی سرکاری ضلعی موسم کی تنبیہات اور سفری حفاظتی رہنمائی سے جوڑتا ہے۔ IMD نقشہ دیکھیں اور مقامی ہدایات پر عمل کریں۔'}
 };
-const todayInIndia = () => {
-  const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
-  const part = type => parts.find(item => item.type === type)?.value || '';
-  return `${part('year')}-${part('month')}-${part('day')}`;
-};
-const formatSourceDate = value => {
-  const [year,month,day] = value.split('-').map(Number);
-  return new Intl.DateTimeFormat(localeTags[currentLanguage], {timeZone:'Asia/Kolkata',day:'numeric',month:'short',year:'numeric'}).format(new Date(Date.UTC(year,month-1,day)));
-};
-const warningSnapshotPromise = fetch(`data/imd-warning.json?ts=${Date.now()}`, {cache:'no-store'})
-  .then(response => { if (!response.ok) throw new Error('IMD warning snapshot is unavailable'); return response.json(); })
-  .then(value => {
-    if (value.schemaVersion !== 1 || !Array.isArray(value.districts)) throw new Error('IMD warning snapshot has an unsupported format');
-    return value;
-  })
-  .catch(() => null);
 
-function renderGuidance(kind) {
-  const copySet = safetyGuidance[currentLanguage];
-  const items = copySet[kind] || copySet.unverified;
-  items.forEach((item,index) => {
-    const number = index + 1;
-    document.querySelector(`#step${number}Title`).textContent = item[0];
-    document.querySelector(`#step${number}Text`).textContent = item[1];
+const copy = {en:base,...translated};
+let currentLanguage='en';
+const languageSelect=document.querySelector('#language');
+const dialog=document.querySelector('#dialog');
+
+function renderLanguage(language) {
+  currentLanguage=copy[language]?language:'en';
+  const strings=copy[currentLanguage];
+  document.querySelectorAll('[data-i18n]').forEach(node=>{
+    const value=strings[node.dataset.i18n] ?? base[node.dataset.i18n];
+    if(value) node.innerHTML=value;
   });
+  document.documentElement.lang=currentLanguage==='en'?'en-IN':`${currentLanguage}-IN`;
+  document.documentElement.dir=currentLanguage==='ur'?'rtl':'ltr';
+  try{localStorage.setItem('stormsignal-language',currentLanguage);}catch{}
 }
 
-function renderCurrentData(snapshot) {
-  const strings = copy[currentLanguage];
-  const record = snapshot?.districts?.find(item => item.district === 'CHENNAI');
-  const card = document.querySelector('.alert-card');
-  const dateLabel = document.querySelector('#updated');
-  const sourceDetail = document.querySelector('#sourceDetail');
-  const original = document.querySelector('#originalWarning');
-  const badge = document.querySelector('#statusBadge');
-  const feedStatus = document.querySelector('#feedStatus');
-  const icon = document.querySelector('#statusIcon');
-  let guidanceKind = 'unverified';
-  let state = 'unavailable';
-
-  document.querySelector('#selectedArea').textContent = 'Chennai district, Tamil Nadu';
-  document.querySelector('#areaLabel').textContent = strings.districtLevel;
-  card.classList.remove('is-clear','is-stale');
-
-  if (!record) {
-    document.querySelector('#alertTitle').textContent = strings.unavailableTitle;
-    document.querySelector('#alertSummary').textContent = strings.unavailableSummary;
-    dateLabel.textContent = strings.unavailableStatus;
-    sourceDetail.textContent = strings.unavailableStatus;
-    original.textContent = strings.unavailableTitle;
-    badge.textContent = strings.staleBadge;
-    feedStatus.textContent = strings.feedStatus;
-    document.querySelector('#infoStatusText').textContent = strings.unavailableStatus;
-  } else {
-    const sourceDate = String(record.sourceUpdatedOn || '');
-    const formattedDate = /^\d{4}-\d{2}-\d{2}$/.test(sourceDate) ? formatSourceDate(sourceDate) : '';
-    const isFresh = sourceDate === todayInIndia() && formattedDate;
-    const warnings = Array.isArray(record.warnings) ? record.warnings.map(String) : [];
-    dateLabel.textContent = formattedDate ? `${strings.sourceDateLabel} · ${formattedDate}` : strings.unavailableStatus;
-    sourceDetail.textContent = formattedDate ? `${snapshot.sourceName} · ${formattedDate}` : strings.unavailableStatus;
-
-    if (!isFresh) {
-      state = 'stale';
-      card.classList.add('is-stale');
-      document.querySelector('#alertTitle').textContent = strings.staleTitle;
-      document.querySelector('#alertSummary').textContent = strings.staleSummary.replace('{date}', formattedDate || sourceDate || 'unknown');
-      original.textContent = warnings.length ? warnings.join(' · ') : strings.noWarningOriginal;
-      badge.textContent = strings.staleBadge;
-      feedStatus.textContent = strings.staleBadge;
-      document.querySelector('#infoStatusText').textContent = strings.staleStatus;
-    } else if (record.noWarning || warnings.length === 0) {
-      state = 'clear';
-      guidanceKind = 'noWarning';
-      card.classList.add('is-clear');
-      document.querySelector('#alertTitle').textContent = strings.noWarningTitle;
-      document.querySelector('#alertSummary').textContent = strings.noWarningSummary;
-      original.textContent = strings.noWarningOriginal;
-      badge.textContent = strings.noWarningBadge;
-      feedStatus.textContent = strings.noWarningBadge;
-      document.querySelector('#infoStatusText').textContent = strings.noWarningStatus;
-    } else {
-      state = 'fresh';
-      const normalized = warnings.join(' ').toLowerCase();
-      if (/thunderstorm|lightning|squall/.test(normalized)) guidanceKind = 'thunderstorm';
-      else if (/rain/.test(normalized)) guidanceKind = 'rain';
-      else if (/wind/.test(normalized)) guidanceKind = 'wind';
-      document.querySelector('#alertTitle').textContent = [...new Set(warnings.map(value => localizeWarning(value,currentLanguage)))].join(' · ');
-      document.querySelector('#alertSummary').textContent = strings.warningSummary;
-      original.textContent = warnings.join(' · ');
-      badge.textContent = strings.warningBadge;
-      feedStatus.textContent = strings.warningBadge;
-      document.querySelector('#infoStatusText').textContent = strings.freshStatus;
-    }
-  }
-
-  icon.textContent = state === 'fresh' ? '!' : state === 'clear' ? '✓' : '!';
-  renderGuidance(guidanceKind);
-}
-
-warningSnapshotPromise.then(renderCurrentData);
-
-const dialog = document.querySelector('#dialog');
-const dialogTitle = document.querySelector('#dialogTitle');
-const dialogBody = document.querySelector('#dialogBody');
-let currentLanguage = 'en';
-function showDialog(title, body) { dialogTitle.textContent = title; dialogBody.textContent = body; dialog.showModal(); }
-document.querySelectorAll('.close,.close-action').forEach(button => button.addEventListener('click', () => dialog.close()));
-document.querySelector('#sourceInfo').addEventListener('click', () => showDialog(copy[currentLanguage].aboutTitle, copy[currentLanguage].aboutBody));
-document.querySelector('#shareDemo').addEventListener('click', async () => {
-  const strings = copy[currentLanguage];
-  const shareData = {title:'StormSignal', text:strings.shareText, url:new URL('.',location.href).href};
-  try {
-    if (navigator.share) await navigator.share(shareData);
-    else if (navigator.clipboard) { await navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`); showDialog(strings.copiedTitle, strings.copiedBody); }
-    else showDialog(strings.shareDemo, `${shareData.text} ${shareData.url}`);
-  } catch (error) {
-    if (error.name !== 'AbortError') showDialog(strings.shareDemo, `${shareData.text} ${shareData.url}`);
-  }
+languageSelect.addEventListener('change',event=>renderLanguage(event.target.value));
+document.querySelectorAll('.close,.close-action').forEach(button=>button.addEventListener('click',()=>dialog.close()));
+document.querySelector('#aboutButton').addEventListener('click',()=>dialog.showModal());
+document.querySelector('#shareDemo').addEventListener('click',async()=>{
+  const strings=copy[currentLanguage];
+  const data={title:'StormSignal',text:strings.shareText,url:new URL('.',location.href).href};
+  try{
+    if(navigator.share) await navigator.share(data);
+    else if(navigator.clipboard){await navigator.clipboard.writeText(`${data.text} ${data.url}`);window.alert(strings.shareDemo);}
+    else window.prompt(strings.shareDemo,`${data.text} ${data.url}`);
+  }catch(error){if(error.name!=='AbortError') window.prompt(strings.shareDemo,`${data.text} ${data.url}`);}
 });
-document.querySelector('#language').addEventListener('change', event => {
-  const strings = copy[event.target.value];
-  currentLanguage = event.target.value;
-  document.querySelectorAll('[data-i18n]').forEach(node => {
-    const value = strings[node.dataset.i18n];
-    if (value) node.innerHTML = value;
-  });
-  document.documentElement.lang = `${event.target.value}-IN`;
-  try { localStorage.setItem('stormsignal-language', event.target.value); } catch {}
-  warningSnapshotPromise.then(renderCurrentData);
-});
+
 try {
-  const savedLanguage = localStorage.getItem('stormsignal-language');
-  if (savedLanguage && copy[savedLanguage]) {
-    const selector = document.querySelector('#language');
-    selector.value = savedLanguage;
-    selector.dispatchEvent(new Event('change'));
-  }
-} catch {}
-
+  const saved=localStorage.getItem('stormsignal-language');
+  if(saved&&copy[saved]) languageSelect.value=saved;
+}catch{}
+renderLanguage(languageSelect.value||'en');
