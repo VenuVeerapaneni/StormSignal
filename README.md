@@ -8,13 +8,14 @@ StormSignal is a mobile-first prototype for the TravelTech problem statement: **
 - [Public source repository](https://github.com/VenuVeerapaneni/StormSignal)
 - [Open the official IMD district warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php)
 - [View current alerts on NDMA's SACHET portal](https://sachet.ndma.gov.in/)
+- [SACHET for Android](https://play.google.com/store/apps/details?id=com.cdotindia.capsachet) and [SACHET for iPhone](https://apps.apple.com/in/app/sachet/id6443882278)
 
-StormSignal links to the India Meteorological Department's interactive district map. Select a forecast date and district on the official IMD page to see the published warning. It also links to NDMA's SACHET portal for its current CAP alerts. This prototype does not mirror either source's live alerts; the issuing authority's page remains the source of truth. The interface and practical travel guidance are available in 18 languages: English, Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu, French, Spanish, German, Simplified Chinese, and Japanese. The IMD's original warning wording is preserved on its source page.
+StormSignal links to the India Meteorological Department's interactive district map. Select a forecast date and district on the official IMD page to see the published warning. It also links to NDMA's SACHET portal for its current CAP alerts. The prototype does not mirror either source's live alerts; the issuing authority's page remains the source of truth. For phone notifications, SACHET's official apps support current-location alerts or subscriptions to a state or district. The interface and practical travel guidance are available in 18 languages: English, Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu, French, Spanish, German, Simplified Chinese, and Japanese. The IMD's original warning wording is preserved on its source page.
 
 ## What it includes
 
 - India-wide entry point to official district warnings and forecast dates.
-- Direct links to official IMD district warnings and NDMA SACHET's current alerts.
+- Direct links to official IMD district warnings and NDMA SACHET's current alerts, plus optional official SACHET app links for phone notifications.
 - IMD warning-level legend: No Warning, Watch, Alert, and Warning.
 - Three concise travel-safety steps and clear limitations.
 - A language selector with 18 languages and saved preference, covering Indian travellers and visitors from several major international language groups.
