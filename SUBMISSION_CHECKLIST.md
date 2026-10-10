@@ -20,10 +20,10 @@
 ## Before recording
 
 - Open the deployed demo on a phone-sized screen.
-- Keep the source attribution, district, and IMD update date visible when presenting the warning.
-- Show English, Tamil, and Hindi; open the official IMD warning and Chennai helpline source links.
-- Explain that the warning is district-level, not street-level, and that the app does not provide verified shelters, evacuation routes, or rescue dispatch.
-- If the source is stale or unavailable, show the app's "could not verify" state; do not claim an old warning is current.
+- Show the 13 language choices and open the official India-wide IMD district warning map.
+- Select a district and forecast date on the IMD map so the source remains visible with its warning.
+- Show the nationwide 112 emergency contact and its Government of India source.
+- Explain that StormSignal links to IMD's map; it does not mirror live warnings, detect street-level flooding, or provide verified shelters, evacuation routes, or rescue dispatch.
 - Save the final video inside this repository (for example, `demo/stormsignal-demo.webm`) and include its link in the submission form.
 
 ## Rules to remember
@@ -32,5 +32,4 @@
 - The README must explain the problem statement, solution, and setup instructions.
 - The project must be hosted at an accessible public link.
 - Only the team leader should submit. Eligibility also requires in-person attendance for at least part of the event and a valid fest pass.
-
 
