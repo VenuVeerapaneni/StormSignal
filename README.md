@@ -27,8 +27,10 @@ The page links to official external sources and uses the Web Share API when supp
 ## Submission materials
 
 - [Copy-ready project description](SUBMISSION_DESCRIPTION.md)
-- [Timed 2:25 demo recording guide](DEMO_SCRIPT.md)
-- [English subtitle file](demo/stormsignal-demo.srt)
+- [Timed 2:23 AI-narrated demo guide](DEMO_SCRIPT.md)
+- [Browser-tab-only recording helper](demo/recorder.html)
+- [AI narration audio track](demo/stormsignal-narration.mp3)
+- [Timed English captions](demo/stormsignal-demo.srt)
 - [Submission checklist](SUBMISSION_CHECKLIST.md)
 
 ## Data and safety
@@ -55,5 +57,6 @@ The warning snapshot is collected from the public [IMD Regional Meteorological C
 **Selected problem statement: TravelTech - Real-Time Crisis Communication for Tourists During Extreme Weather Events.** The challenge describes fragmented local weather warnings, language barriers, limited knowledge of local geography, and travelers relying on unverified reports during floods and cyclones.
 
 StormSignal presents the official Chennai district warning, practical safety steps, and official help contacts in English, Tamil, and Hindi. It makes the district, exact source wording, source update date, and data freshness visible. It does not claim street-level hazard detection, verified safe-zone declarations, rescue dispatch, or route guidance.
+
 
 

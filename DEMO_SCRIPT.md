@@ -1,25 +1,28 @@
-# StormSignal demo recording guide (2 minutes 25 seconds)
+# StormSignal narrated demo (2 minutes 23 seconds)
 
-Use the public demo at <https://venuveerapaneni.github.io/StormSignal/>. This narration is written to match the current interface and its district-level data. Read the warning and source date that are actually on screen; both may change. A matching subtitle file is in `demo/stormsignal-demo.srt`.
+The demo uses the public app at <https://venuveerapaneni.github.io/StormSignal/>. The voice-over is AI-generated. The recording helper in [demo/recorder.html](demo/recorder.html) captures the selected browser tab only, adds the narration track, and moves through the interface. It never requests desktop, system-audio, or microphone capture. Choose the tab titled “StormSignal — Travel safer” in the browser picker.
+
+The narration is in [demo/stormsignal-narration.mp3](demo/stormsignal-narration.mp3), with matching timed English captions in [demo/stormsignal-demo.srt](demo/stormsignal-demo.srt). The current IMD source date and warning can change; the app and recording show the actual published snapshot. At the time this narration was prepared, the source wording was “Thunderstorm & Lightning, Squall etc” and its date was 10 Oct 2026.
 
 | Time | Show | Narration |
 | --- | --- | --- |
-| 0:00–0:15 | Start at the English home screen. | “During extreme weather, travelers may not know which warning to trust or where to find help. StormSignal brings official warnings and local guidance together.” |
-| 0:15–0:30 | Open the language menu; select Tamil, then Hindi, then return to English. | “Chennai is our demo district. I’ll switch between English, Tamil, and Hindi. The main information and safety steps change with the selected language.” |
-| 0:30–0:46 | Point to the district, IMD wording, and source update date. Read the current wording on screen. | “The page shows the IMD district warning, its exact wording, and the source update date. Open the link to verify what the source says.” |
-| 0:46–0:59 | Open “How does this work?” and show the refresh explanation. | “A scheduled refresh checks IMD’s public Chennai page every 30 minutes. StormSignal displays the latest published snapshot.” |
-| 0:59–1:12 | Return to the warning and point to the district-level note. | “This is district-level forecast information, not street-by-street flood reports. The app does not show safe routes or confirmed shelters.” |
-| 1:12–1:29 | Show all three safety steps. | “Safety steps reflect the warning category. For thunder and lightning, go indoors, avoid windows, and stay sheltered for 30 minutes after the last thunder.” |
-| 1:29–1:42 | Point out the freshness status. | “If the source data is old or unavailable, the app says it cannot verify the current warning. No warning listed is not an all-clear.” |
-| 1:42–1:57 | Open the official IMD source in a new tab or return to the app after showing it. | “Let’s open IMD’s page to compare its wording and date, then return to the app. Now we’ll show the official local contacts.” |
-| 1:57–2:10 | Show the two tap-to-call contacts and District Administration source link. | “The contact panel has tap-to-call links for Chennai’s Disaster Helpline 1077 and Corporation 1913, with a link to verify the numbers.” |
-| 2:10–2:25 | Return to the app’s main view. | “StormSignal helps travelers understand official warnings in a familiar language. In an emergency, follow local authority instructions.” |
+| 0:00–0:16 | English home and warning overview. | “During severe weather, travelers may not know which warning to trust, or where to find reliable help. StormSignal brings official warnings and local guidance together in one simple view.” |
+| 0:16–0:31 | Change to Tamil, then Hindi, then English. | “Chennai is our demo district. Switch between English, Tamil, and Hindi for familiar safety information.” |
+| 0:31–0:53 | Show district, source date, exact IMD wording, and official link. | “The IMD wording reads: Thunderstorm and lightning, squall, et cetera. Check the source date and link.” |
+| 0:53–1:06 | Open “How does this work?” | “A scheduled refresh checks the public IMD Chennai page every 30 minutes and publishes its latest snapshot.” |
+| 1:06–1:21 | Show the district-level warning and limitation. | “This is district-level forecast information, not street-by-street conditions. No verified shelters or safe routes are shown.” |
+| 1:21–1:40 | Show the three safety steps. | “For thunder, move indoors, stay away from windows and plumbing, and shelter for 30 minutes after the last thunder.” |
+| 1:40–1:53 | Show freshness status and warning caveat. | “If the source is old or unavailable, the app says it cannot verify the current warning. No warning listed is not an all-clear.” |
+| 1:53–2:10 | Show Chennai contacts and their source. | “Chennai help: Disaster Helpline 1077 and Corporation 1913. Verify the numbers with District Administration.” |
+| 2:10–2:23 | Return to the app home. | “StormSignal makes official warnings easier to understand. In an emergency, follow local authorities.” |
 
-## Recording notes
+## Recording steps
 
-- Keep the recording between 2 and 5 minutes; this run sheet targets 2:25.
-- Use a phone-sized view if the text remains readable. Keep the warning date and source visible long enough to read.
-- Read the current warning exactly as shown. If it changes before recording, use the new wording and matching guidance.
-- If the source lists no warning, explain that this is not an all-clear. If the data is stale or unavailable, show that state honestly.
-- Keep the published IMD source link and the Chennai helpline source visible when demonstrating them.
-- Add the finished video to the repository, suggested path: `demo/stormsignal-demo.mp4`.
+1. Open [the public recorder](https://venuveerapaneni.github.io/StormSignal/demo/recorder.html).
+2. Click **Open demo and start capture**.
+3. In the browser picker, choose the **StormSignal — Travel safer (recording)** tab. Do not choose a desktop or window.
+4. Wait for the narration to finish. Save the resulting `stormsignal-demo.webm` video in this repository.
+5. Include the video and public repository link in the team leader’s submission form.
+
+Before recording, confirm the visible warning and date match the current app. Follow local authority instructions in an emergency.
+

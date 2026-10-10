@@ -1,101 +1,62 @@
 1
-00:00:00,000 --> 00:00:07,000
-During extreme weather, travelers may not
-know which warning to trust
+00:00:00,000 --> 00:00:08,997
+During severe weather, travelers may not know which
+warning to trust, or where to find reliable help.
 
 2
-00:00:07,000 --> 00:00:15,000
-or where to find help. StormSignal brings
-official warnings and local guidance together.
+00:00:08,997 --> 00:00:15,347
+StormSignal brings official warnings and local
+guidance together in one simple view.
 
 3
-00:00:15,000 --> 00:00:22,000
-Chennai is our demo district. I’ll switch
-between English, Tamil, and Hindi.
+00:00:16,347 --> 00:00:30,190
+Chennai is our demo district. Switch between English,
+Tamil, and Hindi for familiar safety information.
 
 4
-00:00:22,000 --> 00:00:30,000
-The main information and safety steps
-change with the selected language.
+00:00:31,190 --> 00:00:51,986
+The IMD wording reads: Thunderstorm and lightning,
+squall, et cetera. Check the source date and link.
 
 5
-00:00:30,000 --> 00:00:38,000
-The page shows the IMD district warning,
-its exact wording, and the source update date.
+00:00:52,986 --> 00:01:04,744
+A scheduled refresh checks the public IMD Chennai
+page every 30 minutes and publishes its latest snapshot.
 
 6
-00:00:38,000 --> 00:00:46,000
-Open the link to verify what the source
-says.
+00:01:05,744 --> 00:01:15,625
+This is district-level forecast information, not
+street-by-street conditions. No verified shelters
 
 7
-00:00:46,000 --> 00:00:52,000
-A scheduled refresh checks IMD’s public
-Chennai page every 30 minutes.
+00:01:15,625 --> 00:01:20,116
+or safe routes are shown.
 
 8
-00:00:52,000 --> 00:00:59,000
-StormSignal displays the latest published
-snapshot.
+00:01:21,116 --> 00:01:36,532
+For thunder, move indoors, stay away from windows
+and plumbing, and shelter for 30 minutes after
 
 9
-00:00:59,000 --> 00:01:05,000
-This is district-level forecast information,
-not street-by-street flood reports.
+00:01:36,532 --> 00:01:39,423
+the last thunder.
 
 10
-00:01:05,000 --> 00:01:12,000
-The app does not show safe routes or
-confirmed shelters.
+00:01:40,423 --> 00:01:49,268
+If the source is old or unavailable, the app says
+it cannot verify the current warning. No warning
 
 11
-00:01:12,000 --> 00:01:20,000
-Safety steps reflect the warning category.
+00:01:49,268 --> 00:01:51,726
+listed is not an all-clear.
 
 12
-00:01:20,000 --> 00:01:24,000
-For thunder and lightning, go indoors,
+00:01:52,726 --> 00:02:09,712
+Chennai help: Disaster Helpline 1077 and Corporation
+1913. Verify the numbers with District Administration.
 
 13
-00:01:24,000 --> 00:01:29,000
-Avoid windows, and stay sheltered for
-30 minutes after the last thunder.
+00:02:10,712 --> 00:02:23,215
+StormSignal makes official warnings easier to
+understand. In an emergency, follow local authorities.
 
-14
-00:01:29,000 --> 00:01:36,000
-If the source data is old or unavailable,
-the app says it cannot verify the
-
-15
-00:01:36,000 --> 00:01:42,000
-current warning. No warning listed
-is not an all-clear.
-
-16
-00:01:42,000 --> 00:01:50,000
-Let’s open IMD’s page to compare its
-wording and date, then return to the app.
-
-17
-00:01:50,000 --> 00:01:57,000
-Now we’ll show the official local contacts.
-
-18
-00:01:57,000 --> 00:02:04,000
-The contact panel has tap-to-call links
-for Chennai’s Disaster Helpline 1077
-
-19
-00:02:04,000 --> 00:02:10,000
-and Corporation 1913, with a link to
-verify the numbers.
-
-20
-00:02:10,000 --> 00:02:17,000
-StormSignal helps travelers understand
-official warnings in a familiar language.
-
-21
-00:02:17,000 --> 00:02:25,000
-In an emergency, follow local authority
-instructions.

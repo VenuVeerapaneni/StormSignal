@@ -6,8 +6,9 @@
 - [x] Public, judge-accessible web demo: https://venuveerapaneni.github.io/StormSignal/
 - [x] README describing the selected problem statement, solution, and setup
 - [x] Ready-to-paste project description: [SUBMISSION_DESCRIPTION.md](SUBMISSION_DESCRIPTION.md)
-- [x] Demo script within the required 2-5 minute video length: [DEMO_SCRIPT.md](DEMO_SCRIPT.md)
-- [x] Timed English captions for the recording: [stormsignal-demo.srt](demo/stormsignal-demo.srt)
+- [x] AI narration audio track, about 2 minutes 23 seconds: [stormsignal-narration.mp3](demo/stormsignal-narration.mp3)
+- [x] Timed English captions aligned to narration: [stormsignal-demo.srt](demo/stormsignal-demo.srt)
+- [x] Recording helper that requests capture of the selected browser tab only: [recorder.html](demo/recorder.html)
 - [ ] Record a 2-5 minute demo video and add the video file to this repository
 
 ## Team and final submission
@@ -23,7 +24,7 @@
 - Show English, Tamil, and Hindi; open the official IMD warning and Chennai helpline source links.
 - Explain that the warning is district-level, not street-level, and that the app does not provide verified shelters, evacuation routes, or rescue dispatch.
 - If the source is stale or unavailable, show the app's "could not verify" state; do not claim an old warning is current.
-- Save the final video inside this repository (for example, `demo/stormsignal-demo.mp4`) and include its link in the submission form.
+- Save the final video inside this repository (for example, `demo/stormsignal-demo.webm`) and include its link in the submission form.
 
 ## Rules to remember
 
@@ -31,4 +32,5 @@
 - The README must explain the problem statement, solution, and setup instructions.
 - The project must be hosted at an accessible public link.
 - Only the team leader should submit. Eligibility also requires in-person attendance for at least part of the event and a valid fest pass.
+
 
