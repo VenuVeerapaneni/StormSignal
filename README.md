@@ -36,9 +36,9 @@ StormSignal does not provide automatic location tracking, street-level flood sta
 
 - [Copy-ready project description](SUBMISSION_DESCRIPTION.md)
 - [Current India-wide walkthrough script](DEMO_SCRIPT.md)
-- [Recording helper](demo/recorder.html) — needs its narration and page steps refreshed before use
-- [Legacy narration audio](demo/stormsignal-narration-16k.mp3) — Chennai version; do not use for the current app
-- [Legacy English captions](demo/stormsignal-demo.srt) — Chennai version; do not use for the current app
+- [Current synthesized English narration](demo/stormsignal-narration-india.wav) — about 2:41, Windows text-to-speech
+- [Time-aligned English captions](demo/stormsignal-demo.srt)
+- Legacy Chennai-version MP3 and recorder helper remain in `demo/`; do not use them for the current app walkthrough.
 - [Submission checklist](SUBMISSION_CHECKLIST.md)
 
 The final 2–5 minute video still needs to be recorded and added to the repository before submission.
