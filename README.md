@@ -8,14 +8,14 @@ StormSignal is a mobile-first prototype for the TravelTech problem statement: **
 - [Public source repository](https://github.com/VenuVeerapaneni/StormSignal)
 - [Open the official IMD district warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php)
 
-StormSignal links to the India Meteorological Department's interactive district map. Select a forecast date and district on the official IMD page to see the published warning. This prototype does not mirror or independently fetch every district warning; the official IMD map remains the source of truth. The interface and practical travel guidance are available in English, Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, and Urdu. The IMD's original warning wording is preserved on its source page.
+StormSignal links to the India Meteorological Department's interactive district map. Select a forecast date and district on the official IMD page to see the published warning. This prototype does not mirror or independently fetch every district warning; the official IMD map remains the source of truth. The interface and practical travel guidance are available in 18 languages: English, Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu, French, Spanish, German, Simplified Chinese, and Japanese. The IMD's original warning wording is preserved on its source page.
 
 ## What it includes
 
 - India-wide entry point to official district warnings and forecast dates.
 - IMD warning-level legend: No Warning, Watch, Alert, and Warning.
 - Three concise travel-safety steps and clear limitations.
-- A language selector with 13 languages and saved preference.
+- A language selector with 18 languages and saved preference, covering Indian travellers and visitors from several major international language groups.
 - A call link to India's nationwide 112 emergency response number.
 - Share support on browsers that provide the Web Share or clipboard API.
 - An installable Progressive Web App (PWA) with a cached app shell for offline access to the guidance and emergency call link.
@@ -51,5 +51,5 @@ The final 2–5 minute video still needs to be recorded and added to the reposit
 
 ## Problem and solution
 
-The problem statement describes the difficulty travellers face when weather warnings are fragmented, unfamiliar, or hard to understand. StormSignal gives travellers an India-wide starting point to the official district warnings and forecast dates, concise safety guidance in 13 languages, and a nationwide emergency contact. It deliberately sends district/date selection to the authoritative IMD map instead of presenting an unverified local alert as live data.
+The problem statement describes the difficulty travellers face when weather warnings are fragmented, unfamiliar, or hard to understand. StormSignal gives travellers an India-wide starting point to the official district warnings and forecast dates, concise safety guidance in 18 languages, and a nationwide emergency contact. It deliberately sends district/date selection to the authoritative IMD map instead of presenting an unverified local alert as live data.
 
