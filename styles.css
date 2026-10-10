@@ -613,6 +613,9 @@ dialog p:not(.eyebrow) {
   white-space:nowrap;
 }
 .map-launch:hover {background:#173a56}
+.map-launch-actions {display:flex;justify-content:flex-end;flex-wrap:wrap;gap:8px}
+.map-launch-secondary {background:#fff;color:var(--navy);border:1px solid #c7d8e2}
+.map-launch-secondary:hover {background:#edf5f8}
 .legend-dot {
   width:9px;
   height:9px;
@@ -634,6 +637,7 @@ dialog p:not(.eyebrow) {
   .map-legend {gap:10px 13px}
   .map-legend>strong {width:100%}
   .map-launch-panel {align-items:stretch;flex-direction:column;gap:12px;padding:14px}
+  .map-launch-actions {display:grid;grid-template-columns:1fr}
   .map-launch {white-space:normal}
 }
 @media(max-width:700px) {

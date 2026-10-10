@@ -18,7 +18,7 @@ const base = {
   footer:'In an emergency, call 112 and follow local authority instructions.',aboutLabel:'ABOUT THIS SERVICE',
   aboutTitle:'Clear information. Clear source.',
   aboutBody:'StormSignal covers India by opening IMD’s public district-wise warning map. The map provides the official warning and forecast date for the district selected there. This prototype does not provide automatic location tracking, street-level conditions, shelters, evacuation routes, or rescue dispatch.',
-  gotIt:'Got it',shareText:'StormSignal links travellers to India’s official district weather warnings and practical safety guidance. Check IMD’s map and follow local authority instructions.'
+  gotIt:'Got it',openSachet:'View current alerts on SACHET ↗',shareText:'StormSignal links travellers to India’s official district weather warnings and practical safety guidance. Check IMD’s map and follow local authority instructions.'
 };
 
 // Translations are concise summaries. The official IMD warning remains in its original wording on the source map.
@@ -67,6 +67,10 @@ const mapLaunchLabels={
   ja:['IMDのライブマップで予報日と地区を選択してください','地区と日付を正しく選べるよう、公式マップを別のページで開きます。']
 };
 for(const [language,[mapLaunchTitle,mapLaunchText]] of Object.entries(mapLaunchLabels)) Object.assign(translated[language],{mapLaunchTitle,mapLaunchText});
+const sachetLabels={
+  hi:'SACHET पर ताज़ा चेतावनी देखें ↗',ta:'SACHET-இல் தற்போதைய எச்சரிக்கைகளைப் பார்க்கவும் ↗',te:'SACHETలో తాజా హెచ్చరికలు చూడండి ↗',bn:'SACHET-এ বর্তমান সতর্কতা দেখুন ↗',mr:'SACHET वरील सध्याचे इशारे पाहा ↗',gu:'SACHET પર વર્તમાન ચેતવણીઓ જુઓ ↗',kn:'SACHETನಲ್ಲಿನ ಪ್ರಸ್ತುತ ಎಚ್ಚರಿಕೆಗಳನ್ನು ನೋಡಿ ↗',ml:'SACHET-ലെ നിലവിലെ മുന്നറിയിപ്പുകൾ കാണുക ↗',pa:'SACHET ’ਤੇ ਮੌਜੂਦਾ ਚੇਤਾਵਨੀਆਂ ਵੇਖੋ ↗',or:'SACHETରେ ବର୍ତ୍ତମାନର ସତର୍ਕਤਾ ଦେଖନ୍ତୁ ↗',as:'SACHET-ত বৰ্তমান সতৰ্কবাণী চাওক ↗',ur:'SACHET پر موجودہ انتباہات دیکھیں ↗',fr:'Voir les alertes actuelles sur SACHET ↗',es:'Ver las alertas actuales en SACHET ↗',de:'Aktuelle Warnungen auf SACHET ansehen ↗',zh:'在 SACHET 查看当前预警 ↗',ja:'SACHETで現在の警報を見る ↗'
+};
+for(const [language,label] of Object.entries(sachetLabels)) translated[language].openSachet=label;
 const installLabels={hi:'ऐप इंस्टॉल करें',ta:'செயலியை நிறுவு',te:'యాప్‌ను ఇన్‌స్టాల్ చేయండి',bn:'অ্যাপ ইনস্টল করুন',mr:'अॅप स्थापित करा',gu:'એપ ઇન્સ્ટોલ કરો',kn:'ಆ್ಯಪ್ ಸ್ಥಾಪಿಸಿ',ml:'ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യുക',pa:'ਐਪ ਇੰਸਟਾਲ ਕਰੋ',or:'ଆପ୍ ସ୍ଥାପନ କରନ୍ତୁ',as:'এপ্ ইনষ্টল কৰক',ur:'ایپ انسٹال کریں'};
 for(const [language,strings] of Object.entries(translated)) {
   strings.sourceName??=base.sourceName;

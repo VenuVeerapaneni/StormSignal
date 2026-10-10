@@ -1,9 +1,9 @@
-const CACHE_NAME='stormsignal-shell-v6';
+const CACHE_NAME='stormsignal-shell-v7';
 const APP_SHELL=[
   './',
   './index.html',
-  './styles.css?v=8',
-  './app.js?v=10',
+  './styles.css?v=9',
+  './app.js?v=11',
   './manifest.webmanifest',
   './icons/icon-192.png',
   './icons/icon-512.png'

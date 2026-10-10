@@ -7,12 +7,14 @@ StormSignal is a mobile-first prototype for the TravelTech problem statement: **
 - [Open StormSignal](https://venuveerapaneni.github.io/StormSignal/)
 - [Public source repository](https://github.com/VenuVeerapaneni/StormSignal)
 - [Open the official IMD district warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php)
+- [View current alerts on NDMA's SACHET portal](https://sachet.ndma.gov.in/)
 
-StormSignal links to the India Meteorological Department's interactive district map. Select a forecast date and district on the official IMD page to see the published warning. This prototype does not mirror or independently fetch every district warning; the official IMD map remains the source of truth. The interface and practical travel guidance are available in 18 languages: English, Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu, French, Spanish, German, Simplified Chinese, and Japanese. The IMD's original warning wording is preserved on its source page.
+StormSignal links to the India Meteorological Department's interactive district map. Select a forecast date and district on the official IMD page to see the published warning. It also links to NDMA's SACHET portal for its current CAP alerts. This prototype does not mirror either source's live alerts; the issuing authority's page remains the source of truth. The interface and practical travel guidance are available in 18 languages: English, Hindi, Bengali, Telugu, Marathi, Tamil, Gujarati, Kannada, Malayalam, Punjabi, Odia, Assamese, Urdu, French, Spanish, German, Simplified Chinese, and Japanese. The IMD's original warning wording is preserved on its source page.
 
 ## What it includes
 
 - India-wide entry point to official district warnings and forecast dates.
+- Direct links to official IMD district warnings and NDMA SACHET's current alerts.
 - IMD warning-level legend: No Warning, Watch, Alert, and Warning.
 - Three concise travel-safety steps and clear limitations.
 - A language selector with 18 languages and saved preference, covering Indian travellers and visitors from several major international language groups.
@@ -26,7 +28,7 @@ Open `index.html` in a modern browser. No build step, package installation, or b
 
 ## Data and safety
 
-Warnings and forecast dates are provided directly by IMD's public [district-wise warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php). The app does not claim a district-specific warning until the visitor selects a district on IMD's map. Warning language is kept at its official source; StormSignal's translated guidance is a concise aid, not an official translation of the warning.
+IMD's public [district-wise warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php) provides district warnings and forecast dates. [NDMA's SACHET portal](https://sachet.ndma.gov.in/) provides its current CAP alerts. StormSignal links to these official sources without mirroring their alerts. Official warning language is kept at its source; StormSignal's translated guidance is a concise aid, not an official translation of the warning.
 
 StormSignal does not provide automatic location tracking, street-level flood status, road closures, verified shelters, evacuation routes, or rescue dispatch. It is not an emergency service. For emergencies, call [112](https://112.gov.in/) and follow current instructions from local authorities.
 
