@@ -5,6 +5,7 @@ const base = {
   noticeText:'StormSignal links you to the India Meteorological Department’s interactive district map. Check the district and forecast date there, then follow current local authority instructions.',
   alertLabel:'OFFICIAL DISTRICT WARNINGS · INDIA',liveSourceTag:'OFFICIAL IMD MAP',mapTitle:'Check the warning for your district',
   mapText:'Open IMD’s nationwide map, choose one of the available forecast dates, and select your district to read its warning.',
+  mapLaunchTitle:'Choose your forecast date and district on IMD’s live map',mapLaunchText:'The official map opens separately so its district selection and forecast controls work as intended.',
   legendTitle:'IMD warning levels',noWarning:'No warning',watch:'Watch',alert:'Alert',warning:'Warning',openMap:'Open India warning map ↗',
   rightNow:'RIGHT NOW',stepsTitle:'Stay safer while travelling',step1Title:'Check your district and date',
   step1Text:'Open the official map and read the warning for the place and day of your trip.',
@@ -45,6 +46,32 @@ Object.assign(translated,{
   zh:{status:'印度气象局 · 印度地区预警',sourceName:'India Meteorological Department',sourceDetail:'印度各地区官方预警 · 预报日期以印度气象局为准',aboutLink:'使用说明',languageLabel:'语言',installApp:'安装应用',eyebrow:'清晰了解旅途安全',title:'了解正在发生什么。<br><em>知道该怎么做。</em>',intro:'为印度旅行者提供地区天气预警入口和实用安全建议。',coverageLabel:'覆盖范围',coverage:'印度 · 各邦和中央直辖区',noticeTitle:'官方预警，清楚的下一步',noticeText:'StormSignal 将你带到印度气象局的地区预警互动地图。请在那里核对地区和预报日期，并遵循当地主管部门的最新指引。',alertLabel:'印度地区官方预警',liveSourceTag:'印度气象局官方地图',mapTitle:'查看所在地区的预警',mapText:'打开印度气象局全国地图，选择预报日期和地区查看预警。',legendTitle:'印度气象局预警级别',noWarning:'无预警',watch:'关注',alert:'警戒',warning:'预警',openMap:'打开印度预警地图 ↗',rightNow:'安全提示',stepsTitle:'让旅途更安全',step1Title:'核对地区和日期',step1Text:'查看目的地和出行日期对应的官方预警。',step2Title:'远离洪水和无遮蔽区域',step2Text:'切勿步行或驾车穿越洪水。遵循当地主管部门关于避险或撤离的指引。',step3Title:'出发前再次确认',step3Text:'预警可能变化。出行前请再次确认当地最新指引。',nearbyHelp:'印度全国紧急援助',helpTitle:'紧急援助',emergencyNumber:'拨打 112',emergencyDetail:'印度全国紧急电话号码',helpNote:'适用于警务、消防、医疗及其他紧急援助。',verifyNumbers:'印度官方 112 服务 ↗',infoStatus:'信息来源与范围',scopeText:'预警在印度气象局官方地图中查看。StormSignal 不是紧急救援服务。',shareDemo:'分享此页面',footer:'遇到紧急情况请拨打 112，并遵循当地主管部门指引。',aboutLabel:'关于本服务',aboutTitle:'信息清晰，来源明确。',aboutBody:'StormSignal 链接到印度气象局公开的地区预警地图。官方预警保留在来源页面；这里的翻译建议仅供参考，并非官方预警翻译。本版本不提供自动定位、道路状况、已核实避难所、撤离路线或救援调度。',gotIt:'知道了',shareText:'StormSignal 帮助旅行者查找印度官方地区天气预警和实用安全建议。请查看印度气象局地图并遵循当地指引。'},
   ja:{status:'インド気象局 · インドの地区別警報',sourceName:'India Meteorological Department',sourceDetail:'インド全土の公式な地区別警報 · 予報日はIMDで確認',aboutLink:'利用方法',languageLabel:'言語',installApp:'アプリをインストール',eyebrow:'旅行の安全情報をわかりやすく',title:'状況を知る。<br><em>取るべき行動を知る。</em>',intro:'インドを旅行する方向けの地区別気象警報と実用的な安全案内です。',coverageLabel:'対象地域',coverage:'インド · 州および連邦直轄領',noticeTitle:'公式警報と次の行動をわかりやすく',noticeText:'StormSignalはインド気象局の地区別警報マップを開きます。そこで地区と予報日を確認し、現地当局の最新指示に従ってください。',alertLabel:'インド全土の公式地区別警報',liveSourceTag:'IMD公式マップ',mapTitle:'地区の警報を確認する',mapText:'IMDの全国マップを開き、予報日と地区を選んで警報を確認してください。',legendTitle:'IMD警報レベル',noWarning:'警報なし',watch:'注意',alert:'警戒',warning:'警報',openMap:'インドの警報マップを開く ↗',rightNow:'安全のために',stepsTitle:'旅行中の安全を守る',step1Title:'地区と日付を確認する',step1Text:'旅行先と旅行日に対応する公式警報を確認してください。',step2Title:'洪水の水や危険な場所を避ける',step2Text:'洪水の中を歩いたり運転したりしないでください。避難や安全確保に関する現地当局の指示に従ってください。',step3Title:'出発前にもう一度確認する',step3Text:'警報は変わることがあります。出発前に現地の最新指示を確認してください。',nearbyHelp:'インド全土の緊急連絡',helpTitle:'緊急時の支援',emergencyNumber:'112に電話',emergencyDetail:'インド全土の緊急電話番号',helpNote:'警察、消防、医療などの緊急支援に利用できます。',verifyNumbers:'インド政府の112サービス ↗',infoStatus:'情報源と対象範囲',scopeText:'警報はIMDの公式マップで確認します。StormSignalは緊急サービスではありません。',shareDemo:'このページを共有',footer:'緊急時は112に電話し、現地当局の指示に従ってください。',aboutLabel:'このサービスについて',aboutTitle:'明確な情報。明確な情報源。',aboutBody:'StormSignalはIMDの公開地区別警報マップを案内します。公式警報は情報源のページに表示されます。翻訳された案内は参考情報であり、公式な警報翻訳ではありません。この版では位置追跡、道路状況、確認済み避難所、避難経路、救助要請は提供しません。',gotIt:'確認',shareText:'StormSignalは、インドの公式な地区別気象警報と旅行中の安全案内を確認するための入口です。IMDのマップと現地当局の指示を確認してください。'}
 });
+
+const mapLaunchLabels={
+  hi:['IMD के लाइव मानचित्र पर पूर्वानुमान की तारीख़ और ज़िला चुनें','आधिकारिक मानचित्र अलग से खुलता है ताकि ज़िले और तारीख़ के विकल्प ठीक से काम करें।'],
+  ta:['IMD நேரடி வரைபடத்தில் முன்னறிவிப்பு நாளையும் மாவட்டத்தையும் தேர்ந்தெடுக்கவும்','மாவட்டம் மற்றும் தேதி தேர்வுகள் சரியாகச் செயல்பட அதிகாரப்பூர்வ வரைபடம் தனியாகத் திறக்கப்படும்.'],
+  te:['IMD ప్రత్యక్ష మ్యాప్‌లో సూచన తేదీ, జిల్లాను ఎంచుకోండి','జిల్లా, తేదీ ఎంపికలు సరిగ్గా పనిచేయడానికి అధికారిక మ్యాప్ వేరుగా తెరుచుకుంటుంది.'],
+  bn:['IMD-এর লাইভ মানচিত্রে পূর্বাভাসের তারিখ ও জেলা বেছে নিন','জেলা ও তারিখ বেছে নেওয়ার সুবিধা ঠিকমতো কাজ করতে সরকারি মানচিত্রটি আলাদা করে খুলবে।'],
+  mr:['IMD च्या थेट नकाशावर अंदाजाची तारीख आणि जिल्हा निवडा','जिल्हा आणि तारीख निवडण्याची सुविधा योग्य चालण्यासाठी अधिकृत नकाशा वेगळ्या पानावर उघडेल.'],
+  gu:['IMDના લાઇવ નકશામાં આગાહીની તારીખ અને જિલ્લો પસંદ કરો','જિલ્લો અને તારીખ પસંદ કરવાની સુવિધા યોગ્ય રીતે કામ કરે તે માટે સત્તાવાર નકશો અલગથી ખુલશે.'],
+  kn:['IMD ನೇರ ನಕ್ಷೆಯಲ್ಲಿ ಮುನ್ಸೂಚನೆಯ ದಿನಾಂಕ ಮತ್ತು ಜಿಲ್ಲೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ','ಜಿಲ್ಲೆ ಮತ್ತು ದಿನಾಂಕ ಆಯ್ಕೆಗಳು ಸರಿಯಾಗಿ ಕೆಲಸ ಮಾಡಲು ಅಧಿಕೃತ ನಕ್ಷೆ ಪ್ರತ್ಯೇಕವಾಗಿ ತೆರೆಯುತ್ತದೆ.'],
+  ml:['IMD-യുടെ തത്സമയ മാപ്പിൽ പ്രവചന തീയതിയും ജില്ലയും തിരഞ്ഞെടുക്കുക','ജില്ലയും തീയതിയും തിരഞ്ഞെടുക്കാനുള്ള നിയന്ത്രണങ്ങൾ ശരിയായി പ്രവർത്തിക്കാൻ ഔദ്യോഗിക മാപ്പ് വേറിട്ട് തുറക്കും.'],
+  pa:['IMD ਦੇ ਲਾਈਵ ਨਕਸ਼ੇ ਵਿੱਚ ਪੇਸ਼ਗੋਈ ਦੀ ਤਾਰੀਖ਼ ਅਤੇ ਜ਼ਿਲ੍ਹਾ ਚੁਣੋ','ਜ਼ਿਲ੍ਹਾ ਅਤੇ ਤਾਰੀਖ਼ ਚੁਣਨ ਵਾਲੇ ਵਿਕਲਪ ਠੀਕ ਕੰਮ ਕਰਨ ਲਈ ਸਰਕਾਰੀ ਨਕਸ਼ਾ ਵੱਖਰੇ ਤੌਰ ’ਤੇ ਖੁੱਲ੍ਹੇਗਾ।'],
+  or:['IMDର ସିଧାସଳଖ ମାନଚିତ୍ରରେ ପୂର୍ବାନୁମାନ ତାରିଖ ଓ ଜିଲ୍ଲା ବାଛନ୍ତୁ','ଜିଲ୍ଲା ଓ ତାରିଖ ବାଛିବାର ବିକଳ୍ପ ଠିକ୍‌ ଭାବେ କାମ କରିବା ପାଇଁ ସରକାରୀ ମାନଚିତ୍ର ଅଲଗା ଖୋଲିବ।'],
+  as:['IMD-ৰ লাইভ মানচিত্ৰত পূৰ্বানুমানৰ তাৰিখ আৰু জিলা বাছনি কৰক','জিলা আৰু তাৰিখ বাছনিৰ সুবিধা সঠিকভাৱে চলিবলৈ চৰকাৰী মানচিত্ৰখন পৃথককৈ খোল খাব।'],
+  ur:['IMD کے براہِ راست نقشے پر پیش گوئی کی تاریخ اور ضلع منتخب کریں','ضلع اور تاریخ کے اختیارات درست چلانے کے لیے سرکاری نقشہ الگ کھلے گا۔'],
+  fr:['Choisissez la date de prévision et le district sur la carte en direct de l’IMD','La carte officielle s’ouvre séparément pour que le choix du district et de la date fonctionne correctement.'],
+  es:['Elige la fecha del pronóstico y el distrito en el mapa en directo del IMD','El mapa oficial se abre por separado para que funcionen bien la selección del distrito y la fecha.'],
+  de:['Wähle Vorhersagedatum und Bezirk auf der IMD-Livekarte aus','Die offizielle Karte wird separat geöffnet, damit Bezirk und Datum dort zuverlässig ausgewählt werden können.'],
+  zh:['在印度气象局实时地图上选择预报日期和地区','官方地图将在单独页面打开，以便正常选择地区和日期。'],
+  ja:['IMDのライブマップで予報日と地区を選択してください','地区と日付を正しく選べるよう、公式マップを別のページで開きます。']
+};
+for(const [language,[mapLaunchTitle,mapLaunchText]] of Object.entries(mapLaunchLabels)) Object.assign(translated[language],{mapLaunchTitle,mapLaunchText});
+const installLabels={hi:'ऐप इंस्टॉल करें',ta:'செயலியை நிறுவு',te:'యాప్‌ను ఇన్‌స్టాల్ చేయండి',bn:'অ্যাপ ইনস্টল করুন',mr:'अॅप स्थापित करा',gu:'એપ ઇન્સ્ટોલ કરો',kn:'ಆ್ಯಪ್ ಸ್ಥಾಪಿಸಿ',ml:'ആപ്പ് ഇൻസ്റ്റാൾ ചെയ്യുക',pa:'ਐਪ ਇੰਸਟਾਲ ਕਰੋ',or:'ଆପ୍ ସ୍ଥାପନ କରନ୍ତୁ',as:'এপ্ ইনষ্টল কৰক',ur:'ایپ انسٹال کریں'};
+for(const [language,strings] of Object.entries(translated)) {
+  strings.sourceName??=base.sourceName;
+  strings.installApp??=installLabels[language]??base.installApp;
+}
 
 const sourceLabels={
   hi:['यह कैसे काम करता है','पूरे भारत की आधिकारिक जिला चेतावनियाँ · IMD पर पूर्वानुमान की तारीखें'],
