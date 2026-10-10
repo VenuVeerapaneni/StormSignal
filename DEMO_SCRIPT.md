@@ -4,7 +4,6 @@ The narration and captions below match the current app.
 
 - English synthesized narration: [demo/stormsignal-narration-india.wav](demo/stormsignal-narration-india.wav) — WAV, 16 kHz mono, about 2 minutes 41 seconds. The voice is Microsoft Zira Desktop text-to-speech.
 - Time-aligned English captions: [demo/stormsignal-demo.srt](demo/stormsignal-demo.srt).
-- The final 2–5 minute screen recording is not included. The team will record and submit that separately.
 
 | Time | Show | Narration focus |
 | --- | --- | --- |
@@ -15,10 +14,3 @@ The narration and captions below match the current app.
 | 1:32–1:56 | Show the three safety steps. | Check the destination and date, avoid floodwater, follow local instructions, and recheck before moving. |
 | 1:56–2:15 | Show the nationwide emergency call link. | Call 112 for emergency assistance and follow local authority instructions. |
 | 2:15–2:41 | Show the scope note and return home. | Clarify what the prototype does not provide and close on the official-source approach. |
-
-## Recording notes
-
-- Use the current app at <https://venuveerapaneni.github.io/StormSignal/> and show its current title, **StormSignal — India travel safety**.
-- The IMD map and SACHET portal open separately. They are the sources for current warnings and alerts.
-- The existing `demo/recorder.html` helper is still from the earlier Chennai version. Do not use it for this walkthrough.
-- Save the finished 2–5 minute video in this repository, for example as `demo/stormsignal-demo.webm`.
