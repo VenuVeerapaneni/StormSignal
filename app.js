@@ -36,6 +36,22 @@ const translated = {
   ur:{status:'IMD ضلعی نقشہ · بھارت',languageLabel:'زبان',eyebrow:'سفر کی حفاظت، واضح معلومات',title:'جانیں کیا ہو رہا ہے۔<br><em>جانیں کیا کرنا ہے۔</em>',intro:'بھارت بھر کے مسافروں کے لیے ضلعی موسم کی تنبیہات اور عملی رہنمائی۔',coverageLabel:'دائرہ',coverage:'بھارت · ریاستیں اور مرکز کے زیر انتظام علاقے',noticeTitle:'سرکاری تنبیہات، اگلے اقدامات واضح',noticeText:'StormSignal آپ کو محکمہ موسمیات کے انٹرایکٹو ضلعی نقشے تک لے جاتا ہے۔ وہاں ضلع اور پیش گوئی کی تاریخ دیکھیں اور مقامی حکام کی ہدایات پر عمل کریں۔',alertLabel:'سرکاری ضلعی تنبیہات · بھارت',liveSourceTag:'سرکاری IMD نقشہ',mapTitle:'اپنے ضلع کی تنبیہ دیکھیں',mapText:'IMD کا ملک گیر نقشہ کھولیں، تاریخ منتخب کریں اور اپنے ضلع کی تنبیہ پڑھیں۔',legendTitle:'IMD تنبیہ کی سطحیں',noWarning:'کوئی تنبیہ نہیں',watch:'نظر رکھیں',alert:'خبردار',warning:'تنبیہ',openMap:'بھارت کا تنبیہی نقشہ کھولیں ↗',rightNow:'ابھی',stepsTitle:'سفر میں محفوظ رہیں',step1Title:'ضلع اور تاریخ دیکھیں',step1Text:'سرکاری نقشے پر سفر کی جگہ اور دن کی تنبیہ پڑھیں۔',step2Title:'سیلابی پانی اور کھلی جگہوں سے بچیں',step2Text:'سیلابی پانی میں نہ چلیں اور نہ گاڑی چلائیں۔ مقامی حکام کی پناہ یا انخلا کی ہدایات پر عمل کریں۔',step3Title:'روانہ ہونے سے پہلے دوبارہ دیکھیں',step3Text:'تنبیہات بدل سکتی ہیں۔ سفر سے پہلے تازہ مقامی ہدایات کی تصدیق کریں۔',nearbyHelp:'ملک گیر ہنگامی مدد',helpTitle:'ہنگامی امداد',emergencyNumber:'112 پر کال کریں',emergencyDetail:'پورے بھارت کا ہنگامی نمبر',helpNote:'پولیس، فائر، طبی اور دیگر ہنگامی مدد کے لیے۔',verifyNumbers:'سرکاری 112 سروس ↗',infoStatus:'ماخذ اور دائرہ',scopeText:'تنبیہات IMD کے سرکاری نقشے پر کھلتی ہیں؛ StormSignal ہنگامی سروس نہیں۔',shareDemo:'یہ صفحہ شیئر کریں',footer:'ہنگامی حالت میں 112 پر کال کریں اور مقامی حکام کی ہدایات پر عمل کریں۔',aboutLabel:'اس سروس کے بارے میں',aboutTitle:'واضح معلومات۔ واضح ماخذ۔',aboutBody:'StormSignal، IMD کے عوامی ضلعی تنبیہی نقشے کے ذریعے بھارت بھر کی معلومات دکھاتا ہے۔ منتخب ضلع کی سرکاری تنبیہ اور تاریخ نقشے پر دیکھیں۔ یہ نمونہ مقام کی نگرانی، سڑک کی حالت، پناہ گاہ، انخلا کے راستے یا امدادی کارروائی فراہم نہیں کرتا۔',gotIt:'ٹھیک ہے',shareText:'StormSignal بھارت کی سرکاری ضلعی موسم کی تنبیہات اور سفری حفاظتی رہنمائی سے جوڑتا ہے۔ IMD نقشہ دیکھیں اور مقامی ہدایات پر عمل کریں۔'}
 };
 
+const sourceLabels={
+  hi:['यह कैसे काम करता है','पूरे भारत की आधिकारिक जिला चेतावनियाँ · IMD पर पूर्वानुमान की तारीखें'],
+  ta:['இது எப்படி செயல்படுகிறது','இந்தியா முழுவதும் அதிகாரப்பூர்வ மாவட்ட எச்சரிக்கைகள் · IMD-யில் முன்னறிவிப்பு நாட்கள்'],
+  te:['ఇది ఎలా పనిచేస్తుంది','భారతదేశమంతటా అధికారిక జిల్లా హెచ్చరికలు · IMDలో సూచన తేదీలు'],
+  bn:['এটি কীভাবে কাজ করে','ভারতজুড়ে সরকারি জেলা সতর্কতা · IMD-তে পূর্বাভাসের তারিখ'],
+  mr:['हे कसे काम करते','भारतभरातील अधिकृत जिल्हा इशारे · IMD वर अंदाजाच्या तारखा'],
+  gu:['આ કેવી રીતે કાર્ય કરે છે','ભારતભરની સત્તાવાર જિલ્લા ચેતવણીઓ · IMD પર આગાહીની તારીખો'],
+  kn:['ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ','ಭಾರತದಾದ್ಯಂತ ಅಧಿಕೃತ ಜಿಲ್ಲಾ ಎಚ್ಚರಿಕೆಗಳು · IMDಯಲ್ಲಿ ಮುನ್ಸೂಚನೆ ದಿನಾಂಕಗಳು'],
+  ml:['ഇത് എങ്ങനെ പ്രവർത്തിക്കുന്നു','ഇന്ത്യയിലുടനീളമുള്ള ഔദ്യോഗിക ജില്ലാ മുന്നറിയിപ്പുകൾ · IMD-യിലെ പ്രവചന തീയതികൾ'],
+  pa:['ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ','ਭਾਰਤ ਭਰ ਦੀਆਂ ਅਧਿਕਾਰਤ ਜ਼ਿਲ੍ਹਾ ਚੇਤਾਵਨੀਆਂ · IMD ’ਤੇ ਪੇਸ਼ਗੋਈ ਦੀਆਂ ਤਾਰੀਖਾਂ'],
+  or:['ଏହା କିପରି କାମ କରେ','ଭାରତର ସରକାରୀ ଜିଲ୍ଲା ସତର୍କତା · IMDରେ ପୂର୍ବାନୁମାନ ତାରିଖ'],
+  as:['এইটো কেনেকৈ কাম কৰে','ভাৰতজুৰি চৰকাৰী জিলা সতৰ্কবাণী · IMD-ত পূৰ্বানুমানৰ তাৰিখ'],
+  ur:['یہ کیسے کام کرتا ہے','بھارت بھر کی سرکاری ضلعی تنبیہات · IMD پر پیش گوئی کی تاریخیں']
+};
+for(const [language,[aboutLink,sourceDetail]] of Object.entries(sourceLabels)) Object.assign(translated[language],{aboutLink,sourceDetail});
+
 const copy = {en:base,...translated};
 let currentLanguage='en';
 const languageSelect=document.querySelector('#language');
@@ -47,6 +63,10 @@ function renderLanguage(language) {
   document.querySelectorAll('[data-i18n]').forEach(node=>{
     const value=strings[node.dataset.i18n] ?? base[node.dataset.i18n];
     if(value) node.innerHTML=value;
+  });
+  document.querySelectorAll('[data-i18n-aria]').forEach(node=>{
+    const value=strings[node.dataset.i18nAria] ?? base[node.dataset.i18nAria];
+    if(value) node.setAttribute('aria-label',value);
   });
   document.documentElement.lang=currentLanguage==='en'?'en-IN':`${currentLanguage}-IN`;
   document.documentElement.dir=currentLanguage==='ur'?'rtl':'ltr';
