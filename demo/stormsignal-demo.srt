@@ -1,62 +1,118 @@
 1
-00:00:00,000 --> 00:00:08,997
-During severe weather, travelers may not know which
-warning to trust, or where to find reliable help.
+00:00:00,000 --> 00:00:02,655
+Welcome to StormSignal.
 
 2
-00:00:08,997 --> 00:00:15,347
-StormSignal brings official warnings and local
-guidance together in one simple view.
+00:00:02,835 --> 00:00:11,070
+When severe weather affects a trip, travellers
+need to find reliable warnings and clear next
+steps quickly.
 
 3
-00:00:16,347 --> 00:00:30,190
-Chennai is our demo district. Switch between English,
-Tamil, and Hindi for familiar safety information.
+00:00:11,250 --> 00:00:21,070
+This prototype gives people across India a
+simple starting point for official weather
+information and practical travel safety
+guidance.
 
 4
-00:00:31,190 --> 00:00:51,986
-The IMD wording reads: Thunderstorm and lightning,
-squall, et cetera. Check the source date and link.
+00:00:21,250 --> 00:00:27,805
+For district weather warnings, open the India
+Meteorological Department map.
 
 5
-00:00:52,986 --> 00:01:04,744
-A scheduled refresh checks the public IMD Chennai
-page every 30 minutes and publishes its latest snapshot.
+00:00:27,985 --> 00:00:36,710
+Choose your forecast date and district directly
+on the official IMD page, then read the warning
+published there.
 
 6
-00:01:05,744 --> 00:01:15,625
-This is district-level forecast information, not
-street-by-street conditions. No verified shelters
+00:00:36,890 --> 00:00:43,530
+The map shows several forecast days, and the
+latest available dates can change.
 
 7
-00:01:15,625 --> 00:01:20,116
-or safe routes are shown.
+00:00:43,710 --> 00:00:50,965
+StormSignal links to the source; it does not
+copy changing warning data into this app.
 
 8
-00:01:21,116 --> 00:01:36,532
-For thunder, move indoors, stay away from windows
-and plumbing, and shelter for 30 minutes after
+00:00:51,145 --> 00:00:57,950
+For current disaster alerts, StormSignal also
+links to NDMA SACHET.
 
 9
-00:01:36,532 --> 00:01:39,423
-the last thunder.
+00:00:58,130 --> 00:01:04,925
+Check that official page for current alert
+details and instructions from the issuing
+authority.
 
 10
-00:01:40,423 --> 00:01:49,268
-If the source is old or unavailable, the app says
-it cannot verify the current warning. No warning
+00:01:05,105 --> 00:01:16,010
+The interface and general guidance are available
+in 18 languages, including twelve Indian
+languages and several used by international
+visitors.
 
 11
-00:01:49,268 --> 00:01:51,726
-listed is not an all-clear.
+00:01:16,190 --> 00:01:22,225
+For example, you can switch between Hindi,
+English, and French.
 
 12
-00:01:52,726 --> 00:02:09,712
-Chennai help: Disaster Helpline 1077 and Corporation
-1913. Verify the numbers with District Administration.
+00:01:22,405 --> 00:01:31,775
+These translations cover the StormSignal
+interface and guidance; they are not
+translations of the official warning itself.
 
 13
-00:02:10,712 --> 00:02:23,215
-StormSignal makes official warnings easier to
-understand. In an emergency, follow local authorities.
+00:01:31,955 --> 00:01:38,290
+Before you travel, check the district and
+forecast date for your destination.
+
+14
+00:01:38,470 --> 00:01:41,855
+Never walk or drive through floodwater.
+
+15
+00:01:42,035 --> 00:01:50,135
+Avoid exposed places during severe weather, and
+follow local shelter or evacuation instructions.
+
+16
+00:01:50,315 --> 00:01:56,250
+Warnings can change, so recheck the official
+source before moving.
+
+17
+00:01:56,430 --> 00:02:05,840
+For police, fire, medical, and other emergency
+assistance anywhere in India, call one one two.
+
+18
+00:02:06,020 --> 00:02:10,050
+StormSignal is not an emergency service.
+
+19
+00:02:10,230 --> 00:02:14,535
+Follow current instructions from local
+authorities.
+
+20
+00:02:14,715 --> 00:02:27,970
+The app does not track your location or show
+street-level flood conditions, road closures,
+verified shelters, evacuation routes, or rescue
+dispatch.
+
+21
+00:02:28,150 --> 00:02:37,450
+Its purpose is to make it easier to reach
+official information and practical safety
+guidance, while keeping the source clear.
+
+22
+00:02:37,630 --> 00:02:41,095
+Thanks for exploring StormSignal.
+
 
