@@ -546,6 +546,56 @@ dialog p:not(.eyebrow) {
   height:62px;
   padding:0 18px
 }
+
+.national-card {
+  border-top-color:#16836f;
+}
+.map-legend {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:10px 18px;
+  margin:17px 0 18px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#f9fbfc;
+  color:#526675;
+  font-size:11px;
+}
+.map-legend>strong {
+  color:#304b5e;
+  font-size:10px;
+  margin-right:3px;
+}
+.map-legend>span {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+.legend-dot {
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  display:inline-block;
+}
+.legend-dot.none {background:#63b67c}
+.legend-dot.watch {background:#f1cf54}
+.legend-dot.alert {background:#ef9d43}
+.legend-dot.warning {background:#d9534f}
+.primary-link {
+  padding:9px 12px;
+  border-radius:7px;
+  background:#e8f3f7;
+  font-weight:700;
+  white-space:nowrap;
+}
+@media(max-width:700px) {
+  .map-legend {gap:10px 13px}
+  .map-legend>strong {width:100%}
+  .source #aboutButton {margin-left:32px}
+  .source a.primary-link {max-width:none;text-align:center;margin-left:auto}
+}
 .top-actions {
   gap:10px
 }
