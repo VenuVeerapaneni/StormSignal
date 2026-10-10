@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b1f33" />
   <meta name="description" content="India-wide district weather warnings from IMD, with practical travel safety guidance in 13 languages." />
   <title>StormSignal — India travel safety</title>
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=6" />
 </head>
 <body>
   <header class="topbar">
@@ -28,10 +28,7 @@
       <h2 id="alertTitle" data-i18n="mapTitle">Check the warning for your district</h2>
       <p class="alert-summary" data-i18n="mapText">Open IMD’s nationwide map, choose one of the available forecast dates, and select your district to read its warning.</p>
       <div class="map-legend" data-i18n-aria="legendTitle" aria-label="Warning levels"><strong data-i18n="legendTitle">IMD warning levels</strong><span><i class="legend-dot none"></i><span data-i18n="noWarning">No warning</span></span><span><i class="legend-dot watch"></i><span data-i18n="watch">Watch</span></span><span><i class="legend-dot alert"></i><span data-i18n="alert">Alert</span></span><span><i class="legend-dot warning"></i><span data-i18n="warning">Warning</span></span></div>
-      <div class="official-map-wrap">
-        <iframe class="official-map" title="India Meteorological Department interactive district warning map" src="https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p class="map-caption">Interactive map from IMD. Choose a forecast date, then select or zoom into a district. If the map does not appear here, <a href="https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php" target="_blank" rel="noopener">open it directly on IMD ↗</a>.</p>
-      </div>
+      <div class="map-launch-panel"><div><strong>Choose your forecast date and district on IMD’s live map</strong><p>The official map opens separately so its district selection and forecast controls work as intended.</p></div><a class="map-launch" href="https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php" target="_blank" rel="noopener" data-i18n="openMap">Open India warning map ↗</a></div>
       <div class="source"><span class="source-icon">✓</span><div><strong data-i18n="sourceName">India Meteorological Department</strong><small data-i18n="sourceDetail">Interactive district warnings across India · forecast dates shown by IMD</small></div><button class="text-button" id="aboutButton" data-i18n="aboutLink">How this works</button><a class="text-button primary-link" href="https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php" target="_blank" rel="noopener" data-i18n="openMap">Open India warning map ↗</a></div>
     </section>
 
