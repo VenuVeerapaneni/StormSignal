@@ -1,5 +1,5 @@
 const base = {
-  status:'IMD district map · India',sourceName:'India Meteorological Department',sourceDetail:'Interactive district warnings across India · forecast dates shown by IMD',aboutLink:'How this works',languageLabel:'Language',eyebrow:'TRAVEL SAFETY, MADE CLEAR',
+  status:'IMD district map · India',sourceName:'India Meteorological Department',sourceDetail:'Interactive district warnings across India · forecast dates shown by IMD',aboutLink:'How this works',languageLabel:'Language',installApp:'Install app',eyebrow:'TRAVEL SAFETY, MADE CLEAR',
   title:'Know what’s happening.<br><em>Know what to do.</em>',intro:'District weather warnings and practical guidance for travellers across India.',
   coverageLabel:'COVERAGE',coverage:'India · states and union territories',noticeTitle:'Official warnings, clearer next steps',
   noticeText:'StormSignal links you to the India Meteorological Department’s interactive district map. Check the district and forecast date there, then follow current local authority instructions.',
@@ -91,3 +91,26 @@ try {
   if(saved&&copy[saved]) languageSelect.value=saved;
 }catch{}
 renderLanguage(languageSelect.value||'en');
+
+let installPrompt=null;
+const installButton=document.querySelector('#installApp');
+window.addEventListener('beforeinstallprompt',event=>{
+  event.preventDefault();
+  installPrompt=event;
+  installButton.hidden=false;
+});
+installButton.addEventListener('click',async()=>{
+  if(!installPrompt) return;
+  installPrompt.prompt();
+  await installPrompt.userChoice;
+  installPrompt=null;
+  installButton.hidden=true;
+});
+window.addEventListener('appinstalled',()=>{
+  installPrompt=null;
+  installButton.hidden=true;
+});
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+}
+

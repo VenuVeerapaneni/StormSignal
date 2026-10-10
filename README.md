@@ -18,10 +18,11 @@ StormSignal links to the India Meteorological Department's interactive district 
 - A language selector with 13 languages and saved preference.
 - A call link to India's nationwide 112 emergency response number.
 - Share support on browsers that provide the Web Share or clipboard API.
+- An installable Progressive Web App (PWA) with a cached app shell for offline access to the guidance and emergency call link.
 
 ## Run locally
 
-Open `index.html` in a modern browser. No build step, package installation, or backend is required. The official IMD district map opens in a separate tab.
+Open `index.html` in a modern browser. No build step, package installation, or backend is required. For installation and offline app-shell support, serve the site over HTTPS (GitHub Pages already does this). The official IMD district map opens in a separate tab because the source does not allow embedding. An Android APK has not been packaged; this repo is currently a web app/PWA.
 
 ## Data and safety
 
@@ -51,3 +52,4 @@ The final 2–5 minute video still needs to be recorded and added to the reposit
 ## Problem and solution
 
 The problem statement describes the difficulty travellers face when weather warnings are fragmented, unfamiliar, or hard to understand. StormSignal gives travellers an India-wide starting point to the official district warnings and forecast dates, concise safety guidance in 13 languages, and a nationwide emergency contact. It deliberately sends district/date selection to the authoritative IMD map instead of presenting an unverified local alert as live data.
+
