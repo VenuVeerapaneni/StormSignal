@@ -28,7 +28,7 @@ Open `index.html` in a modern browser. No build step, package installation, or b
 
 ## Data and safety
 
-IMD's public [district-wise warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php) provides district warnings and forecast dates. [NDMA's SACHET portal](https://sachet.ndma.gov.in/) provides its current CAP alerts. StormSignal links to these official sources without mirroring their alerts. Official warning language is kept at its source; StormSignal's translated guidance is a concise aid, not an official translation of the warning.
+IMD's public [district-wise warning map](https://mausam.imd.gov.in/responsive/districtWiseWarningGIS.php) provides district warnings and forecast dates. [NDMA's SACHET portal](https://sachet.ndma.gov.in/) provides its current CAP alerts. StormSignal links to these official sources without mirroring their alerts. NDMA's [website policy](https://sachet.ndma.gov.in/WebsitePolicy) describes permission requirements for reproducing site material, and its [CAP feed guide](https://sachet.ndma.gov.in/docs/Integration_Guide_For_Agencies.pdf) requires ETag-based caching for consumers. This prototype links to SACHET instead of implementing that feed integration. Official warning language is kept at its source; StormSignal's translated guidance is a concise aid, not an official translation of the warning.
 
 StormSignal does not provide automatic location tracking, street-level flood status, road closures, verified shelters, evacuation routes, or rescue dispatch. It is not an emergency service. For emergencies, call [112](https://112.gov.in/) and follow current instructions from local authorities.
 
