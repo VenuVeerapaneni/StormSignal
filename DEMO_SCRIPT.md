@@ -1,22 +1,24 @@
-# StormSignal walkthrough script — India-wide version
+# StormSignal walkthrough — India-wide version
 
-This talk track matches the current public app. The existing MP3, SRT captions, and recorder helper in `demo/` are from the earlier Chennai prototype. They mention Chennai-only data, an automated refresh, Chennai helplines, and 13 languages; those claims do not match the current app. Do not use those assets for this walkthrough. The 2–5 minute screen recording is still for the team to make.
+The narration and captions below match the current app.
 
-## Suggested talk track (about 2:20–2:40)
+- English synthesized narration: [demo/stormsignal-narration-india.wav](demo/stormsignal-narration-india.wav) — WAV, 16 kHz mono, about 2 minutes 41 seconds. The voice is Microsoft Zira Desktop text-to-speech.
+- Time-aligned English captions: [demo/stormsignal-demo.srt](demo/stormsignal-demo.srt).
+- The final 2–5 minute screen recording is not included. The team will record and submit that separately.
 
-| Time | Show | Narration |
+| Time | Show | Narration focus |
 | --- | --- | --- |
-| 0:00–0:18 | English home screen and India coverage. | “When severe weather affects a trip, travellers need to know which sources to trust and what steps to take. StormSignal gives people a clear starting point for official weather information across India.” |
-| 0:18–0:42 | The IMD warning card and its map button. | “For district warnings, open the India Meteorological Department’s map. Choose a forecast date and district on IMD’s page to read the official warning. StormSignal links to that source; it does not copy changing warning data into this screen.” |
-| 0:42–1:02 | Point to the SACHET link. | “For current disaster alerts, StormSignal also links to NDMA’s SACHET portal. The alert list is maintained by the issuing authorities, so check the official page for the latest details.” |
-| 1:02–1:22 | Change the language to Hindi, then French, then return to English. | “The interface and practical travel guidance are available in 18 languages, including Indian languages and options for international visitors. Official alert wording stays on its source page; StormSignal’s guidance is not an official translation.” |
-| 1:22–1:48 | Show the three safety steps. | “Check the district and forecast date for your trip. Never walk or drive through floodwater, and follow local shelter or evacuation instructions. Recheck before you travel because warnings can change.” |
-| 1:48–2:05 | Show the call 112 link and Government of India source. | “For police, fire, medical, and other emergency assistance anywhere in India, use the nationwide 112 service. Follow instructions from local authorities.” |
-| 2:05–2:28 | Show the scope note and return to the home screen. | “StormSignal does not track your location or show street-level flooding, road closures, verified shelters, evacuation routes, or rescue dispatch. It helps travellers reach official information and practical guidance, while keeping the source clear.” |
+| 0:00–0:21 | English home screen and India coverage. | Why travellers need reliable warnings and clear next steps. |
+| 0:21–0:51 | IMD warning card and map link. | Choose a forecast date and district on the official IMD page; StormSignal does not copy changing warnings into the app. |
+| 0:51–1:05 | SACHET link. | Open NDMA's portal for current disaster alert details. |
+| 1:05–1:32 | Switch to Hindi, English, and French. | The interface and general guidance are available in 18 languages; official warning wording stays on its source page. |
+| 1:32–1:56 | Show the three safety steps. | Check the destination and date, avoid floodwater, follow local instructions, and recheck before moving. |
+| 1:56–2:15 | Show the nationwide emergency call link. | Call 112 for emergency assistance and follow local authority instructions. |
+| 2:15–2:41 | Show the scope note and return home. | Clarify what the prototype does not provide and close on the official-source approach. |
 
 ## Recording notes
 
-- Keep the app visible while explaining its two official-source links. They open separately; the app does not embed or mirror either authority’s alert feed.
-- Use the current app title, **StormSignal — India travel safety**. Show language choices from the current 18-language selector.
-- The existing recorder page is not ready for this version because it still plays the old narration and targets old page controls. Do not use it until its audio and page steps are refreshed.
-- Save the finished 2–5 minute video in the repository, for example as `demo/stormsignal-demo.webm`.
+- Use the current app at <https://venuveerapaneni.github.io/StormSignal/> and show its current title, **StormSignal — India travel safety**.
+- The IMD map and SACHET portal open separately. They are the sources for current warnings and alerts.
+- The existing `demo/recorder.html` helper is still from the earlier Chennai version. Do not use it for this walkthrough.
+- Save the finished 2–5 minute video in this repository, for example as `demo/stormsignal-demo.webm`.
